@@ -2,33 +2,39 @@ body {
     background-color: white;
     color: rgb(201,13,0);
     font-family: eurostile-extended, sans-serif;
+}
+
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
 h1 {
-    font-size:20px;
-    margin-left: 155px;
+    font-size:18px;
+    margin-top: 20px;
+    margin-left: 165px;
+    display: inline;
+    float: left;
 }
 
 h2 {
-    font-size: 20px;
-    text-align: right;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 165px;
+    display: inline;
+    float: right;
 }
 
 h3 {
+    font-size: 18px;
     border: 3px solid rgb(150,0,5);
     padding: 10px;
 }
 
-ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-img {
-    position: absolute;
-    margin: auto;
-    animation: animation1 3s ease-in-out infinite alternate;
+a:hover {
+    background-color: rgb(150, 0, 5);
+    color: white;
+    transition: all 500ms;
 }
 
 div {
@@ -40,38 +46,90 @@ div {
     overflow: hidden;
 }
 
+img {
+    position: absolute;
+    margin: auto;
+    animation: animation1 5s ease-in-out infinite alternate;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+li {
+    font-size: 20px;
+    margin-left: -35px;
+    padding: 8px;
+    text-decoration: none;
+}
+
 article {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px;
+    padding-left: 165px;
+    padding-right: 165px;
 }
+
+a {
+    margin: 20px;
+    padding: 8px;
+    text-transform: lowercase;
+}
+
 
 a:link {
     color: rgb(201,13,0);
     text-decoration: none;
 }
 
-/* visited link */
 a:visited {
     color: rgb(201,13,0);
     text-decoration: none;
 }
 
-/* mouse over link */
 a:hover {
-    color: black;
+    color: white;
     text-decoration: none;
 } 
 
 @keyframes animation1 {
     from {
-        left: -300px;;
+        left: -150px;
         opacity:1;
     }
     to {
-        left:calc(30%);
+        left:calc(25%);
         opacity:1;
     }
 }
+
+footer {
+    background-color: rgb(150,0,5);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.footerlink:link {
+    color: white;
+    text-decoration: none;
+}
+
+.footerlink:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.footerlink:hover {
+    color: white;
+    text-decoration: none;
+} 
