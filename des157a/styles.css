@@ -122,9 +122,8 @@ a:visited {
 }
 
 a:hover {
-    background-color: rgb(150, 0, 5);
     border: 1px solid rgb(150, 0, 5);
-    color: white;
+    color: rgb(201,13,0);
     transition: all 500ms;
 }
 
