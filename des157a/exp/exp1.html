@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+
+    <script>
+        var food = prompt("Do you enjoy spicy food", "");
+
+        if (food === "yes" || food === "Yes") {
+            console.log("You are a real one")
+            for (var i = 0; i < 21; i++){
+                if (i < 20) {
+                    console.log(`Days remaining until your next spicy meal! ${i}`);
+                }
+                else {
+                    console.log(`Days remaining until your next spicy meal! ${i} <-- you are here`);
+                }
+            }
+            
+        }
+        else if (food === "no" || food === "No") {
+            console.log("You suck man")
+        }
+        else if (food == "maybe" || food == "Maybe") {
+            console.log("Only one way to find out")
+        }
+        else {
+            console.log("Answer the question muahaha")
+        }
+
+    </script>
+</body>
+</html>
