@@ -21,6 +21,7 @@
     <script>
         
         var colorPrompt = prompt(`What color do you want the background color to be?`, "");
+        var colorNames = ["red", "orange", "yellow", "green", "blue", "purple", "black", "white", "gray/grey"]
 
         if (colorPrompt == null || colorPrompt == '') {
             console.log("You didn't enter a color")
@@ -78,6 +79,14 @@
             document.body.style.backgroundColor = 'gray';
             document.getElementById('h1color').style.color = "white";
         }
+
+        function list(colorNames){
+            for (var i=0; i<colorNames.length; i++)
+            console.log(`Here is a color you can also pick: ${colorNames[i]}`)
+        }
+
+        list(colorNames);
+
 
 
      
