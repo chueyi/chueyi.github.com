@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 2</title>
+    <style>
+        h1 {
+            font-family: Arial;
+            font-size: large;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body id = "bodycolor">
+    <h1 id = "h1color">WOW, A HEADER</h1>
+
+    <script>
+        
+        var colorPrompt = prompt(`What color do you want the background color to be?`, "");
+
+        if (colorPrompt == null || colorPrompt == '') {
+            console.log("You didn't enter a color")
+        }
+        else if (colorPrompt == "red" || colorPrompt == "Red") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'red';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "orange" || colorPrompt == "Orange") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'orange';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "yellow" || colorPrompt == "Yellow") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'yellow';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "green" || colorPrompt == "Green") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'green';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "blue" || colorPrompt == "Blue") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'blue';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "purple" || colorPrompt == "Purple") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'purple';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "black" || colorPrompt == "Black") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'black';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+        else if (colorPrompt == "white" || colorPrompt == "White") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'white';
+            document.getElementById('h1color').style.color = "black";
+        }
+        
+        else if (colorPrompt == "gray" || colorPrompt == "Gray" || colorPrompt == "grey" || colorPrompt == "Grey") { 
+            console.log(`You selected ${colorPrompt}`)
+            document.body.style.backgroundColor = 'gray';
+            document.getElementById('h1color').style.color = "white";
+        }
+
+
+     
+
+
+    </script>
+</body>
+</html>

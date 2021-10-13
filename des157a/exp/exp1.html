@@ -11,6 +11,7 @@
 
     <script>
         var food = prompt("Do you enjoy spicy food", "");
+        var hashtag = ("#")
 
         if (food === "yes" || food === "Yes") {
             console.log("You are a real one")
@@ -24,9 +25,19 @@
             }
             
         }
+
         else if (food === "no" || food === "No") {
             console.log("You suck man")
+            for (var i = 0; i < 21; i++){
+                if (i < 20) {
+                    console.log(hashtag);
+                }
+                else {
+                    console.log(hashtag);
+                }
+            }
         }
+
         else if (food == "maybe" || food == "Maybe") {
             console.log("Only one way to find out")
         }
