@@ -1,0 +1,104 @@
+body {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(41, 82, 125);
+}
+
+h2 {
+    border-radius: 10px;
+    color: rgb(117, 184, 255);
+}
+
+#nav {
+    display: inline;
+    float: right;
+    margin-top: -65px;
+    color: rgb(0, 91, 163);
+    transition: all 500ms;
+}
+
+#nav:link, #nav:visited{
+    color: rgb(0, 91, 163);
+}
+
+#nav:hover {
+    color: rgb(52, 235, 180);
+}
+
+#namesubtitle {
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+p, li {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.firstarticle {
+    text-indent: 50px;
+}
+
+article {
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section {
+    border-bottom: solid 2px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#articlelinkp {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#articlelink {
+    padding: 15px;
+    height: 100px;
+    width: 0px;
+    transition: all 500ms;
+    border-radius: 40px;
+    border: solid 5px rgb(0, 91, 163);
+}
+
+#articlelink:hover {
+    padding: 15px;
+    width: 500px;
+    border-radius: 40px;
+    color: white;
+    border: solid 5px rgb(52, 235, 180);
+}
+
+#articlelink:link, #articlelink:visited, .footerlink:link, .footerlink:visited, #zhu:link, #zhu:visited {
+    color: rgb(0, 91, 163);
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+.footerlink:hover, #zhu:hover {
+    color: rgb(52, 235, 180);
+}
