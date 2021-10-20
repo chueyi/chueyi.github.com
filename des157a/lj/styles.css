@@ -1,9 +1,24 @@
 body {
+    background-color: white;
     font-family: mr-eaves-modern, sans-serif;
+    padding: 15%;
     font-weight: 400;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;  
+}
+
+.one {
+    background-color: rgb(181, 227, 255); transition: all 3s;
+}
+.two {
+    background-color: rgb(49, 104, 214); transition: all 3s;
+}
+.three {background-color: rgb(122, 244, 255); transition: all 3s;
+}
+.four {
+    background-color: rgb(155,184,204); transition: all 3s;
+}
+.five {
+    background-color: rgb(194, 205, 252); transition: all 3s
 }
 
 h1 {
@@ -20,7 +35,11 @@ h2 {
     display: inline;
     float: right;
     margin-top: -65px;
+    padding-right: 10px;
+    padding-left: 10px;
     color: rgb(0, 91, 163);
+    border-left: solid 3px black;
+    border-right: solid 3px black;
     transition: all 500ms;
 }
 
@@ -44,13 +63,17 @@ p, li {
 
 .articles {
     text-indent: 50px;
+    width: 100%;
+}
+
+li {
+    width: 100%;
 }
 
 article {
     padding-top: 20px;
-    border-top: 2px solid black;
+    border-top: 3px solid black;
 }
-
 
 footer {
     display: flex;
@@ -67,7 +90,6 @@ a{
 .articlelinkp {
     padding-top: 20px;
     padding-bottom: 60px;
-    border-bottom: solid 2px black;
 }
 
 .articlelink {
@@ -76,7 +98,7 @@ a{
     width: 0px;
     transition: all 500ms;
     border-radius: 40px;
-    border: solid 5px rgb(0, 91, 163);
+    border: solid 3px rgb(0, 91, 163);
 }
 
 .articlelink:hover {
@@ -84,7 +106,7 @@ a{
     width: 500px;
     border-radius: 40px;
     color: white;
-    border: solid 5px rgb(52, 235, 180);
+    border: solid 3px rgb(52, 235, 180);
 }
 
 .articlelink:link, .articlelink:visited, .footerlink:link, .footerlink:visited, #zhu:link, #zhu:visited {
