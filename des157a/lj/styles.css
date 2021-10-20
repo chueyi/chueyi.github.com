@@ -42,22 +42,15 @@ p, li {
     line-height: 30px;
 }
 
-.firstarticle {
+.articles {
     text-indent: 50px;
 }
 
 article {
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
     padding-top: 20px;
-    padding-bottom: 20px;
+    border-top: 2px solid black;
 }
 
-section {
-    border-bottom: solid 2px black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 footer {
     display: flex;
@@ -71,12 +64,13 @@ a{
     text-decoration: none;
 }
 
-#articlelinkp {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.articlelinkp {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-bottom: solid 2px black;
 }
 
-#articlelink {
+.articlelink {
     padding: 15px;
     height: 100px;
     width: 0px;
@@ -85,7 +79,7 @@ a{
     border: solid 5px rgb(0, 91, 163);
 }
 
-#articlelink:hover {
+.articlelink:hover {
     padding: 15px;
     width: 500px;
     border-radius: 40px;
@@ -93,7 +87,7 @@ a{
     border: solid 5px rgb(52, 235, 180);
 }
 
-#articlelink:link, #articlelink:visited, .footerlink:link, .footerlink:visited, #zhu:link, #zhu:visited {
+.articlelink:link, .articlelink:visited, .footerlink:link, .footerlink:visited, #zhu:link, #zhu:visited {
     color: rgb(0, 91, 163);
     text-decoration: none;
     transition: all 500ms;
