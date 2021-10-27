@@ -66,6 +66,13 @@ p, li {
     width: 100%;
 }
 
+figcaption {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
 li {
     width: 100%;
 }
@@ -73,6 +80,12 @@ li {
 article {
     padding-top: 20px;
     border-top: 3px solid black;
+}
+
+.pictures {
+    display: block;
+    margin: auto;
+    padding: 30px;
 }
 
 footer {
