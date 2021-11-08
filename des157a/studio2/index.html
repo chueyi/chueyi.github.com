@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel ="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/fyh3hfp.css">
+    <link href = "styles.css" rel = stylesheet>
+    <script src = "script.js" defer></script>
+    <title>Every Picture</title>
+</head>
+<body>            
+    <header>
+        <h1>EVERY PICTURE</h1>
+    </header>
+    
+    <main id = "wholecarousel">
+
+                <div id = "leftcarousel">
+                    <img src = "images/5.2.jpg" alt = "street outfit" class = "leftpictures currentimg hidden" id = "leftcrow5" width = "250" height = "600">
+                    <img src = "images/4.2.jpg" alt = "royal outfit" class = "leftpictures hidden " id = "leftcrow4" width = "250" height = "600">
+                    <img src = "images/3.2.jpg" alt = "avant garde outfit" class = "leftpictures hidden" id = "leftcrow3" width = "250" height = "600">
+                    <img src = "images/2.2.jpg" alt = "desert outfit" class = "leftpictures hidden" id = "leftcrow2" width = "250" height = "600">
+                    <img src = "images/1.2.jpg" alt = "black dress" class = "leftpictures" id = "leftcrow1" width = "250" height = "600">
+                </div>
+
+                <section id = "centercontainer">
+                    <h2>THE CROWS</h2>
+                    <section id = "centerp">
+                        <p></p>
+                    </section>
+                </section>
+
+                <div id = rightcarousel>
+                    <img src = "images/5.1.jpg" alt = "street outfit" class = "rightpictures hidden" id = "rightcrow5" width = "250" height = "600">
+                    <img src = "images/4.1.jpg" alt = "royal outfit" class = "rightpictures hidden" id = "rightcrow4" width = "250" height = "600">
+                    <img src = "images/3.1.jpg" alt = "avant garde outfit" class = "rightpictures hidden" id = "rightcrow3" width = "250" height = "600">
+                    <img src = "images/2.1.jpg" alt = "desert outfit" class = "rightpictures hidden" id = "rightcrow2" width = "250" height = "600">
+                    <img src = "images/1.1.jpg" alt = "black dress" class = "rightpictures" id = "rightcrow1" width = "250" height = "600">
+                </div>
+
+                <div id = "carouselindicators">
+                    <button class = "indicator currentindicator" id = "button1"></button>
+                    <button class = "indicator" id = "button2"></button>
+                    <button class = "indicator" id = "button3"></button>
+                    <button class = "indicator" id = "button4"></button>
+                    <button class = "indicator" id = "button5"></button>
+                </div>
+    </main>
+
+    <div id = "overlay" class = "hidden">
+        <img src = "images/1overlay.jpg" width="600" height = "600" class = "overlayimg">
+        <button class = "corner close">&otimes;</button>
+    </div>
+
+    <footer>
+        <p><a href = "https://validator.w3.org/check?uri=https://chueyi.github.io/des157a" class = "footerlink">VALID HTML5</a></p>
+
+        <p><a href = "https://jigsaw.w3.org/css-validator/check/referer" class = "footerlink">VALID CSS</a ></p>
+    </footer>
+</body>
+</html>
