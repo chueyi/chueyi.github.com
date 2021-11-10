@@ -208,17 +208,11 @@ a:hover{
     opacity: 1;
 }
 
-footer {
-    visibility: hidden;
-}
-
 .hidden {
     visibility: hidden;
     opacity: 0;
 }
 
-.hiddenforimg {
-    position: relative;
+footer {
     visibility: hidden;
-    opacity: 0;
 }
