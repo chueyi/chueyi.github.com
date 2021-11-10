@@ -17,32 +17,113 @@
         '5.2.jpg',
     ]
 
-
-    document.querySelector('#button2').addEventListener('click', function(event) {
-        event.preventDefault;
-        document.querySelector('#rightcrow1').className = 'hidden'
-        document.getElementById('rightcrow2')
-    })
-
-    // For Overlays
+    // OVERLAY 1
     document.querySelector('#leftcrow1').addEventListener('click', function(event) {
         event.preventDefault();
-        document.querySelector('#overlay').className = 'showing'
+        document.querySelector('#overlay1').className = 'showing'
     });
 
     document.querySelector('#rightcrow1').addEventListener('click', function(event) {
         event.preventDefault();
-        document.querySelector('#overlay').className = 'showing'
+        document.querySelector('#overlay1').className = 'showing'
     });
 
     document.querySelector('.close').addEventListener('click', function(event){
-        document.querySelector('#overlay').className = 'hidden';
+        document.querySelector('#overlay1').className = 'hidden';
     }); 
 
     document.addEventListener('keydown', function(event){
         if (event.key === 'Escape') {
-            document.querySelector('#overlay').className = 'hidden';
+            document.querySelector('#overlay1').className = 'hidden';
         }
     });
+
+    // OVERLAY 2
+
+    document.querySelector('#leftcrow2').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#overlay2').className = 'showing'
+    });
+
+    document.querySelector('#rightcrow2').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#overlay2').className = 'showing'
+    });
+
+    document.querySelector('.close').addEventListener('click', function(event){
+        document.querySelector('#overlay2').className = 'hidden';
+    }); 
+
+    document.addEventListener('keydown', function(event){
+        if (event.key === 'Escape') {
+            document.querySelector('#overlay2').className = 'hidden';
+        }
+    });
+
+    // OVERLAY 3
+
+    document.querySelector('#leftcrow3').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#overlay3').className = 'showing'
+    });
+
+    document.querySelector('#rightcrow3').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#overlay3').className = 'showing'
+    });
+
+    document.querySelector('.close').addEventListener('click', function(event){
+        document.querySelector('#overlay3').className = 'hidden';
+    }); 
+
+    document.addEventListener('keydown', function(event){
+        if (event.key === 'Escape') {
+            document.querySelector('#overlay3').className = 'hidden';
+        }
+    });
+
+    // OVERLAY 4
+
+    document.querySelector('#leftcrow4').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#overlay4').className = 'showing'
+    });
+
+    document.querySelector('#rightcrow4').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#overlay4').className = 'showing'
+    });
+
+    document.querySelector('.close').addEventListener('click', function(event){
+        document.querySelector('#overlay4').className = 'hidden';
+    }); 
+
+    document.addEventListener('keydown', function(event){
+        if (event.key === 'Escape') {
+            document.querySelector('#overlay4').className = 'hidden';
+        }
+    });
+
+        // OVERLAY 4
+
+        document.querySelector('#leftcrow5').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#overlay5').className = 'showing'
+        });
+    
+        document.querySelector('#rightcrow5').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#overlay5').className = 'showing'
+        });
+    
+        document.querySelector('.close').addEventListener('click', function(event){
+            document.querySelector('#overlay5').className = 'hidden';
+        }); 
+    
+        document.addEventListener('keydown', function(event){
+            if (event.key === 'Escape') {
+                document.querySelector('#overlay5').className = 'hidden';
+            }
+        });
 
 }());
