@@ -1,11 +1,7 @@
 body {
     color: white;
     background-color: black;
-}
-
-main {
     display: flex;
-    justify-content: center;
 }
 
 h1 {
