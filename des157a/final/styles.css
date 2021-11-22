@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(255, 215, 150);
+    color: white;
+    padding: 100px;
+}
+
+h1, h2 {
+font-family: lust-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+p {
+font-family: proxima-nova, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+#p1 {
+    width:40%;
+}
