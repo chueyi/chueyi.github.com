@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel ="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wxs2gsn.css">
+    <script src = "script.js" defer></script>
+    <title>Prototype 1</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section id = "startingscreen">
+            <audio controls autoplay id = "soundbar">
+                <source src = "media/jingle.mp3" type = "audio/mpeg">
+            </audio>
+
+<!-- PINKSIDE -->
+            <div class = "pinkside">
+                <img src = "images/logo.png" alt = "logo" id = "logo">
+
+                <div id = "characterselect"></div>
+
+                <section id = "characterselectscreen" class = "hidden">
+                    <div id = "gallery1">
+                        <img src = "images/1.2.png" alt = "seonggihun" id = "seonggihun" class = "characterselect">
+                        <img src = "images/2.2.png" alt = "kangsaebyeok" id = "kangsaebyeok" class = "characterselect">
+                        <img src = "images/3.2.png" alt = "abdulali" id = "abdulali" class = "characterselect">
+                    </div>
+        
+                    <div id = "gallery2">
+                        <img src = "images/4.2.png" alt = "jiyeong" id = "jiyeong" class = "characterselect">
+                        <img src = "images/5.2.png" alt = "chosangwoo" id = "chosangwoo" class = "characterselect">
+                        <img src = "images/6.2.png" alt = "ohilnam" id = "ohilnam" class = "characterselect">
+                    </div>
+        
+                    <div id = "gallery3">
+                        <img src = "images/7.2.png" alt = "jungkook" id = "jungkook" class = "characterselect">
+                        <img src = "images/8.2.png" alt = "taehyung" id = "taehyung" class = "characterselect">
+                    </div>
+                </section>
+            </div>
+<!-- BLUESIDE -->
+            <div class = "blueside">
+
+                <div id = "rules">
+                        <ul>
+                            <h1 id = "rulestitle">RULES</h1>
+                            <li>1. Pick your character</li>
+                            <li>2. Fill in the text boxes</li>
+                            <li>3. Unravel your story</li>
+                        </ul>
+
+                        <button id = "startbutton"><img src = "images/start.png" alt = "startbutton"></button>
+                </div>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+</body>
+
+</html>

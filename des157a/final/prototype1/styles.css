@@ -1,0 +1,98 @@
+body {
+    color: white;
+    font-family: lores-12, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+main {
+    width: 1366px;
+    height: 768px;
+    margin: auto;
+}
+
+audio {
+    position: absolute;
+    visibility: hidden;
+}
+
+#startingscreen {
+    display: flex;
+}
+
+#logo {
+    margin-left: -7%;
+}
+
+.pinkside {
+    background-color: rgb(251, 55, 115);
+    width: 683px;
+    height: 768px;
+}
+
+.blueside {
+    width: 683px;
+    height: 768px;
+    background-color: rgb(0, 200, 207);
+}
+
+#rules {
+    margin-top: 20%;
+}
+
+#rulestitle {
+    margin-top: 0px;
+    font-size: 48px;
+    filter: drop-shadow(0px 4px black);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    border: solid 5px white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
+    width: 35%;
+}
+
+li {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#startbutton {
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+#characterselectscreen {
+    display: block;
+    margin-top: 8%;
+    padding: 50px;
+}
+
+.characterselect {
+    margin: 20px;
+}
+
+.characterselect:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.showing {
+    visibility: visible;
+}
