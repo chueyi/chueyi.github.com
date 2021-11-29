@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel ="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wxs2gsn.css">
+    <script src = "script.js" defer></script>
+    <title>Prototype 1</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div id = "mainscreen">
+            <audio controls autoplay id = "soundbar">
+                <source src = "media/jingle.mp3" type = "audio/mpeg">
+            </audio>
+
+<!-- PINKSIDE -->
+            <div class = "pinkside">
+
+                <img src = "images/logo.png" alt = "logo" id = "logo">
+
+                <div id = "characterselect"></div>
+
+                <div id = "characterselectscreen" class = "hidden">
+                    <div id = "gallery1">
+                        <img src = "images/1.2.png" alt = "seonggihun" id = "seonggihun" class = "characterselect">
+                        <img src = "images/2.2.png" alt = "kangsaebyeok" id = "kangsaebyeok" class = "characterselect">
+                        <img src = "images/3.2.png" alt = "abdulali" id = "abdulali" class = "characterselect">
+                    </div>
+        
+                    <div id = "gallery2">
+                        <img src = "images/4.2.png" alt = "jiyeong" id = "jiyeong" class = "characterselect">
+                        <img src = "images/5.2.png" alt = "chosangwoo" id = "chosangwoo" class = "characterselect">
+                        <img src = "images/6.2.png" alt = "ohilnam" id = "ohilnam" class = "characterselect">
+                    </div>
+        
+                    <div id = "gallery3">
+                        <img src = "images/7.2.png" alt = "jungkook" id = "jungkook" class = "characterselect">
+                        <img src = "images/8.2.png" alt = "taehyung" id = "taehyung" class = "characterselect">
+                        <img src = "images/0.2.png" alt = "randomizer" id = "randomizer" class = "characterselect">
+                    </div>
+                </div>
+
+                <div id = "madlibcharactersection">
+
+                </div>
+                
+            </div>
+<!-- BLUESIDE -->
+            <div class = "blueside">
+
+                <div id = "rules">
+                        <ul>
+                            <li id = "rulestitle">RULES</li>
+                            <li>1. Pick your character</li>
+                            <li>2. Fill in the text boxes</li>
+                            <li>3. Unravel your story</li>
+                        </ul>
+
+                        <button id = "startbutton"><img src = "images/start.png" alt = "startbutton"></button>
+                </div>
+
+                <div id = "charactercards">
+                    <div id = "charactercardspot">
+                        <img src = "images/0.3.png" alt = "card1" class = "cards" id = "card1">
+                    </div>
+
+                    <button id = "contbutton"><img src = "images/continue.png"></button>
+                </div>
+
+                <div id = "madlib">
+                    <form id = "myform">
+                        <label class = "fields">Number
+                            <input type = "text" id = "number1">
+                        </label>
+        
+                        <label class = "fields">Adjective
+                            <input type = "text" id = "adjective1">
+                        </label>
+        
+                        <label class = "fields">Number (1-999)
+                            <input type = "text" id = "number2">
+                        </label>
+        
+                        <label class = "fields">Noun
+                            <input type = "text" id = "noun1">
+                        </label>
+        
+                        <label class = "fields">Noun
+                            <input type = "text" id = "noun2">
+                        </label>
+        
+                        <label class = "fields">Body Part
+                            <input type = "text" id ="bodypart">
+                        </label>
+        
+                        <label class = "fields">Person In The Room
+                            <input type = "text" id = "personintheroom">
+                        </label>
+        
+                        <label class = "fields">Verb With "ing"
+                            <input type = "text" id = "verb1">
+                        </label>
+                        
+                        <label class = "fields">Plural Noun
+                            <input type = "text" id = "noun3">
+                        </label>
+        
+                        <input type = "submit" value = "Finish" id = "submit" class = "showing">
+                    </form>
+
+                        <button id = "replaybutton"><img src = "images/replay.png"></button>
+                    
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        
+    </main>
+
+</body>
+
+</html>
