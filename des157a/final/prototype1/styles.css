@@ -16,7 +16,7 @@ audio {
     visibility: hidden;
 }
 
-#startingscreen {
+#mainscreen {
     display: flex;
 }
 
@@ -58,7 +58,7 @@ ul {
 
 li {
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -68,31 +68,92 @@ button:hover {
     cursor: pointer;
 }
 
-#startbutton {
+button {
     background-color: transparent;
     border: none;
+}
+
+#startbutton {
     margin: auto;
     display: block;
 }
 
 #characterselectscreen {
-    display: block;
+    display: none;
     margin-top: 8%;
     padding: 50px;
 }
 
 .characterselect {
     margin: 20px;
+    filter: drop-shadow(7px 8px rgba(0, 0, 0, 0.25));
+    transition: all 100ms;
 }
 
 .characterselect:hover {
     cursor: pointer;
+    transform: scale(1.15) translateY(-10px);
+    filter: drop-shadow(20px 20px rgba(0, 0, 0, 0.25));
 }
 
-.hidden {
-    visibility: hidden;
+#charactercards {
+    display: none;
 }
 
-.showing {
-    visibility: visible;
+.cards {
+    display: block;
+    margin: auto;
+    margin-top: 8%;
+}
+
+#madlib {
+    display: none;
+    margin: auto;
+    width: 50%;
+    padding-top: 15%;
+    padding-right: 100px;
+    padding-left: 100px;
+    line-height: 25px;
+}
+
+#myform {
+    display: none;
+    position: relative;
+    float: right;
+    margin-right: 35%;
+}
+
+#contbutton {
+    display: block;
+    margin: auto;
+}
+
+#madlibcharactersection {
+    display: none;
+}
+
+.madlibchars {
+    display: block;
+    margin: auto;
+    margin-top: 30%;
+}
+
+label, input {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+#submit {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 213, 87);
+    border: solid 5px rgb(255, 122, 63);
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+#replaybutton {
+    display: none;
+    margin: auto;
 }
