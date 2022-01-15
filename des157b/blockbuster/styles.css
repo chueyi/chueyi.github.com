@@ -8,7 +8,8 @@ body {
 nav {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 40px;
+    z-index: 10;
     color: white;
 }
 
@@ -19,55 +20,45 @@ a {
 
 button {
   z-index: 10;
+  border: 4px solid transparent;
   font-weight: 900;
   color: white;
-  background-color: transparent;
-  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+  padding: 10px;
 }
 
 button:hover {
   cursor: pointer;
+  color: yellow;
+  animation: buttonhover 800ms infinite linear;
 }
 
-#madeonvideo {
+@keyframes buttonhover {
+  0% {
+    filter: hue-rotate(0deg);
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+  }
+75% {
+    outline: 4px solid rgba(255, 255, 255, 1);
+  }
+100% {
+  filter: hue-rotate(720deg);
+  outline: 8px solid rgba(255, 255, 255, 0.1);
+}
+}
+
+.video {
   position: fixed;
   right: -20%;
   bottom: -10%;
   display: block;
   min-width: 100%;
   min-width: 1366px;
-  animation: huechange 10s infinite linear;
-  mix-blend-mode: color;
-}
-
-
-#loading {
-  position: fixed;
-  width: 100%;
-  height: 1366px;
-  z-index: 20;
-  background: black;
-  animation: loadingscreen 4s ease-out;
-  visibility: hidden;
-}
-
-#warninglabel {
-  font-size: 25px;
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  color: white;
-  z-index: 100;
-}
-
-#loadingbar {
-  background-color: red;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  top: 28%;
-  z-index: 101;
-  animation: loadingbar 4s linear;
 }
 
 @keyframes huechange {
@@ -79,32 +70,108 @@ button:hover {
   }
 }
 
+/* #info {
+  border: 4px solid yellow;
+  height: 550px;
+  width: 72%;
+  left: 50%;
+  margin: auto;
+  margin-top: 40px;
+  animation: info 20s linear infinite;
+} */
+
+#infobox {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  top: -40px;
+  margin: auto;
+  margin-top: 40px;
+  animation: info 20s linear infinite;
+}
+
+@keyframes info {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(1080deg);
+  }
+}
+
+
+#loading {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: black;
+  animation: loadingscreen 6s linear;
+  visibility: hidden;
+}
+
+#warninglabel {
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  color: white;
+  z-index: 100;
+  animation: label 6s linear;
+  line-height: 50px;
+}
+
+#loadingbar {
+  background-color: orange;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 45%;
+  z-index: 101;
+  animation: loadingbar 6s linear;
+}
+
 @keyframes loadingbar {
   0% {
     width: 0px;
-    filter: hue-rotate(1080deg);
   }
   80% {
+    filter: hue-rotate(1080deg);
     width: 100%;
   }
 }
 
 @keyframes loadingscreen {
   0% {
-    opacity: 100%;
-    width: 100%;
+    height: 100%;
     visibility: visible;
   }
   90% {
-    opacity: 100%;
-    width: 100%;
+    height: 100%;
     visibility: visible;
+    filter: hue-rotate(0deg);
+    background: black;
+  }
+  100% {
+    height: 0%;
+    background: yellow;
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes label {
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
   }
   100% {
     opacity: 0%;
-    width: 0%;
   }
-}
+} 
 
 #marquee {
     position: absolute;
@@ -121,10 +188,10 @@ button:hover {
    bottom: 0;
    white-space: nowrap;
    will-change: transform;
-   animation: marquee 20s linear infinite;
+   animation: marquee 30s linear infinite;
   }
 
-  #marqueetext {
+#marqueetext {
       color: white;
   }
   
@@ -135,4 +202,36 @@ button:hover {
     to {
       transform: translateX(-50%);
     }
+  }
+
+footer {
+    position: absolute;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    bottom: 10%;
+  }
+
+  a {
+    margin-left: 430px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  /* .hidden {
+    visibility: hidden;
+  } */
+
+  .showing {
+    visibility: visible;
   }
