@@ -11,11 +11,6 @@ main {
     margin: auto;
 }
 
-audio {
-    position: absolute;
-    visibility: hidden;
-}
-
 #mainscreen {
     display: flex;
 }
