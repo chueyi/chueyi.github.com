@@ -195,7 +195,7 @@ button:hover {
   width: 100%;
   z-index: 20;
   background: black;
-  animation: loadingscreen 8s linear;
+  animation: loadingscreen 10s linear;
   visibility: hidden;
 }
 
@@ -208,7 +208,7 @@ button:hover {
   left: 30%;
   color: white;
   z-index: 100;
-  animation: label 8s linear;
+  animation: label 10s linear;
   line-height: 50px;
 }
 
@@ -219,7 +219,7 @@ button:hover {
   height: 4px;
   top: 45%;
   z-index: 101;
-  animation: loadingbar 8s linear;
+  animation: loadingbar 10s linear;
 }
 
 @keyframes loadingbar {
