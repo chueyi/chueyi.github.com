@@ -13,49 +13,82 @@
 <body>
     <main>
 
-        <div id = "loading">
+        <!-- <div id = "loading">
             <p id = "warninglabel">CAUTION: <br>EPILEPSY AND SEIZURE WARNING</p>
             <div id = "loadingbar"></div>
 
             <footer>
-                <p><a href = "https://validator.w3.org/check?uri=https://chueyi.github.io/des157b/blockbuster/index.html">VERIFY HTML</a></p>
-                <p><a href = "https://jigsaw.w3.org/css-validator/check/referer">VERIFY CSS</a></p>
+                <p><a href = "https://validator.w3.org/check?uri=https://chueyi.github.io/des157b/blockbuster/index.html" class = "footerlinks">VERIFY HTML</a></p>
+                <p><a href = "https://jigsaw.w3.org/css-validator/check/referer" class = "footerlinks">VERIFY CSS</a></p>
             </footer>
-        </div>
+        </div> -->
 
-        <nav>
+        <nav id = "navbar">
             <button id = "madeonbutton">MADEON</button>
             <button id = "porterbutton">PORTER ROBINSON</button>
             <button>ODESZA</button>
         </nav>
 
-        <video id="portervideo" class = "video hidden" autoplay muted loop playsinline>
+        <video id="portervideo" class = "video" autoplay muted loop playsinline>
             <source src="media/porter.webm" type="video/webm">
             <source src="media/porter.mp4" type="video/mp4">
             <p>Your browser doesn't support HTML5 video. Here is a <a href="media/getyourwish.mp4">link to the video</a>
                 instead.</p>
         </video>
 
-        <video id="madeonvideo" class = "video hidden" autoplay muted loop playsinline>
+        <video id="madeonvideo" class = "video" autoplay muted loop playsinline>
             <source src="media/madeoncolor.webm" type="video/webm">
             <source src="media/madeoncolor.mp4" type="video/mp4">
             <p>Your browser doesn't support HTML5 video. Here is a <a href="media/getyourwish.mp4">link to the video</a>
                 instead.</p>
         </video>
 
-        <!-- <video id="odeszavideo" class = "video hidden" autoplay muted loop playsinline>
-            <source src="media/odesza.webm" type="video/webm">
-            <source src="media/odesza.mp4" type="video/mp4">
-    
-            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/getyourwish.mp4">link to the video</a>
-                instead.</p>
-        </video> -->
+        <div id = "blackoverlay"></div>
 
-        <div id = "infobox"></div>
+        <section id = "info">
+            <article class = "infotextbox" id = "madeonbox">
+                <h1 class = "headers">MADEON</h1>
+
+                    <p class = "infotext">Hugo Leclerq, also known as, Madeon, is a French electronic-dance musician who is now based in Los Angeles. He has produced two full length albums, Adventure and Good Faith, the latter of which was nominated for a Grammy Award. Leclerq is widely known for his song, Shelter, which he created with longtime friend, Porter Robinson. He has worked alongside notable artists, namely Lady Gaga, Mark Foster of Foster the People, and Dan Smith of Bastille.
+                        <br><br>
+                    I have seen Madeon three times during his Good Faith Tour 2019, Second Sky 2019, and Second Sky 2021. 
+                    </p>
+
+                    <div class = "infolinks">
+                        <p><a href = "https://porterrobinson.com/" class = "infolinks">OFFICIAL SITE</a></p>
+                        <p><a href = "https://www.youtube.com/c/porterrobinson" class = "infolinks">YOUTUBE</a></p>
+                        <p><a href = "https://open.spotify.com/artist/4pb4rqWSoGUgxm63xmJ8xc" class = "infolinks">SPOTIFY</a></p>
+                        <p><a href = "https://www.instagram.com/madeon/" class = "infolinks">INSTAGRAM</a></p>
+                        <p><a href = "https://twitter.com/madeon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class = "infolinks">TWITTER</a></p>
+                    </div>
+            </article>
+
+            <article class = "infotextbox hidden" id = "porterbox">
+                <h1 class = "headers">PORTER ROBINSON</h1>
+
+                    <p class = "infotext">Porter Robinson is an American electronic-dance musician from Chapel Hill, North Carolina. Robinson is renowned for two full length albums, Worlds and Nurture and is highly regarded for pioneering new sounds and styles. His most notable work is his song, Shelter, which he collaborated with his long time friend, Madeon, and even developed an original anime for the music video. Robinson was recently engaged with his fiancee, Rika Mikuriya, yes!
+                        <br><br>
+                    I've seen Porter Robinson perform at Second Sky 2019 and Second Sky 2021, both of which he created and headlined.
+                    </p>
+
+                    <div class = "infolinks">
+                        <p><a href = "https://porterrobinson.com/" class = "infolinks">OFFICIAL SITE</a></p>
+                        <p><a href = "https://www.youtube.com/c/porterrobinson" class = "infolinks">YOUTUBE</a></p>
+                        <p><a href = "https://open.spotify.com/artist/3dz0NnIZhtKKeXZxLOxCam" class = "infolinks">SPOTIFY</a></p>
+                        <p><a href = "https://www.instagram.com/porterrobinson/" class = "infolinks">INSTAGRAM</a></p>
+                        <p><a href = "https://twitter.com/porterrobinson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class = "infolinks">TWITTER</a></p>
+                    </div>
+            </article>
+        </section>
+
+        <div class = "closer" id = "closingbutton"></div>
 
         <div id = "marquee">
-            <div id = "marqueebox">
-                <p id = "marqueetext">• JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE •</p>
+            <div class = "marqueebox">
+                <p class = "marqueebox marqueetext" id = "madeontext">• JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE • JUST CALM YOURSELF AND BREATHE •</p>
+            </div>
+            <div>
+                <p class = "marqueebox marqueetext hidden" id = "portertext">• LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE • LEAN INTO MY SIDE •</p>
             </div>
         </div>
 

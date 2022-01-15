@@ -70,17 +70,7 @@ button:hover {
   }
 }
 
-/* #info {
-  border: 4px solid yellow;
-  height: 550px;
-  width: 72%;
-  left: 50%;
-  margin: auto;
-  margin-top: 40px;
-  animation: info 20s linear infinite;
-} */
-
-#infobox {
+#blackoverlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
@@ -91,6 +81,87 @@ button:hover {
   animation: info 20s linear infinite;
 }
 
+#porterbox {
+  position: absolute;
+  top: 0;
+}
+
+#info {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 4px solid yellow;
+  border-radius: 30px;
+  height: 520px;
+  width: 67%;
+  left: 50%;
+  margin: auto;
+  margin-top: 40px;
+  animation: info 20s linear infinite;
+}
+
+.closer {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  animation: closeanimate 1.5s ease infinite;
+}
+
+@keyframes closeanimate {
+  0% {
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    outline: 2px solid rgba(255, 255, 255, 1);
+  }
+  100% {
+  outline: 10px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.headers {
+  border-bottom: 4px solid white;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+
+.infotextbox {
+  color: white;
+  margin: 50px;
+}
+
+.infotext {
+  font-family: eurostile, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-right: 60px;
+}
+
+.infolinks {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.infolinks:link {
+  color: white;
+}
+
+.infolinks:hover {
+  cursor: pointer;
+  animation: infolinkshover 2s infinite linear;
+}
+
+.infolinks:visited {
+  color: white;
+}
+
 @keyframes info {
   from {
     filter: hue-rotate(0deg);
@@ -98,6 +169,17 @@ button:hover {
   to {
     filter: hue-rotate(1080deg);
   }
+}
+
+@keyframes infolinkshover {
+  0% {
+    filter: hue-rotate(0deg);
+    color: yellow;
+  }
+100% {
+  color: yellow;
+  filter: hue-rotate(720deg);
+}
 }
 
 
@@ -114,6 +196,8 @@ button:hover {
 
 #warninglabel {
   font-size: 25px;
+  padding: 20px;
+  border-radius: 20px;
   position: absolute;
   top: 20%;
   left: 30%;
@@ -136,6 +220,7 @@ button:hover {
 @keyframes loadingbar {
   0% {
     width: 0px;
+    outline: 0px solid rgba(255, 255, 255, 0.1);
   }
   80% {
     filter: hue-rotate(1080deg);
@@ -164,12 +249,30 @@ button:hover {
 @keyframes label {
   0% {
     opacity: 100%;
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  10% {
+    outline: 2px solid rgba(255, 255, 255, 1);
+  }
+  20% {
+    outline: 10px solid rgba(255, 255, 255, 0.0);
+  }
+
+  40% {
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    outline: 2px solid rgba(255, 255, 255, 1);
+  }
+  60% {
+    outline: 10px solid rgba(255, 255, 255, 0.0);
   }
   90% {
     opacity: 100%;
   }
   100% {
     opacity: 0%;
+    outline: 10px solid rgba(255, 255, 255, 0.0);
   }
 } 
 
@@ -183,7 +286,7 @@ button:hover {
     background-color: black;
   }
   
-#marqueebox {
+.marqueebox {
    position: absolute;
    bottom: 0;
    white-space: nowrap;
@@ -191,7 +294,7 @@ button:hover {
    animation: marquee 30s linear infinite;
   }
 
-#marqueetext {
+.marqueetext {
       color: white;
   }
   
@@ -211,27 +314,27 @@ footer {
     justify-content: center;
     color: white;
     text-align: center;
-    bottom: 10%;
+    bottom: 30%;
   }
 
-  a {
-    margin-left: 430px;
+.footerlinks {
+    margin-left: 440px;
     text-decoration: none;
     text-align: center;
   }
 
-  a:link {
+.footerlinks:link {
     color: white;
   }
 
-  a:visited {
+.footerlinks:visited {
     color: white;
   }
 
-  /* .hidden {
+.hidden {
     visibility: hidden;
-  } */
+  }
 
-  .showing {
+.showing {
     visibility: visible;
   }
