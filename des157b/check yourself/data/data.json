@@ -1,0 +1,56 @@
+{
+    "point1" : {
+        "time" : "6:00",
+        "artist" : "Jay Park Punch",
+        "song" : "All I Wanna Do",
+        "website" : "Google"
+    },
+    "point2" : {
+        "time" : "6:15",
+        "artist" : "Twice Ice",
+        "song" : "Doughnut",
+        "website" : "Google"
+    },
+    "point3" : {
+        "time" : "6:30",
+        "artist" : "EXO Espresso",
+        "song" : "Day After Day",
+        "website" : "Youtube"
+    },
+    "point4" : {
+        "time" : "6:45",
+        "artist" : "BTS Blasts",
+        "song" : "Pied Piper",
+        "website" : "Kinetic Games"
+    },
+    "point5" : {
+        "time" : "7:00",
+        "artist" : "Heize Cafes",
+        "song" : "First Sight",
+        "website" : "Instagram"
+    },
+    "point6" : {
+        "time" : "7:15",
+        "artist" : "Twice Paradise",
+        "song" : "Ice Cream",
+        "website" : "Google"
+    },
+    "point7" : {
+        "time" : "7:30",
+        "artist" : "SuperM Sweet",
+        "song" : "Line Em Up",
+        "website" : "Google"
+    },
+    "point8" : {
+        "time" : "7:45",
+        "artist" : "NCT Tea",
+        "song" : "Baby Don't Stop",
+        "website" : "Youtube"
+    },
+    "point9" : {
+        "time" : "8:00",
+        "artist" : "Baekhyun Brew",
+        "song" : "Garden In The Air",
+        "website" : "Youtube"
+    }
+}
