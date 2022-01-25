@@ -200,7 +200,6 @@ button > p {
     border-radius: 20px;
     color: rgb(0, 50, 62);
     filter: drop-shadow(5px 5px rgb(4, 69, 95));
-    box-shadow: 10px black;
     margin: auto;
     width: 40%;
 }
