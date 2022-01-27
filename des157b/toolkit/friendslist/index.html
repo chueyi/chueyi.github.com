@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!--/ /-------- Font Awesome --------/ /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link href="https://fonts.googleapis.com/css?family=Baloo|IBM+Plex+Sans+Condensed:300,600&display=swap" rel="stylesheet">
+    
+    <!--/ /-------- Site Styling --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Parse Library -->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-at"></i> Friends</h1>
+        </div>
+    </header>
+    <main>
+        <ol class="container">
+            <!-- <li>
+                <div class="name">
+                    FirstName LastName
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope-square"></i> user@someemail.com
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-times-circle"></i>
+            </li>
+
+            <li>
+                <div class="name">
+                    FirstName LastName
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope-square"></i> user@someemail.com
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-times-circle"></i>
+            </li>
+
+            <li>
+                <div class="name">
+                    FirstName LastName
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope-square"></i> user@someemail.com
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-times-circle"></i>
+            </li>
+
+            <li>
+                <div class="name">
+                    FirstName LastName
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope-square"></i> user@someemail.com
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-times-circle"></i>
+            </li>
+
+
+            <li>
+                <div class="name">
+                    FirstName LastName
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope-square"></i> user@someemail.com
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-times-circle"></i>
+            </li> -->
+
+        </ol>
+
+    </main>
+    <form id="add-friend" class="add-friend-offscreen">
+        <h2>Add a Friend</h2>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Barb">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Spike">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="barb.spike@pointy.com">
+
+        <div class="social-input">
+            <label for="fbook"><i class="fab fa-facebook-square"></i></label>
+            <input type="url" id="fbook" name="facebook" value="https://facebook.com">
+        </div>
+
+        <div class="social-input">
+            <label for="twitter"><i class="fab fa-twitter-square"></i></label>
+            <input type="url" id="twitter" name="twitter" value="https://twitter.com">
+        </div>
+
+        <div class="social-input">
+            <label for="insta"><i class="fab fa-instagram"></i></label>
+            <input type="url" id="insta" name="instagram" value="https://instagram.com">
+        </div>
+
+        <div class="social-input">
+            <label for="linkedin"><i class="fab fa-linkedin"></i></label>
+            <input type="url" id="linkedin" name="linkedin" value="https://linkedin.com">
+        </div>
+
+        <input type="submit" value="Add Friend">
+    </form>
+
+    <form id="edit-friend" class="edit-friend-offscreen">
+        <h2>Edit Friend Details</h2>
+
+        <label for="fname-edit">First Name</label>
+        <input type="text" id="fname-edit" name="fname">
+
+        <label for="lname-edit">Last Name</label>
+        <input type="text" id="lname-edit" name="lname">
+
+        <label for="email-edit">Email Address</label>
+        <input type="email" id="email-edit" name="email">
+
+        <div class="social-input">
+            <label for="fbook-edit"><i class="fab fa-facebook-square"></i></label>
+            <input type="url" id="fbook-edit" name="fbook">
+        </div>
+        
+        <div class="social-input">
+            <label for="twitter-edit"><i class="fab fa-twitter-square"></i></label>
+            <input type="url" id="twitter-edit" name="twitter">
+        </div>
+
+        <div class="social-input">
+            <label for="insta-edit"><i class="fab fa-instagram"></i></label>
+            <input type="url" id="insta-edit" name="insta">
+        </div>
+
+        <div class="social-input">
+            <label for="linkedin-edit"><i class="fab fa-linkedin"></i></label>
+            <input type="url" id="linkedin-edit" name="linkedin">
+        </div>
+
+        <input type="submit" value="Save Details">
+    </form>
+    <footer>
+        <div class="container">
+            <a href="#" id="newbtn">New <i class="fas fa-user-plus"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
