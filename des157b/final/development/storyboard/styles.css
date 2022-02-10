@@ -1,0 +1,32 @@
+body {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(255, 137, 180);
+}
+
+img {
+    width: 35%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+section {
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 45%;
+    margin-right: 10%;
+}
+
+#original {
+    color: rgb(27, 192, 27);
+}
+
+#second {
+    color: rgb(88, 144, 255);
+}
