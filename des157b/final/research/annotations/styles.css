@@ -1,0 +1,50 @@
+body {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(51, 89, 255);
+    margin-left: 5%;
+}
+
+h2 {
+    color: rgb(84, 212, 255);
+}
+
+.writing {
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+#workscited {
+    display: block;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    top: 9%;
+    left: 50%;
+    border-left: 3px solid black;
+}
+
+a {
+    animation: a 5s infinite;
+}
+
+a:visited {
+    color: black;
+}
+
+@keyframes a {
+    from {
+        color: pink;
+        filter: hue-rotate(0deg);
+    }
+    to {
+        color: pink;
+        filter: hue-rotate(360deg);
+    }
+}
