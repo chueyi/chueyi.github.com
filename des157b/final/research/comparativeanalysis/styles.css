@@ -1,0 +1,51 @@
+body {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin-left: 5%;
+    left: 45%;
+    transition: all 500ms;
+}
+
+#firstpic {
+    top: 5%;
+}
+
+#secondpic {
+    top: 50%;
+}
+
+section {
+    display: flex;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#firsth1 {
+    color: rgb(163, 239, 0);
+}
+
+#secondh1 {
+    color: rgb(80, 162, 255);
+}
+
+img:hover {
+    cursor: pointer;
+    width: 42%;
+    height: 42%;
+}
