@@ -4,48 +4,75 @@ body {
     font-style: normal;
 }
 
-img {
-    display: block;
+section {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.img-compare {
     position: absolute;
-    width: 40%;
-    height: 40%;
+    display: block;
+    width: 30%;
+    height: auto;
     margin-left: 5%;
-    left: 45%;
-    transition: all 500ms;
+    transition: 500ms all;
 }
 
-#firstpic {
-    top: 5%;
+#pic1 {
+    top: 30%;
 }
 
-#secondpic {
-    top: 50%;
+.img-compare:hover {
+    cursor: pointer;
+    width: 32%;
+    height: auto;
+}
+
+.img-visual {
+    position: absolute;
+    display: block;
+    width: 35%;
+    height: auto;
+    margin-top: 5%;
+}
+
+article {
+    margin-top: 10%;
 }
 
 section {
-    display: flex;
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 10%;
-    margin-top: 2%;
+    width: 50%;
+    margin-left: 10%;
 }
 
 h1 {
-    margin-top: 5%;
+    font-size: 35px;
     margin-left: 5%;
-    margin-right: 10%;
 }
 
-#firsth1 {
-    color: rgb(163, 239, 0);
+.p-compare {
+    width: 4000px;
+    margin-left: 5%;
 }
 
-#secondh1 {
-    color: rgb(80, 162, 255);
+.p-visual {
+    width: 1500px;
+    margin-left: 5%;
 }
 
-img:hover {
-    cursor: pointer;
-    width: 42%;
-    height: 42%;
+#h2-1 {
+    color: rgb(189, 255, 47);
+}
+
+#h2-2 {
+    color: rgb(65, 154, 255);
+}
+
+#h2-3 {
+    color: rgb(99, 233, 99);
+}
+
+#green {
+    margin-top: -10%;
 }
