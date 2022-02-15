@@ -1,0 +1,78 @@
+body {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.img-compare {
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+    transition: 500ms all;
+}
+
+#pic1 {
+    top: 30%;
+}
+
+.img-compare:hover {
+    cursor: pointer;
+    width: 32%;
+    height: auto;
+}
+
+.img-visual {
+    position: absolute;
+    display: block;
+    width: 35%;
+    height: auto;
+    margin-top: 5%;
+}
+
+article {
+    margin-top: 10%;
+}
+
+section {
+    width: 50%;
+    margin-left: 10%;
+}
+
+h1 {
+    font-size: 35px;
+    margin-left: 5%;
+}
+
+.p-compare {
+    width: 4000px;
+    margin-left: 5%;
+}
+
+.p-visual {
+    width: 1500px;
+    margin-left: 5%;
+}
+
+#h2-1 {
+    color: rgb(189, 255, 47);
+}
+
+#h2-2 {
+    color: rgb(65, 154, 255);
+}
+
+#h2-3 {
+    color: rgb(99, 233, 99);
+}
+
+#green {
+    margin-top: -10%;
+}
