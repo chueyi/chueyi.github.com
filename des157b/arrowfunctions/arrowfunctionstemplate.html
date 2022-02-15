@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>RNG</h1>
+
+    <p>This arrow function generates a random number from 1-100. Open the console to find out which number you get.</p>
+
+    <h2>Random Numba Generata</h2>
+    <code>
+        <pre>
+            const random = () => {return Math.floor(Math.random() * 100) + 1;}
+            console.log(random (100));
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const aVaraiable = function(parameter){
+                Do something();
+            }
+
+            turns into
+
+            const aVariable(function(parameter){
+                Do something();
+            })
+
+
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const aVaraiable = arrow function...{
+            }
+
+            const aVariable = arrow function => Do something();
+        </pre>
+    </code>
+
+    <footer> Chueyi Vue </footer>
+    
+    <script>
+        // function makeUpperCase(aString) {
+        //     return aString.toUpperCase();
+        // }
+
+        const makeUpperCase = (aString) => aString.toUpperCase();
+        console.log(makeUpperCase("here is a string"));
+
+        // const fullName = (fname, lname) => `${fname} ${lname}`;
+        // console.log(fullName(`Jose`, `Gonzalez`));
+
+        const fullName = () => {
+            const fname = "Maria";
+            const lname = "Sanchez";
+            return `${fname} ${lname}`;
+        }
+        console.log(fullName());
+
+
+        const fruit = ['banana', 'apple', 'lemon', 'kiwi', "strawberry"];
+        const upperFruit = [];
+
+        fruit.forEach(thisFruit => {
+            upperFruit.push(thisFruit.toUpperCase());
+        });
+        console.log(upperFruit);
+
+
+        const employee = function(fname, lname, jobTitle) {
+            this.fname = fname;
+            this.lname = lname;
+            this.position = jobTitle;
+            this.fullName = () => `${fname} ${lname}`;
+        }
+
+        const id1234 = new employee('Bob', 'Smith', 'Mechanic');
+
+        console.log(id1234.fname);
+        console.log(id1234.fullName());
+
+        const greeting = (fname, lname) => `Hello ${fname} ${lname}`;
+        console.log(greeting('Jose', 'Garcia'));
+
+        const square = x => x * x;
+        console.log(square(5));
+
+        const largestNum = (num1, num2) => num1 > num2 ? num1 : num2;
+        console.log(largestNum(45,22));
+
+        const animals = ['llama', 'chicken', 'dog', 'cat'];
+
+        animals.forEach(eachAnimal => {
+            const upperCase = eachAnimal.toUpperCase();
+            console.log(upperCase);
+        });
+
+        const scores = [5, 10, 15, 20];
+        console.log(scores.reduce((accumulator, curValue) => accumulator + curValue));
+
+        const random = () => {return Math.floor(Math.random() * 100) + 1;}
+        console.log(random (100));
+
+    </script>
+</body>
+</html>
