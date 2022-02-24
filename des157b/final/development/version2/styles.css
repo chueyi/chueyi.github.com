@@ -1,0 +1,501 @@
+body, html {
+    height: 100%;
+}
+
+#background {
+    background-image: url(images/background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#logo-link {
+    color: white;
+    text-decoration: none;
+}
+
+#logo-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(17, 115, 30);
+    font-weight: 800px;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid white;
+}
+
+p, h2 {
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+}
+
+
+#logo {
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+}
+
+/* MIDDLE */
+
+#panels-section {
+    margin-top: -550px;
+    display: flex;
+    justify-content: space-evenly;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.panels {
+    width: 200px;
+    height: 80px;
+    background: white;
+    transition: 250ms linear;
+}
+
+.panels:hover {
+    height: 400px;
+    cursor: pointer;
+}
+
+#panel1 {
+    border-top: 10px solid rgb(75, 146, 57);
+    border-bottom: 10px solid rgb(75, 146, 57);
+}
+
+#panel2 {
+    border-top: 10px solid rgb(190, 130, 46);
+    border-bottom: 10px solid rgb(190, 130, 46);
+}
+
+#panel3 {
+    border-top: 10px solid rgb(0, 82, 176);
+    border-bottom: 10px solid rgb(0, 82, 176);
+}
+
+#panel4 {
+    border-top: 10px solid rgb(176, 0, 0);
+    border-bottom: 10px solid rgb(176, 0, 0);
+}
+
+.scrolltext {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(202, 128, 42);
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* .move {
+    animation: scrollmove 300ms linear;
+}
+
+@keyframes scrollmove{
+    0% {
+        width: 200px; */
+        /* height: 400px;
+        background: white;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        height: 0px;
+        background: white;
+        opacity: 0;
+    }
+}
+
+.moveback {
+    animation: scrollmoveback 300ms linear;
+}
+
+@keyframes scrollmoveback {
+    0% {
+        width: 200px;
+        height: 80px;
+        background: white;
+    }
+    100% {
+        width: 200px;
+        height: 400px;
+        background: white;
+    }
+} */
+
+/* OVERLAY */
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 500px;
+    width: 900px;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay1 {
+    position: absolute;
+    top: 18%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 550px;
+    width: 1000px;
+    background: rgb(75, 146, 57);
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay2 {
+    position: absolute;
+    top: 18%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 550px;
+    width: 1000px;
+    background: rgb(190, 130, 46);
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay3 {
+    position: absolute;
+    top: 18%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 550px;
+    width: 1000px;
+    background: rgb(0, 82, 176);
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay4 {
+    position: absolute;
+    top: 18%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 550px;
+    width: 1000px;
+    background: rgb(176, 0, 0);
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.overlay-text {
+    display: inline-block;
+    color: white;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.corner {
+    position: absolute;
+    top: 0;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 36px;
+    margin: 0;
+    margin-top: 2%;
+    margin-right: 3%;
+    padding: 0;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.names {
+    display: flex;
+}
+
+.input-lname {
+    margin-left: 5%;
+}
+
+form {
+    margin-left: 5%;
+    font-size: 18px;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+input {
+    margin-top: 10px;
+    display: block;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    line-height: 23px;
+}
+
+#food-input-share {
+    width: 70%;
+    height: 200px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* ABOUT */
+#about {
+    position: absolute;
+    margin-top: -39%;
+    margin-left: 5%;
+    width: 45%;
+    line-height: 25px;
+}
+
+/* CHOOSE PATH */
+
+#choose-section {
+    position: absolute;
+    right: 1%;
+    display: flex;
+    margin-right: 8%;
+    margin-top: -39%;
+}
+
+.choose-a {
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+.choose-a:visited {
+    color: rgb(202, 128, 42);
+    text-decoration: none;
+}
+
+.choose-p {
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(202, 128, 42);
+}
+
+.choose {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 25%;
+    background: white;
+    width: 200px;
+    height: 400px;
+    border-top: 10px solid rgb(231, 170, 49);
+    border-bottom: 10px solid rgb(231, 170, 49);
+}
+
+/* LOADING */
+
+#nyobzoo {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: rgb(17, 115, 30);
+    opacity: 0;
+    z-index: 25;
+    animation: nyobzoo 2s linear;
+}
+
+#hello {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: rgb(65, 193, 82);
+    opacity: 0;
+    z-index: 25;
+    margin-top: -25px;
+    animation: nyobzoo 2s linear;
+}
+
+@keyframes nyobzoo {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    99% {
+        z-index: 15;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#loading {
+    display: flex;
+    margin-top: -53%;
+    height: 101%;
+}
+
+#loading-hello {
+    margin: 0 auto;
+    margin-top: 20%;
+    z-index: 25;
+    text-align: center;
+}
+
+.loading-panels {
+    width: 50%;
+    z-index: -10;
+}
+
+#lefthalf {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: white;
+    animation: lefthalf 2.5s linear;
+    opacity: 0;
+}
+
+#righthalf {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: white;
+    animation: righthalf 2.5s linear;
+    opacity: 0;
+}
+
+@keyframes lefthalf {
+    0% {
+        opacity: 1;
+        width: 50%;
+        z-index: 10;
+    }
+    60% {
+        width: 50%;
+    }
+    99% {
+        z-index: 10;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes righthalf {
+    0% {
+        opacity: 1;
+        width: 50%;
+        z-index: 10;
+    }
+    60% {
+        width: 50%;
+    }
+    99% {
+        z-index: 10;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+/* NAV BAR */
+
+nav {
+    position: absolute;
+    display: flex;
+    right: 5%;
+    top: 5%;
+}
+
+.nav-a {
+    color: rgb(17, 115, 30);
+    padding-right: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    border-right: 3px solid white;
+    transition: 250ms linear;
+}
+
+#homepage-a {
+    border-left: 3px solid white;
+}
+
+#homepage-p {
+    font-weight: 800;
+}
+
+#gallery {
+    font-weight: 800;
+}
+
+#write {
+    font-weight: 800;
+}
+
+.nav-a:visited {
+    color: rgb(17, 115, 30);
+}
+
+.nav-a:hover {
+    color: rgb(163, 106, 60);
+}
