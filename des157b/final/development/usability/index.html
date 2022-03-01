@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel ="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mxs0uav.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="scripts.js" defer></script>
+
+    <link href = "styles.css" rel = "stylesheet">
+    
+    <title>Usability</title>
+</head>
+<body>
+
+    <div id = "background"></div>
+
+    <section>
+        <h1 id = "logo"><a id = "logo-link" href = "">REALLY OBVIOUS LOGO</a></h1>
+    </section>
+    
+    <section>
+        <div id = "write-activate">
+            <p id = "write-activate-p" class = "nav">WRITE</p>
+        </div>
+
+        <div id = "gallery-activate">
+            <p id = "gallery-activate-p" class = "nav">GALLERY</p>
+        </div>
+    </section>
+<!-- 
+    <nav>
+        <p id = "homepage-p"><a id = "homepage-a" class = "nav-a" href = "">HOME</a></p>
+        <p id = "write-p"><a href = "" class = "nav-a" id = "write-a">WRITE</a></p>
+        <p><a href = "" class = "nav-a">GALLERY</a></p>
+    </nav> -->
+
+    <section id = "about">
+        <article>
+            <h2>NAME OF PROJECT</h2>
+                <p>(Name of Project) is a safe haven for Hmong people to discuss and share their stories through four selected topics: food, art, war, and ghosts. Hmong culture is slowly dissipating due to Westernization and age, so this was designed to safekeep information and stories about Hmong people and culture for future generations.</p>
+                <p>To participate, select write or gallery. “Write” will take you to select one of the topics: food, art, war, or ghosts. After selecting, fill in the boxes then submit. “Gallery” holds all of the submissions made where you can look at work made by others. Select the desired topic and choose which work you would like to view. Please refrain from vulgar language when writing and be mindful of other submitted pieces.</p>
+        </article>
+    </section>
+
+
+    <!-- NEXT -->
+    <div id = "next">
+    </div>
+
+    <div id = "next2">
+    </div>
+
+    <p id = "next-text">WRITE</p>
+
+    <div id = "next3" class = "hidden">
+    </div>
+
+    <div id = "next4" class = "hidden">
+    </div>
+
+    <p id = "next-text2" class = "hidden">GALLERY</p>
+
+
+    <section id = "panels-section" class = "hidden">
+        <div id = "panel1" class = "panels">
+            <p class = "scrolltext">Food</p>
+        </div>
+        <div id = "panel2" class = "panels">
+            <p class = "scrolltext">Art</p>
+        </div>
+        <div id = "panel3" class = "panels">
+            <p class = "scrolltext">War</p>
+        </div>
+        <div id = "panel4" class = "panels">
+            <p class = "scrolltext">Ghosts</p>
+        </div>
+    </section>
+
+    <section id = "overlay1" class = "overlay hidden">
+        <div class = "img-spot"></div>
+        <div class = "form">
+            <p class = "overlay-text">Food</p>
+            <button id = "close1" class = "corner close">&times;</button>
+    
+            <form id = "add-story">
+                <div class = "names">
+                    <label class = "input-fname">First Name
+                        <input type = "text" placeholder = "First Name" name = "firstname">
+                    </label>
+        
+                    <label class = "input-lname">Last Name
+                        <input type = "text" placeholder = "Last Name" anme = "lastname">
+                    </label>
+    
+                    <label class = "input-title">Story Title
+                        <input type = "text" placeholder = "Story Title" name = "title">
+                    </label>
+                </div>
+    
+                <label id = "food-label-share" class= "fields">Share anything about Hmong food!
+                    <textarea name = "Share" cols = "40" rows = "5" id = "food-input-share" placeholder = "Recipes, Stories, Support, Anything!" name = "story"></textarea>
+                </label>
+    
+                <input id = "submit" type="submit" value="Submit">
+    
+            </form>
+        </div>
+
+    </section>
+
+    <section id = "overlay2" class = "overlay hidden">
+        <div class = "img-spot"></div>
+        <div class = "form">
+        <p class = "overlay-text">Art</p>
+        <button id = "close2" class = "corner close">&times;</button>
+
+        <form>
+            <div class = "names">
+                <label class = "input-fname">First Name
+                    <input type = "text" placeholder = "First Name">
+                </label>
+    
+                <label class = "input-lname">Last Name
+                    <input type = "text" placeholder = "Last Name">
+                </label>
+
+                <label class = "input-title">Story Title
+                    <input type = "text" placeholder = "Story Title">
+                </label>
+            </div>
+
+            <label id = "food-label-share" class= "fields">Share anything about Hmong art!
+                <textarea name = "Share" cols = "40" rows = "5" id = "food-input-share" placeholder = "Paj Ntaub, Fine Arts, Support, Anything!"></textarea>
+            </label>
+
+        </form>
+        </div>
+    </section>
+
+    <section id = "overlay3" class = "overlay hidden">
+        <div class = "img-spot"></div>
+        <div class = "form">
+        <p class = "overlay-text">War</p>
+        <button id = "close3" class = "corner close">&times;</button>
+
+        <form>
+            <div class = "names">
+                <label class = "input-fname">First Name
+                    <input type = "text" placeholder = "First Name">
+                </label>
+    
+                <label class = "input-lname">Last Name
+                    <input type = "text" placeholder = "Last Name">
+                </label>
+
+                <label class = "input-title">Story Title
+                    <input type = "text" placeholder = "Story Title">
+                </label>
+            </div>
+
+            <label id = "food-label-share" class= "fields">Share an experience with the Vietnam War
+                <textarea name = "Share" cols = "40" rows = "5" id = "food-input-share" placeholder = "Experiences can be your own or a loved one's. Try to be detailed."></textarea>
+            </label>
+
+        </form>
+        </div>
+    </section>
+
+    <section id = "overlay4" class = "overlay hidden">
+        <div class = "img-spot"></div>
+        <div class = "form">
+        <p class = "overlay-text">Ghosts</p>
+        <button id = "close4" class = "corner close">&times;</button>
+
+        <form>
+            <div class = "names">
+                <label class = "input-fname">First Name
+                    <input type = "text" placeholder = "First Name">
+                </label>
+    
+                <label class = "input-lname">Last Name
+                    <input type = "text" placeholder = "Last Name">
+                </label>
+
+                <label class = "input-title">Story Title
+                    <input type = "text" placeholder = "Story Title">
+                </label>
+            </div>
+
+            <label id = "food-label-share" class= "fields">Share a paranormal experience or ghost encounter
+                <textarea name = "Share" cols = "40" rows = "5" id = "food-input-share" placeholder = "Experiences can be your own, a loved one's, friend, or acquaintance"></textarea>
+            </label>
+
+        </form>
+        </div>
+    </section>
+
+    <!-- <section id = "choose-section">
+        <a class = "choose-a" href = "write.html">
+            <div class = "choose">
+                <p class = "choose-p">Write</p>
+            </div>
+        </a>
+
+        <a class = "choose-a" href = "gallery.html">
+            <div class = "choose">
+                <p class = "choose-p">Gallery</p>
+            </div>
+        </a>
+    </section> -->
+
+    <section id = "grid" class = "hidden">
+        <ol class = "gallery">
+        </ol>
+    </section>
+
+
+    <!-- <section id = "loading">
+        <div id = "loading-hello">
+            <p id = "nyobzoo">NYOB ZOO</p>
+            <p id = "hello">(HELLO)</p>
+        </div>
+        <div class = "loading-panels" id = "righthalf"></div>
+        <div class = "loading-panels" id = "lefthalf"></div>
+    </section> -->
+
+</body>
+</html>
