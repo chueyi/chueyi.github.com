@@ -23,7 +23,6 @@
     // SUBMIT AND CLOSES FORM
     addFriendForm.addEventListener('submit', function(event){
         event.preventDefault();
-        // addFriendForm.className = 'add-friend-offscreen';
         addFriend();
     });
 
@@ -61,18 +60,6 @@
             addFriendForm.className = "add-friend-offscreen";
         }
     }
-
-    for (let i = 0; i < editButtons.length; i++){
-        editButtons[i].addEventListener('click', function(event){
-            event.preventDefault();
-            editFriendForm.className = 'edit-friend-onscreen'
-        })
-    };
-    
-    editFriendForm.addEventListener('submit', function(event){
-        event.preventDefault();
-        editFriendForm.className = 'edit-friend-offscreen'
-    });
 
     function resetFormFields() {
         document.getElementById('fname').value = "";
@@ -123,6 +110,20 @@
     }
 
     displayFriends();
+
+    //EDIT
+
+    for (let i = 0; i < editButtons.length; i++){
+        editButtons[i].addEventListener('click', function(event){
+            event.preventDefault();
+            editFriendForm.className = 'edit-friend-onscreen'
+        })
+    };
+    
+    editFriendForm.addEventListener('submit', function(event){
+        event.preventDefault();
+        editFriendForm.className = 'edit-friend-offscreen'
+    });
 
 
 })();

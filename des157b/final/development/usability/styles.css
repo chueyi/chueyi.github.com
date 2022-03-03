@@ -94,18 +94,18 @@ h2 {
 
 @keyframes next {
     0% {
-        outline: 0px solid white;
+        outline: 2px solid white;
         opacity: 0;
     }
     20% {
         outline: 0px solid white;
         opacity: 20;
     }
-    40% {
+    30% {
         outline: 0px solid white;
-        opacity: 40;
+        opacity: 60;
     }
-    60% {
+    50% {
         outline: 0px solid white;
         opacity: 20;
     }
@@ -117,18 +117,13 @@ h2 {
 
 #next-text {
     color: white;
-    position: absolute;
-    top: 45%;
-    right: -16%;
-    height: 50px;
-    width: 600px;
     text-align: center;
-    transform: rotate(-90deg);
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
     cursor: pointer;
     z-index: 1;
+    letter-spacing: 3px;
 }
 
 #next3 {
@@ -188,17 +183,12 @@ h2 {
 
 #next-text2 {
     color: white;
-    position: absolute;
-    top: 45%;
-    right: -16%;
-    height: 50px;
-    width: 600px;
     text-align: center;
-    transform: rotate(-90deg);
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
     cursor: pointer;
+    letter-spacing: 3px;
 }
 
 p, h2 {
@@ -228,14 +218,9 @@ p, h2 {
 
 .panels {
     width: 200px;
-    height: 80px;
+    height: 400px;
     background: white;
     transition: 250ms linear;
-}
-
-.panels:hover {
-    height: 400px;
-    cursor: pointer;
 }
 
 #panel1 {
@@ -391,10 +376,6 @@ p, h2 {
     margin-left: 10%;
 }
 
-.input-title {
-    margin-left: 10%;
-}
-
 form {
     margin-left: 5%;
     font-size: 18px;
@@ -437,7 +418,7 @@ textarea {
 
 /* GALLERY */
 #grid {
-    margin-top: -10%;
+    margin-top: -32%;
     margin-left: 2%;
     transition-property: opacity, visibility;
     transition-duration: 1s;
@@ -476,7 +457,7 @@ ol {
 /* ABOUT */
 #about {
     position: absolute;
-    margin-top: -40%;
+    top: 20%;
     margin-left: 5%;
     width: 45%;
     line-height: 25px;

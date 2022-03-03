@@ -7,43 +7,17 @@
     Parse.serverURL = 'https://parseapi.back4app.com/'
 
     const list = document.querySelector("ol")
-    const overlays = document.querySelectorAll("overlay");
-    // const inputs = document.querySelectorAll("#add-story input:not([type=submit])")
+    const inputs = document.querySelectorAll("#add-story input:not([type=submit])")
+    const submitButton = document.getElementById('submit');
 
 
     // SUBMIT
-    // document.getElementById('submit').addEventListener('click', function(event){
-    //     event.preventDefault();
-    //     addStory();
-    // })
+    submitButton.addEventListener('submit', function(event){
+        event.preventDefault();
+        addStory();
+    })
 
     // BACK4APP
-    async function display() {
-        const stories = Parse.Object.extend('Stories');
-        const query = new Parse.Query(stories);
-        const results = await query.ascending('firstname').find();
-        console.log(results);
-
-        results.forEach(function(eachStory){
-            const id = eachStory.id;
-            const title = eachStory.get('title');
-            const firstname = eachStory.get('firstname');
-            const lastname = eachStory.get('lastname');
-            const story = eachStory.get('story');
-
-            const theList = document.createElement("li");
-            theList.setAttribute("id", `r=${id}`);
-            theList.innerHTML = `
-            <div class = "gallery-box">
-            <p class = "gallery-content gallery-title">${title}</p>
-            <p class = "gallery-content gallery-name">${firstname} ${lastname}</p>
-            <p class = "gallery-content gallery-story">${story}</p>
-            </div>`
-
-        list.append(theList);
-        })
-    }
-    display();
 
     async function addStory() {
         const newStory = {};
@@ -59,22 +33,53 @@
             newStoryData.set('firstname', newStory.firstname);
             newStoryData.set('lastname', newStory.lastname);
             newStoryData.set('story', newStory.story);
+
+        try {
+            const result = await newStoryData.save();
+            // console.log('story made', result)
+            document.getElementById('overlay1').className = 'hidden';
+            document.getElementById('panels-section').className = 'showing';
+            list.innerHTML = "";
+            display();
+            }
+            catch (error){
+                console.error('Error while creating friend:', error);
+            }
         }
         else {
             document.getElementById('overlay1').className = 'hidden';
             document.getElementById('panels-section').className = 'showing';
         }
-        try {
-            const result = await newStoryData.save();
-            document.getElementById('overlay1').className = 'hidden';
-            document.getElementById('panels-section').className = 'showing';
-            list.innerHTML = "";
-            display();
-        }
-        catch (error){
-            console.error('Error while creating friend:', error);
-        }
     }
+
+    async function display() {
+        const stories = Parse.Object.extend('Stories');
+        const query = new Parse.Query(stories);
+        const results = await query.ascending('firstname').find();
+        console.log(results);
+
+    results.forEach(function(eachStory){
+        const id = eachStory.id;
+        const title = eachStory.get('title');
+        const firstname = eachStory.get('firstname');
+        const lastname = eachStory.get('lastname');
+        const story = eachStory.get('story');
+        const theList = document.createElement("li");
+            
+        theList.setAttribute("id", `r-${id}`);
+        theList.innerHTML = `
+            <div class = "gallery-box">
+            <p class = "gallery-content gallery-title">${title}</p>
+            <p class = "gallery-content gallery-name">${firstname} ${lastname}</p>
+            <p class = "gallery-content gallery-story">${story}</p>
+            </div>`
+
+            list.append(theList);
+        })
+    }
+    display();
+
+
 
     //NEXT  
 
