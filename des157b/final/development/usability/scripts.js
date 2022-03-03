@@ -12,9 +12,10 @@
 
 
     // SUBMIT
-    submitButton.addEventListener('submit', function(event){
+    submitButton.addEventListener('click', function(event){
         event.preventDefault();
         addStory();
+        console.log('pressed')
     })
 
     // BACK4APP
@@ -22,28 +23,29 @@
     async function addStory() {
         const newStory = {};
 
-        for (let i = 0; i<inputs.length; i++) {
+        for (let i=0; i<inputs.length; i++) {
             let key = inputs[i].getAttribute('name');
             let value = inputs[i].value;
             newStory[key] = value;
         }
-        if (newStory.title != "" && newStory.firstname != "" && newStory.lastname != ""&& newStory.story != ""){
+
+        if (newStory.title != "" && newStory.firstname != "" && newStory.lastname != "" && newStory.story != ""){
             const newStoryData = new Parse.Object('Stories');
             newStoryData.set('title', newStory.title);
             newStoryData.set('firstname', newStory.firstname);
             newStoryData.set('lastname', newStory.lastname);
             newStoryData.set('story', newStory.story);
 
-        try {
-            const result = await newStoryData.save();
-            // console.log('story made', result)
-            document.getElementById('overlay1').className = 'hidden';
-            document.getElementById('panels-section').className = 'showing';
-            list.innerHTML = "";
-            display();
+            try {
+                const result = await newStoryData.save();
+                console.log('story made', result)
+                document.getElementById('overlay1').className = 'hidden';
+                document.getElementById('panels-section').className = 'showing';
+                list.innerHTML = "";
+                display();
             }
             catch (error){
-                console.error('Error while creating friend:', error);
+                console.error("Didn't work", error);
             }
         }
         else {
@@ -55,7 +57,7 @@
     async function display() {
         const stories = Parse.Object.extend('Stories');
         const query = new Parse.Query(stories);
-        const results = await query.ascending('firstname').find();
+        const results = await query.ascending('lastname').find();
         console.log(results);
 
     results.forEach(function(eachStory){
@@ -69,9 +71,9 @@
         theList.setAttribute("id", `r-${id}`);
         theList.innerHTML = `
             <div class = "gallery-box">
-            <p class = "gallery-content gallery-title">${title}</p>
-            <p class = "gallery-content gallery-name">${firstname} ${lastname}</p>
-            <p class = "gallery-content gallery-story">${story}</p>
+                <p class = "gallery-content gallery-title">${title}</p>
+                <p class = "gallery-content gallery-name">${firstname} ${lastname}</p>
+                <p class = "gallery-content gallery-story">${story}</p>
             </div>`
 
             list.append(theList);
@@ -319,5 +321,7 @@
             document.getElementById('next-text2').className = 'showing';
         }
     });
+
+    
     
 })();

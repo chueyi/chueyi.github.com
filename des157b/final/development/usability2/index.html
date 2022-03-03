@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="scripts.js" defer></script>
+
+    <link href = "styles.css" rel = "stylesheet">
+    
+    <title>Usability</title>
+</head>
+<body>
+
+            <p class = "overlay-text">Food</p>
+            <button id = "close1" class = "corner close">&times;</button>
+    
+            <form id = "add-story">
+                <div class = "names">
+                    <label class = "input-fname">First Name
+                        <input type = "text" placeholder = "First Name" name = "firstname">
+                    </label>
+        
+                    <label class = "input-lname">Last Name
+                        <input type = "text" placeholder = "Last Name" name = "lastname">
+                    </label>
+                </div>
+
+                <label class = "input-title">Story Title
+                    <input type = "text" placeholder = "Story Title" name = "title">
+                </label>
+    
+                <label id = "food-label-share" class= "fields">Share anything about Hmong food!
+                    <textarea name = "Share" cols = "40" rows = "5" id = "food-input-share" placeholder = "Recipes, Stories, Support, Anything!" name = "story"></textarea>
+                </label>
+    
+                <input id = "submit" type="submit" value="Submit">
+    
+            </form>
+
+    
+    <main id = "grid" class = "hidden">
+        <ol class = "gallery">
+        </ol>
+    </main>
+
+
+
+</body>
+</html>
