@@ -1,0 +1,43 @@
+body {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(5, 180, 249);
+}
+
+#name {
+    margin-bottom: 80px;
+    font-weight: 800;
+}
+
+img {
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-left: 40%;
+    width: 40%;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    display: inline-block;
+}
+
+#wall {
+    height: 350%;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(19, 196, 255);
+}

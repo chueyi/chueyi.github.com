@@ -2,50 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
-    <script src="scripts.js" defer></script>
-
-    <link href = "styles.css" rel = "stylesheet">
+    <title>Friends</title>
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     
-    <title>Usability</title>
+    <!--/ /-------- Font Awesome --------/ /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link href="https://fonts.googleapis.com/css?family=Baloo|IBM+Plex+Sans+Condensed:300,600&display=swap" rel="stylesheet">
+    
+    <!--/ /-------- Site Styling --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Parse Library -->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
 </head>
 <body>
 
-            <p class = "overlay-text">Food</p>
-            <button id = "close1" class = "corner close">&times;</button>
-    
-            <form id = "add-story">
-                <div class = "names">
-                    <label class = "input-fname">First Name
-                        <input type = "text" placeholder = "First Name" name = "firstname">
-                    </label>
-        
-                    <label class = "input-lname">Last Name
-                        <input type = "text" placeholder = "Last Name" name = "lastname">
-                    </label>
-                </div>
+    <main>
+        <ol class="container1">
+        </ol>
 
-                <label class = "input-title">Story Title
-                    <input type = "text" placeholder = "Story Title" name = "title">
-                </label>
-    
-                <label id = "food-label-share" class= "fields">Share anything about Hmong food!
-                    <textarea name = "Share" cols = "40" rows = "5" id = "food-input-share" placeholder = "Recipes, Stories, Support, Anything!" name = "story"></textarea>
-                </label>
-    
-                <input id = "submit" type="submit" value="Submit">
-    
-            </form>
-
-    
-    <main id = "grid" class = "hidden">
-        <ol class = "gallery">
+        <ol class="container2">
         </ol>
     </main>
 
+    <form id="add-friend" class="forms add-friend-offscreen">
+        <h2>Food</h2>
+
+        <button class = "corner close">&times;</button>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Barb">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Spike">
+
+        <label for="email">Title</label>
+        <input type="text" id="title" name="email" placeholder="barb.spike@pointy.com">
+
+        <label for="story">Story</label>
+        <input type="textarea" id="story" name="story" placeholder="Story">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <form id="add-friend2" class="forms add-friend-offscreen">
+        <h2>Art</h2>
+
+        <button class = "corner close">&times;</button>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Barb">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Spike">
+
+        <label for="email">Title</label>
+        <input type="text" id="email" name="email" placeholder="barb.spike@pointy.com">
+
+        <label for="story">Story</label>
+        <input type="textarea" id="story" name="story" placeholder="Story">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    
 
 
+    <footer>
+        <div class="container">
+            <a href="#" id="newbtn1">Food<i class="fas fa-user-plus"></i></a>
+        </div>
+
+        <div class="container">
+            <a href="#" id="newbtn2">Art<i class="fas fa-user-plus"></i></a>
+        </div>
+        
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
