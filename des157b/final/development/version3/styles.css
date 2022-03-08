@@ -72,6 +72,7 @@ footer {
     transition-property: opacity, visibility;
     transition-duration: 300ms;
     transition-timing-function: ease;
+    overflow: hidden;
 }
 
 a {
@@ -85,6 +86,77 @@ footer p {
     background-color: white;
     text-align: center;
     color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.footerimg {
+    position: absolute;
+    overflow: hidden;
+}
+
+#girlfooterfood {
+    top: -10%;
+    left: -105%;
+    width: 300%;
+}
+
+#girlfooterart {
+    top: -12%;
+    left: -105%;
+    width: 300%;
+}
+
+#girlfooterwar {
+    top: -8%;
+    left: -65%;
+    width: 300%;
+}
+
+#girlfooterghost {
+    top: -7%;
+    left: -96%;
+    width: 300%;
+}
+
+#newbtn1 {
+    border-top: 10px solid rgb(57, 180, 0);
+    border-bottom: 10px solid rgb(57, 180, 0);
+    color: rgb(57, 180, 0);
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+#newbtn2 {
+    border-top: 10px solid rgb(255, 198, 43);
+    border-bottom: 10px solid rgb(255, 198, 43);
+    color: rgb(255, 198, 43);
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+#newbtn3 {
+    border-top: 10px solid blue;
+    border-bottom: 10px solid blue;
+    color: blue;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+#newbtn4 {
+    border-top: 10px solid red;
+    border-bottom: 10px solid red;
+    color: red;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
 }
 
 /*************** FORMS ****************/
@@ -92,8 +164,7 @@ footer p {
 #add-friend {
     z-index: 50;
     height: 100%;
-    background: rgb(74,183,251);
-    background: linear-gradient(23deg, rgba(74,183,251,1) 0%, rgba(12,111,173,1) 100%);
+    background: rgb(57, 180, 0);
     color: #fff;
     box-sizing: border-box;
     width: 75%;
@@ -104,7 +175,7 @@ footer p {
 #add-friend2 {
     z-index: 50;
     height: 100%;
-    background: rgb(173, 0, 0);
+    background: rgb(255, 198, 43);
     color: #fff;
     box-sizing: border-box;
     width: 75%;
@@ -115,7 +186,7 @@ footer p {
 #add-friend3 {
     z-index: 50;
     height: 100%;
-    background: green;
+    background: blue;
     color: #fff;
     box-sizing: border-box;
     width: 75%;
@@ -126,7 +197,7 @@ footer p {
 #add-friend4 {
     z-index: 50;
     height: 100%;
-    background: yellow;
+    background: red;
     color: #fff;
     box-sizing: border-box;
     width: 75%;
@@ -184,6 +255,7 @@ button {
 
 #box-food {
     border: 4px solid green;
+    padding: 40px;
     margin-top: 50px;
     overflow: hidden;
     overflow-y: scroll;
@@ -195,7 +267,7 @@ button {
 }
 
 #box-art {
-    border: 4px solid red;
+    border: 4px solid rgb(255, 198, 43);
     padding: 40px;
     margin-top: 50px;
     height: 300px;
@@ -222,7 +294,7 @@ button {
 }
 
 #box-ghosts {
-    border: 4px solid yellow;
+    border: 4px solid red;
     padding: 40px;
     margin-top: 50px;
     height: 300px;
@@ -303,7 +375,7 @@ button {
 }
 
 #title-art {
-    color: red;
+    color: rgb(255, 198, 43);
 }
 
 #title-war {
@@ -311,7 +383,7 @@ button {
 }
 
 #title-ghosts {
-    color: yellow;
+    color: red;
 }
 
 /* NAVS */
@@ -327,33 +399,31 @@ button {
 }
 
 .main-links {
+    background-color: black;
     border-left: 2px solid white;
-    width: 0px;
     padding-bottom: 10px;
     padding: 10px;
     display: inline-block;
     transition: all 300ms ease;
+    animation: mainlinks 3s infinite;
 }
 
 #home:hover {
     background-color: white;
     color: black;
     cursor: pointer;
-    width: 45px;
 }
 
 #write:hover {
     background-color: white;
     color: black;
     cursor: pointer;
-    width: 45px;
 }
 
 #gallery:hover {
     background-color: white;
     color: black;
     cursor: pointer;
-    width: 60px;
 }
 
 
@@ -381,7 +451,7 @@ button {
 }
 
 #selector-art {
-    color: red;
+    color: rgb(255, 198, 43);
     margin-left: 40%;
 }
 
@@ -391,19 +461,181 @@ button {
 }
 
 #selector-ghosts {
-    color: yellow;
+    color: red;
     margin-left: 40%;
 }
 
 /* SLIDESHOW */
 
-#slideshow {
+#leftside {
     position: absolute;
     left: 0;
     top: 0;
     width: 25%;
     height: 100%;
     background-color: black;
+    overflow: hidden;
+}
+
+#slideshow {
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#girl-food {
+    position: absolute;
+    width: 200%;
+    left: -80%;
+    top: -25%;
+    animation: girl-food 12s infinite;
+}
+
+#girl-art {
+    position: absolute;
+    width: 200%;
+    left: -80%;
+    top: -25%;
+    animation: girl-art 12s infinite;
+}
+
+#girl-war {
+    position: absolute;
+    width: 200%;
+    top: -15%;
+    left: -60%;
+    animation: girl-war 12s infinite;
+}
+
+#girl-ghost {
+    position: absolute;
+    width: 230%;
+    left: -80%;
+    top: -25%;
+    animation: girl-ghost 12s infinite;
+}
+
+#girl-food2 {
+    position: absolute;
+    width: 300%;
+    left: -105%;
+    top: -30%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#girl-art2 {
+    position: absolute;
+    width: 260%;
+    left: -85%;
+    top: -28%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#girl-war2 {
+    position: absolute;
+    width: 250%;
+    left: -50%;
+    top: -25%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#girl-ghost2 {
+    position: absolute;
+    width: 300%;
+    left: -100%;
+    top: -26%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+@keyframes girl-food {
+    0% {
+        opacity: 0;
+        left: -80%;
+        top: -30%;
+    }
+    12.5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        top: 0%;
+        left: -20%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes girl-art {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+        left: 0%;
+        top: -40%;
+    }
+    37.5% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        top: 0%;
+        left: -80%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes girl-war {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        top: -15%;
+        left: 50%;
+    }
+    62.5% {
+        opacity: 1;
+        top: -15%;
+        left: -60%;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes girl-ghost {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+        top: 20%;
+        left: -65%;
+    }
+    87.5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: -30%;
+        left: -65%;
+    }
 }
 
 .hidden {

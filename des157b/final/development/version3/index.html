@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends</title>
+    <title>Version 3</title>
     <!--/ /-------- Normalize CSS --------/ /-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     
@@ -19,9 +19,24 @@
     <!-- Parse Library -->
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
+    <link rel="stylesheet" href="https://use.typekit.net/mxs0uav.css">
+
 </head>
 <body>
-    <div id = "slideshow">
+    <div id = "leftside">
+        <div id = "slideshow">
+            <img src = "images/1.1.png" alt = "foodgirl" class = "images" id = "girl-food">
+            <img src = "images/2.1.png" alt = "artgirl" class = "images" id = "girl-art">
+            <img src = "images/3.1.png" alt = "wargirl" class = "images" id = "girl-war">
+            <img src = "images/4.1.png" alt = "ghostgirl" class = "images" id = "girl-ghost">
+        </div>
+
+        <div id = "images-still">
+            <img src = "images/1.1.png" alt = "foodgirl" class = "images hidden" id = "girl-food2">
+            <img src = "images/2.1.png" alt = "artgirl" class = "images hidden" id = "girl-art2">
+            <img src = "images/3.1.png" alt = "wargirl" class = "images hidden" id = "girl-war2">
+            <img src = "images/4.1.png" alt = "ghostgirl" class = "images hidden" id = "girl-ghost2">
+        </div>
     </div>
 
     <div id = "main-nav">
@@ -70,7 +85,7 @@
         
         <h2 class = "formtitle">Food</h2>
         
-        <button class = "corner close">&times;</button>
+        <button id = "exit1" class = "corner close">&times;</button>
         
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -93,7 +108,7 @@
     <form id="add-friend2" class="forms add-friend-offscreen">
         <h2 class = "formtitle">Art</h2>
 
-        <button class = "corner close">&times;</button>
+        <button id = "exit2" class = "corner close">&times;</button>
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -116,7 +131,7 @@
     <form id="add-friend3" class="forms add-friend-offscreen">
         <h2 class = "formtitle">War</h2>
 
-        <button class = "corner close">&times;</button>
+        <button id = "exit3" class = "corner close">&times;</button>
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -139,7 +154,7 @@
     <form id="add-friend4" class="forms add-friend-offscreen">
         <h2 class = "formtitle">Ghosts</h2>
 
-        <button class = "corner close">&times;</button>
+        <button id = "exit4" class = "corner close">&times;</button>
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -161,19 +176,27 @@
 
     <footer class = "hidden">
         <div class="container">
-            <p href="#" id="newbtn1">Food</p>
+            <p href="#" id="newbtn1">Food
+                <img src = "images/1.1.png" alt = "girlfood" class = "footerimg" id = "girlfooterfood">
+            </p>
         </div>
 
         <div class="container">
-            <p href="#" id="newbtn2">Art</p>
+            <p href="#" id="newbtn2">Art
+                <img src = "images/2.1.png" alt = "girlart" class = "footerimg" id = "girlfooterart">
+            </p>
         </div>
 
         <div class="container">
-            <p href="#" id="newbtn3">War</p>
+            <p href="#" id="newbtn3">War
+                <img src = "images/3.1.png" alt = "girlwar" class = "footerimg" id = "girlfooterwar">
+            </p>
         </div>
 
         <div class="container">
-            <p href="#" id="newbtn4">Ghosts</p>
+            <p href="#" id="newbtn4">Ghosts
+                <img src = "images/4.1.png" alt = "girlghost" class = "footerimg" id = "girlfooterghost"> 
+            </p>
         </div>
         
     </footer>

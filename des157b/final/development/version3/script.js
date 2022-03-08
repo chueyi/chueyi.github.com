@@ -33,6 +33,11 @@
         document.querySelector('main').className = 'hidden'
         document.querySelector('footer').className = 'hidden'
         document.getElementById('gallery-nav').className = 'hidden'
+        document.getElementById("slideshow").className = 'showing';
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("girl-art2").className = 'hidden';
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("girl-ghost2").className = 'hidden';
     })
 
     document.getElementById('gallery').addEventListener('click', function(event){
@@ -45,6 +50,11 @@
         document.getElementById('add-friend2').className = "hidden"
         document.getElementById('add-friend3').className = "hidden"
         document.getElementById('add-friend4').className = "hidden"
+        document.getElementById("slideshow").className = 'showing';
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("girl-art2").className = 'hidden';
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("girl-ghost2").className = 'hidden';
     })
 
     document.getElementById('write').addEventListener('click', function(event){
@@ -53,6 +63,12 @@
         document.querySelector('main').className = 'hidden'
         document.querySelector('footer').className = 'showing'
         document.getElementById('gallery-nav').className = 'hidden'
+        document.getElementById("slideshow").className = 'showing';
+        document.getElementById("slideshow").className = 'showing';
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("girl-art2").className = 'hidden';
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("girl-ghost2").className = 'hidden';
     })
     
 
@@ -63,6 +79,11 @@
         document.getElementById('container3').className = 'hidden'
         document.getElementById('container1').className = 'showing'
         document.getElementById('container2').className = 'hidden'
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("girl-food2").className = 'showing';
+        document.getElementById("girl-ghost2").className = 'hidden';
+        document.getElementById("slideshow").className = 'hidden';
+        document.getElementById("girl-art2").className = 'hidden';
     })
 
     document.getElementById('selector-art').addEventListener('click', function(event){
@@ -71,6 +92,11 @@
         document.getElementById('container3').className = 'hidden'
         document.getElementById('container2').className = 'showing'
         document.getElementById('container1').className = 'hidden'
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("girl-ghost2").className = 'hidden';
+        document.getElementById("girl-art2").className = 'showing';
+        document.getElementById("slideshow").className = 'hidden';
     })
 
     document.getElementById('selector-war').addEventListener('click', function(event){
@@ -79,6 +105,12 @@
         document.getElementById('container3').className = 'showing'
         document.getElementById('container2').className = 'hidden'
         document.getElementById('container1').className = 'hidden'
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("girl-war2").className = 'showing';
+        document.getElementById("girl-ghost2").className = 'hidden';
+        document.getElementById("slideshow").className = 'hidden';
+        document.getElementById("girl-art2").className = 'hidden';
+        document.getElementById("slideshow").className = 'hidden';
     })
     
     document.getElementById('selector-ghosts').addEventListener('click', function(event){
@@ -87,7 +119,31 @@
         document.getElementById('container3').className = 'hidden'
         document.getElementById('container2').className = 'hidden'
         document.getElementById('container1').className = 'hidden'
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("girl-ghost2").className = 'showing';
+        document.getElementById("girl-art2").className = 'hidden';
+        document.getElementById("slideshow").className = 'hidden';
     })
+
+    //EXIT
+    document.getElementById('exit1').addEventListener('click', function(event){
+        document.getElementById("girl-food2").className = 'hidden';
+        document.getElementById("slideshow").className = 'showing';
+    })
+    document.getElementById('exit2').addEventListener('click', function(event){
+        document.getElementById("girl-art2").className = 'hidden';
+        document.getElementById("slideshow").className = 'showing';
+    })
+    document.getElementById('exit3').addEventListener('click', function(event){
+        document.getElementById("girl-war2").className = 'hidden';
+        document.getElementById("slideshow").className = 'showing';
+    })
+    document.getElementById('exit4').addEventListener('click', function(event){
+        document.getElementById("girl-ghost2").className = 'hidden';
+        document.getElementById("slideshow").className = 'showing';
+    })
+    
 
     // OPENS FORM
     newButton1.addEventListener('click', function(event) {
@@ -96,6 +152,9 @@
         addFriendForm3.className = 'add-friend-offscreen';
         addFriendForm.className = 'add-friend-onscreen';
         addFriendForm2.className = "add-friend-offscreen";
+        document.getElementById("girl-food2").className = 'showing';
+        document.getElementById("images-still").className = 'showing';
+        document.getElementById("slideshow").className = 'hidden';
     });
 
     newButton2.addEventListener('click', function(event) {
@@ -104,6 +163,9 @@
         addFriendForm3.className = 'add-friend-offscreen';
         addFriendForm2.className = 'add-friend-onscreen';
         addFriendForm.className = "add-friend-offscreen";
+        document.getElementById("girl-art2").className = 'showing';
+        document.getElementById("images-still").className = 'showing';
+        document.getElementById("slideshow").className = 'hidden';
     });
 
     newButton3.addEventListener('click', function(event) {
@@ -112,6 +174,8 @@
         addFriendForm3.className = 'add-friend-onscreen';
         addFriendForm2.className = 'add-friend-offscreen';
         addFriendForm.className = "add-friend-offscreen";
+        document.getElementById("girl-war2").className = 'showing';
+        document.getElementById("slideshow").className = 'hidden';
     });
 
     newButton4.addEventListener('click', function(event) {
@@ -120,6 +184,8 @@
         addFriendForm3.className = 'add-friend-offscreen';
         addFriendForm2.className = 'add-friend-offscreen';
         addFriendForm.className = "add-friend-offscreen";
+        document.getElementById("girl-ghost2").className = 'showing';
+        document.getElementById("slideshow").className = 'hidden';
     });
 
     // SUBMIT AND CLOSES FORM
