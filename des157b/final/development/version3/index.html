@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Version 3</title>
-    <!--/ /-------- Normalize CSS --------/ /-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    
-    <!--/ /-------- Font Awesome --------/ /-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-    <!--/ /-------- Google Fonts --------/ /-->
-    <link href="https://fonts.googleapis.com/css?family=Baloo|IBM+Plex+Sans+Condensed:300,600&display=swap" rel="stylesheet">
-    
-    <!--/ /-------- Site Styling --------/ /-->
-    <link href="styles.css" rel="stylesheet">
 
-    <!-- Parse Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mxs0uav.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/mxs0uav.css">
 
 </head>
 <body>
+
+    <div id = "loading">
+        <div id = "loading-hello">
+            <p id = "nyobzoo">NYOB ZOO</p>
+            <p id = "hello">(HELLO)</p>
+        </div>
+        <div class = "loading-panels" id = "righthalf"></div>
+        <div class = "loading-panels" id = "lefthalf"></div>
+    </div>
+
     <div id = "leftside">
         <div id = "slideshow">
             <img src = "images/1.1.png" alt = "foodgirl" class = "images" id = "girl-food">
@@ -46,24 +48,31 @@
     </div>
 
     <div id = "gallery-nav" class = "hidden">
-        <h2 id = "selector-select" class = "gallery-links">Select Topic to View</h2>
+        <h2 id = "selector-select" >Select Topic to View</h2>
         <div id = "gallery-selectors">
-            <h2 id = "selector-food" class = "gallery-links">Food</h2>
-            <h2 id = "selector-art" class = "gallery-links">Art</h2>
-            <h2 id = "selector-war" class = "gallery-links">War</h2>
-            <h2 id = "selector-ghosts" class = "gallery-links">Ghosts</h2>
+            <h2 id = "selector-food" class = "gallery-links">FOOD</h2>
+            <h2 id = "selector-art" class = "gallery-links">ART</h2>
+            <h2 id = "selector-war" class = "gallery-links">WAR</h2>
+            <h2 id = "selector-ghosts" class = "gallery-links">GHOSTS</h2>
         </div>
     </div>
 
     <div id = "homepage">
-        <h1>For Us</h1>
+        <h1 id = "homepagetitle">For Us</h1>
 
             <div class = "introparagraph">
+                <h2 class = "homepageheaders">What is "For Us"?</h2>
                 <p>
                     "For Us" is a safe haven for Hmong people to discuss and share their stories through four selected topics: food, art, war, and ghosts. Hmong culture is slowly dissipating due to Westernization and age, so this was designed to safekeep information and stories about Hmong people and culture for future generations.
                     <br>
                     <br>
-                    To participate, select "Write" or "Gallery". “Write” will take you to select any of the four topics: food, art, war, or ghosts. After selecting, fill in the boxes then submit. “Gallery” holds all of the submissions made where you can look at work created by others. Select the desired topic and scroll through the submittied stories. Please refrain from vulgar language when writing and be mindful of other submitted pieces.</p>
+                    To participate, select "Write" or "Gallery". “Write” will take you to select any of the four topics: food, art, war, or ghosts. After selecting, fill in the boxes then submit. “Gallery” holds all of the submissions made where you can look at work created by others. Select the desired topic and scroll through the submittied stories. Please refrain from vulgar language when writing and be mindful of other submitted pieces.
+                </p>
+
+                <!-- <h2 class = "homepageheaders">Contact</h2>
+                <p>
+                    Email:         
+                </p> -->
             </div>
     </div>
 
@@ -94,15 +103,15 @@
         <input type="text" id="lname" name="lname" placeholder="Last Name">
 
         <label for="date">Date</label>
-        <input type="textarea" id="date" name="date" placeholder="January 01, 20XX">
+        <input type="text" id="date" name="date" placeholder="January 01, 20XX">
 
         <label for="email">Title of Story</label>
-        <input type="text" id="title" name="email" placeholder="Story Title">
+        <input type="text" id="email" name="email" placeholder="Story Title">
 
         <label for="story">Story</label>
-        <input type="textarea" id="story" name="story" placeholder="Story">
+        <input type="text" id="story" name="story">
 
-        <input type="submit" value="Submit" id = "submit">
+        <input type="submit" value="SUBMIT" class = "submit">
     </form>
 
     <form id="add-friend2" class="forms add-friend-offscreen">
@@ -110,22 +119,22 @@
 
         <button id = "exit2" class = "corner close">&times;</button>
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <label for="fname2">First Name</label>
+        <input type="text" id="fname2" name="fname" placeholder="First Name">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <label for="lname2">Last Name</label>
+        <input type="text" id="lname2" name="lname" placeholder="Last Name">
 
-        <label for="date">Date</label>
-        <input type="textarea" id="date" name="date" placeholder="January 01, 20XX">
+        <label for="date2">Date</label>
+        <input type="text" id="date2" name="date" placeholder="January 01, 20XX">
 
-        <label for="email">Title of Story</label>
-        <input type="text" id="email" name="email" placeholder="Story Title">
+        <label for="email2">Title of Story</label>
+        <input type="text" id="email2" name="email" placeholder="Story Title">
 
-        <label for="story">Story</label>
-        <input type="textarea" id="story" name="story" placeholder="Story">
+        <label for="story2">Story</label>
+        <input type="text" id="story2" name="story">
 
-        <input type="submit" value="Submit" id = "submit">
+        <input type="submit" value="SUBMIT" class = "submit">
     </form>
 
     <form id="add-friend3" class="forms add-friend-offscreen">
@@ -133,22 +142,22 @@
 
         <button id = "exit3" class = "corner close">&times;</button>
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <label for="fname3">First Name</label>
+        <input type="text" id="fname3" name="fname" placeholder="First Name">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <label for="lname3">Last Name</label>
+        <input type="text" id="lname3" name="lname" placeholder="Last Name">
 
-        <label for="date">Date</label>
-        <input type="textarea" id="date" name="date" placeholder="January 01, 20XX">
+        <label for="date3">Date</label>
+        <input type="text" id="date3" name="date" placeholder="January 01, 20XX">
 
-        <label for="email">Title of Story</label>
-        <input type="text" id="email" name="email" placeholder="Story Title">
+        <label for="email3">Title of Story</label>
+        <input type="text" id="email3" name="email" placeholder="Story Title">
 
-        <label for="story">Story</label>
-        <input type="textarea" id="story" name="story" placeholder="Story">
+        <label for="story3">Story</label>
+        <input type="text" id="story3" name="story">
 
-        <input type="submit" value="Submit" id = "submit">
+        <input type="submit" value="SUBMIT" class = "submit">
     </form>
 
     <form id="add-friend4" class="forms add-friend-offscreen">
@@ -156,48 +165,49 @@
 
         <button id = "exit4" class = "corner close">&times;</button>
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <label for="fname4">First Name</label>
+        <input type="text" id="fname4" name="fname" placeholder="First Name">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <label for="lname4">Last Name</label>
+        <input type="text" id="lname4" name="lname" placeholder="Last Name">
 
-        <label for="date">Date</label>
-        <input type="textarea" id="date" name="date" placeholder="January 01, 20XX">
+        <label for="date4">Date</label>
+        <input type="text" id="date4" name="date" placeholder="January 01, 20XX">
 
-        <label for="email">Title of Story</label>
-        <input type="text" id="email" name="email" placeholder="Story Title">
+        <label for="email4">Title of Story</label>
+        <input type="text" id="email4" name="email" placeholder="Story Title">
 
-        <label for="story">Story</label>
-        <input type="textarea" id="story" name="story" placeholder="Story">
+        <label for="story4">Story</label>
+        <input type="text" id="story4" name="story">
 
-        <input type="submit" value="Submit" id = "submit">
+        <input type="submit" value="SUBMIT" class = "submit">
     </form>
 
     <footer class = "hidden">
         <div class="container">
-            <p href="#" id="newbtn1">Food
+            <p id="newbtn1">Food
                 <img src = "images/1.1.png" alt = "girlfood" class = "footerimg" id = "girlfooterfood">
             </p>
         </div>
 
         <div class="container">
-            <p href="#" id="newbtn2">Art
+            <p id="newbtn2">Art
                 <img src = "images/2.1.png" alt = "girlart" class = "footerimg" id = "girlfooterart">
             </p>
         </div>
 
         <div class="container">
-            <p href="#" id="newbtn3">War
+            <p id="newbtn3">War
                 <img src = "images/3.1.png" alt = "girlwar" class = "footerimg" id = "girlfooterwar">
             </p>
         </div>
 
         <div class="container">
-            <p href="#" id="newbtn4">Ghosts
+            <p id="newbtn4">Ghosts
                 <img src = "images/4.1.png" alt = "girlghost" class = "footerimg" id = "girlfooterghost"> 
             </p>
         </div>
+
         
     </footer>
     

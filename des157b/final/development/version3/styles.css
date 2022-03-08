@@ -1,8 +1,9 @@
 /*********** Basic Resets ************/
 
 body {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-weight: 300;
+    font-family: eurostile, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #333;
     background-image: url(background.jpg);
 }
@@ -48,12 +49,29 @@ ol {
     position: absolute;
     width: 65%;
     margin-left: 30%;
-    top: 10%;
-    /* background-color: white; */
+    top: 0%;
+}
+
+#homepagetitle {
+    color: white;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    padding-bottom: -100px;
+}
+
+.homepageheaders {
+    border-bottom: 3px solid white;
+    padding-bottom: 15px;
 }
 
 .introparagraph {
+    margin-top: -4%;
     width: 50%;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgb(32, 101, 0);
 }
 
 
@@ -91,30 +109,33 @@ footer p {
 }
 
 .footerimg {
+    opacity: 0.25;
     position: absolute;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #girlfooterfood {
-    top: -10%;
+    top: -27%;
     left: -105%;
     width: 300%;
 }
 
 #girlfooterart {
-    top: -12%;
+    top: -28%;
     left: -105%;
     width: 300%;
+    z-index: 3;
 }
 
 #girlfooterwar {
-    top: -8%;
+    top: -25%;
     left: -65%;
     width: 300%;
 }
 
 #girlfooterghost {
-    top: -7%;
+    top: -23%;
     left: -96%;
     width: 300%;
 }
@@ -128,6 +149,7 @@ footer p {
     font-style: normal;
     font-size: 45px;
 }
+
 
 #newbtn2 {
     border-top: 10px solid rgb(255, 198, 43);
@@ -219,6 +241,10 @@ footer p {
 .formtitle {
     margin-left: 20%;
     margin-top: 10%;
+    font-family: six-hands-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
 }
 
 label, input {
@@ -227,7 +253,7 @@ label, input {
 label {
     margin-bottom: 5px;
     margin-left: 20%;
-    margin-top: 3%
+    margin-top: 1%
 }
 input {
     box-sizing: border-box;
@@ -310,15 +336,16 @@ button {
     margin-bottom: 6%;
 }
 
-#submit {
+.submit {
     position: fixed;
+    margin-top: 4%;
     right: 15%;
     width: 100px;
     height: 50px;
     background-color: white;
     border: none;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     color: black;
 }
 
@@ -386,7 +413,7 @@ button {
     color: red;
 }
 
-/* NAVS */
+/* MAIN NAV */
 
 #main-nav {
     position: absolute;
@@ -394,47 +421,61 @@ button {
     flex-direction: column;
     left: 8%;
     top: 35%;
-    z-index: 200;
     color: white;
+    width: 0px;
 }
 
 .main-links {
-    background-color: black;
+    background-color: rgb(57, 180, 0);
+    mix-blend-mode: hard-light;
     border-left: 2px solid white;
     padding-bottom: 10px;
     padding: 10px;
+    width: 0px;
     display: inline-block;
     transition: all 300ms ease;
-    animation: mainlinks 3s infinite;
 }
 
+
 #home:hover {
+    width: 50px;
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
 #write:hover {
+    width: 50px;
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
 #gallery:hover {
+    width: 75px;
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
+/* GALLERY NAV */
+
 
 #gallery-nav {
     display: flex;
-    margin-top: 2%;
+    margin-top: -28%;
     margin-left: 32.5%;
+    font-size: 15px;
 }
 
 .gallery-links {
     font-weight: 400;
+    transition: all 300ms;
+    border-left: 2px solid white;
+}
+
+.gallery-links:hover {
+    cursor: pointer;
 }
 
 #gallery-selectors {
@@ -442,27 +483,72 @@ button {
 }
 
 #selector-select {
-    margin-right: 20%;
+    padding: 10px;
 }
 
 #selector-food {
+    position: absolute;
     color: green;
-    margin-left: 40%;
+    padding: 5px;
+    padding-left: 10px;
+    margin-left: 25%;
+    width: 0%;
+    left: 30%;
+    padding-left: 20px;
+}
+
+#selector-food:hover {
+    background-color: rgb(17, 115, 30);
+    color: white;
+    width: 70px;
 }
 
 #selector-art {
+    position: absolute;
+    padding: 5px;
     color: rgb(255, 198, 43);
-    margin-left: 40%;
+    margin-left: 25%;
+    left: 40%;
+    padding-left: 20px;
+    width: 0px;
+}
+
+#selector-art:hover {
+    background-color: rgb(255, 198, 43);
+    color: white;
+    width: 70px;
 }
 
 #selector-war {
+    position: absolute;
+    padding: 5px;
+    left: 50%;
     color: blue;
-    margin-left: 40%;
+    margin-left: 25%;
+    padding-left: 20px;
+    width: 0px;
+}
+
+#selector-war:hover {
+    background-color: blue;
+    color: white;
+    width: 70px;
 }
 
 #selector-ghosts {
+    position: absolute;
+    left: 60%;
+    padding: 5px;
     color: red;
-    margin-left: 40%;
+    margin-left: 25%;
+    padding-left: 20px;
+    width: 0px;
+}
+
+#selector-ghosts:hover {
+    background-color: red;
+    color: white;
+    width: 90px;
 }
 
 /* SLIDESHOW */
@@ -517,9 +603,9 @@ button {
 
 #girl-food2 {
     position: absolute;
-    width: 300%;
-    left: -105%;
-    top: -30%;
+    width: 260%;
+    left: -85%;
+    top: -27%;
     transition-property: opacity, visibility;
     transition-duration: 300ms;
     transition-timing-function: ease;
@@ -637,6 +723,135 @@ button {
         left: -65%;
     }
 }
+
+/* LOADING */
+#nyobzoo {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: rgb(17, 115, 30);
+    opacity: 0;
+    z-index: -10;
+    animation: nyobzoo 1.5s linear;
+}
+
+#hello {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: rgb(65, 193, 82);
+    opacity: 0;
+    z-index: 0;
+    margin-top: -25px;
+    animation: nyobzoo 1.5s linear;
+}
+
+@keyframes nyobzoo {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    99% {
+        z-index: 15;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#loading {
+    display: flex;
+    height: 100%;
+    z-index: -100;
+    animation: loading 2.5s;
+    visibility: hidden;
+}
+
+@keyframes loading {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+#loading-hello {
+    margin: 0 auto;
+    margin-top: 18%;
+    z-index: 40;
+    text-align: center;
+}
+
+.loading-panels {
+    width: 50%;
+    z-index: -10;
+}
+
+#lefthalf {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: white;
+    animation: lefthalf 2.5s linear;
+    opacity: 0;
+}
+
+#righthalf {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: white;
+    animation: righthalf 2.5s linear;
+    opacity: 0;
+}
+
+@keyframes lefthalf {
+    0% {
+        opacity: 1;
+        width: 50%;
+        z-index: 10;
+    }
+    60% {
+        width: 50%;
+    }
+    99% {
+        z-index: 10;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes righthalf {
+    0% {
+        opacity: 1;
+        width: 50%;
+        z-index: 10;
+    }
+    60% {
+        width: 50%;
+    }
+    99% {
+        z-index: 10;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 0%;
+    }
+}
+
 
 .hidden {
     visibility: hidden;

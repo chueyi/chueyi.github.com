@@ -34,6 +34,10 @@
         document.querySelector('footer').className = 'hidden'
         document.getElementById('gallery-nav').className = 'hidden'
         document.getElementById("slideshow").className = 'showing';
+        document.getElementById('add-friend').className = "hidden"
+        document.getElementById('add-friend2').className = "hidden"
+        document.getElementById('add-friend3').className = "hidden"
+        document.getElementById('add-friend4').className = "hidden"
         document.getElementById("girl-war2").className = 'hidden';
         document.getElementById("girl-art2").className = 'hidden';
         document.getElementById("girl-food2").className = 'hidden';
@@ -63,7 +67,10 @@
         document.querySelector('main').className = 'hidden'
         document.querySelector('footer').className = 'showing'
         document.getElementById('gallery-nav').className = 'hidden'
-        document.getElementById("slideshow").className = 'showing';
+        document.getElementById('add-friend').className = "hidden"
+        document.getElementById('add-friend2').className = "hidden"
+        document.getElementById('add-friend3').className = "hidden"
+        document.getElementById('add-friend4').className = "hidden"
         document.getElementById("slideshow").className = 'showing';
         document.getElementById("girl-war2").className = 'hidden';
         document.getElementById("girl-art2").className = 'hidden';
