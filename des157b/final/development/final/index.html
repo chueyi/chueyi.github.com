@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mxs0uav.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/mxs0uav.css">
+
+</head>
+<body>
+
+    <div id = "loading" class = "hidden">
+        <div id = "loading-hello">
+            <p id = "nyobzoo">NYOB ZOO</p>
+            <p id = "hello">(HELLO)</p>
+        </div>
+        <div class = "loading-panels" id = "righthalf"></div>
+        <div class = "loading-panels" id = "lefthalf"></div>
+    </div>
+
+    <div id = "leftside">
+        <div id = "slideshow">
+            <img src = "images/1.1.png" alt = "foodgirl" class = "images" id = "girl-food">
+            <img src = "images/2.1.png" alt = "artgirl" class = "images" id = "girl-art">
+            <img src = "images/3.1.png" alt = "wargirl" class = "images" id = "girl-war">
+            <img src = "images/4.1.png" alt = "ghostgirl" class = "images" id = "girl-ghost">
+        </div>
+
+        <div id = "images-still">
+            <img src = "images/1.1.png" alt = "foodgirl" class = "images hidden" id = "girl-food2">
+            <img src = "images/2.1.png" alt = "artgirl" class = "images hidden" id = "girl-art2">
+            <img src = "images/3.1.png" alt = "wargirl" class = "images hidden" id = "girl-war2">
+            <img src = "images/4.1.png" alt = "ghostgirl" class = "images hidden" id = "girl-ghost2">
+        </div>
+    </div>
+
+    <div id = "main-nav">
+        <p id = "home" class = "main-links">HOME</p>
+        <p id = "write" class = "main-links">WRITE</p>
+        <p id = "gallery" class = "main-links">GALLERY</p>
+    </div>
+
+    <div id = "gallery-nav" class = "hidden">
+        <h2 id = "selector-select" >Select Topic to View</h2>
+        <div id = "gallery-selectors">
+            <h2 id = "selector-food" class = "gallery-links">FOOD</h2>
+            <h2 id = "selector-art" class = "gallery-links">ART</h2>
+            <h2 id = "selector-war" class = "gallery-links">WAR</h2>
+            <h2 id = "selector-ghosts" class = "gallery-links">GHOSTS</h2>
+        </div>
+    </div>
+
+    <div id = "homepage">
+        <h1 id = "homepagetitle">For Us</h1>
+
+            <div class = "introparagraph paragraphs">
+                <h2 class = "homepageheaders">What is "For Us"?</h2>
+                    <p class = "p1">
+                        "For Us" is a safe haven for Hmong people to discuss and share their stories through four selected topics: food, art, war, and ghosts. Hmong culture is slowly dissipating due to Westernization and age, so this was designed to safekeep information and stories about Hmong people and culture for future generations.
+                    </p>
+            </div>
+            
+            <div id = "bottomhalf">
+
+            <div class = "secondparagraph paragraphs">
+                <h2 class = "homepageheaders">How to Participate</h2>
+                    <p class = "p2">
+                        <ul id = "list">
+                            <li>
+                                <p>Select "Write" or "Gallery"</p>
+                            <li>
+                                <p>"Write" will take you to four topics: food, art, war, or ghosts. Select a topic, fill in the information, and submit!</p>
+                            </li>
+                            <li>
+                                <p>"Gallery" will take you to to all the submitted works. Select a topic and view all the stories!</p>
+                            </li>
+                        </ul>
+            </div>
+            <div class = "thirdparagraph paragraphs">
+                <h2 class = "homepageheaders">Helpful Advice</h2>
+                    <p class = " p2 p3">
+                        It is HIGHLY recommended you write your story in a separate software such as Google Docs, Microsoft Word, or Notes to save your progress. Copy and Paste your story into the "Story" input after you have finished. 
+                    </p>
+            </div>
+
+        </div>
+    </div>
+
+    <main class = "hidden">
+        <ol class="container1 hidden" id = "container1">
+        </ol>
+
+        <ol class="container2 hidden" id = "container2">
+        </ol>
+
+        <ol class="container3 hidden" id = "container3">
+        </ol>
+
+        <ol class="container4 hidden" id = "container4">
+        </ol>
+    </main>
+
+    <form id="add-friend" class="forms add-friend-offscreen">
+        
+        <h2 class = "formtitle">Food</h2>
+        
+        <button id = "exit1" class = "corner close">&times;</button>
+        
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date" placeholder="Month XX, 20XX">
+
+        <label for="email">Title of Story</label>
+        <input type="text" id="email" name="email" placeholder="Story Title">
+
+        <label for="story">Story</label>
+        <input type="text" id="story" name="story" placeholder="Write Story">
+
+        <input type="submit" value="SUBMIT" class = "submit">
+    </form>
+
+    <form id="add-friend2" class="forms add-friend-offscreen">
+        <h2 class = "formtitle">Art</h2>
+
+        <button id = "exit2" class = "corner close">&times;</button>
+
+        <label for="fname2">First Name</label>
+        <input type="text" id="fname2" name="fname" placeholder="First Name">
+
+        <label for="lname2">Last Name</label>
+        <input type="text" id="lname2" name="lname" placeholder="Last Name">
+
+        <label for="date2">Date</label>
+        <input type="text" id="date2" name="date" placeholder="Month XX, 20XX">
+
+        <label for="email2">Title of Story</label>
+        <input type="text" id="email2" name="email" placeholder="Story Title">
+
+        <label for="story2">Story</label>
+        <input type="text" id="story2" name="story" placeholder="Write Story"> 
+
+        <input type="submit" value="SUBMIT" class = "submit">
+    </form>
+
+    <form id="add-friend3" class="forms add-friend-offscreen">
+        <h2 class = "formtitle">War</h2>
+
+        <button id = "exit3" class = "corner close">&times;</button>
+
+        <label for="fname3">First Name</label>
+        <input type="text" id="fname3" name="fname" placeholder="First Name">
+
+        <label for="lname3">Last Name</label>
+        <input type="text" id="lname3" name="lname" placeholder="Last Name">
+
+        <label for="date3">Date</label>
+        <input type="text" id="date3" name="date" placeholder="Month XX, 20XX">
+
+        <label for="email3">Title of Story</label>
+        <input type="text" id="email3" name="email" placeholder="Story Title">
+
+        <label for="story3">Story</label>
+        <input type="text" id="story3" name="story" placeholder="Write Story">
+
+        <input type="submit" value="SUBMIT" class = "submit">
+    </form>
+
+    <form id="add-friend4" class="forms add-friend-offscreen">
+        <h2 class = "formtitle">Ghosts</h2>
+
+        <button id = "exit4" class = "corner close">&times;</button>
+
+        <label for="fname4">First Name</label>
+        <input type="text" id="fname4" name="fname" placeholder="First Name">
+
+        <label for="lname4">Last Name</label>
+        <input type="text" id="lname4" name="lname" placeholder="Last Name">
+
+        <label for="date4">Date</label>
+        <input type="text" id="date4" name="date" placeholder="Month XX, 20XX">
+
+        <label for="email4">Title of Story</label>
+        <input type="text" id="email4" name="email" placeholder="Story Title">
+
+        <label for="story4">Story</label>
+        <input type="text" id="story4" name="story" placeholder="Write Story">
+
+        <input type="submit" value="SUBMIT" class = "submit">
+    </form>
+
+    <footer class = "hidden">
+        <div class="container">
+            <p id="newbtn1">
+                <a class = "footertext" id = "footertextfood">Food</a>
+                <img src = "images/1.1.png" alt = "girlfood" class = "footerimg" id = "girlfooterfood">
+            </p>
+        </div>
+
+        <div class="container">
+            <p id="newbtn2">
+                <a class = "footertext" id = "footertextart">Art</a>
+                <img src = "images/2.1.png" alt = "girlart" class = "footerimg" id = "girlfooterart">
+            </p>
+        </div>
+
+        <div class="container">
+            <p id="newbtn3">
+                <a class = "footertext" id = "footertextwar">War</a>
+                <img src = "images/3.1.png" alt = "girlwar" class = "footerimg" id = "girlfooterwar">
+            </p>
+        </div>
+
+        <div class="container">
+            <p id="newbtn4">
+                <a class = "footertext" id = "footertextghosts">Ghosts</a>
+                <img src = "images/4.1.png" alt = "girlghost" class = "footerimg" id = "girlfooterghost"> 
+            </p>
+        </div>
+
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
