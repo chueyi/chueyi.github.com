@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: none;
+}
+
+main {
+    background-color: pink;
+    filter: hue-rotate(360deg);
+    animation: main 12s infinite linear;
+}
+
+/* @keyframes main {
+    0% {
+        background-color: yellow;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        background-color: yellow;
+        filter: hue-rotate(360deg);
+    }
+} */
+
+@keyframes main {
+    0% {
+        background-color: yellow;
+        filter: hue-rotate(0deg);
+    }
+    /* 8% {
+        filter: hue-rotate(360deg);
+    }
+    16% {
+        filter: hue-rotate(60deg);
+    }
+    24% {
+        filter: hue-rotate(90deg);
+    }
+    32% {
+        filter: hue-rotate(120deg);
+    }
+    40% {
+        filter: hue-rotate(150deg);
+    }
+    48% {
+        filter: hue-rotate(180deg);
+    } */
+    100% {
+        filter: hue-rotate(3600deg);
+    }
+}
+
+#blackscreen {
+    position: absolute;
+    width: 1800px;
+    background-color: white;
+    animation: blackscreen 12s infinite linear;
+}
+
+@keyframes blackscreen {
+    0%{
+        height: 1000px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
