@@ -24,24 +24,6 @@ main {
         background-color: yellow;
         filter: hue-rotate(0deg);
     }
-    /* 8% {
-        filter: hue-rotate(360deg);
-    }
-    16% {
-        filter: hue-rotate(60deg);
-    }
-    24% {
-        filter: hue-rotate(90deg);
-    }
-    32% {
-        filter: hue-rotate(120deg);
-    }
-    40% {
-        filter: hue-rotate(150deg);
-    }
-    48% {
-        filter: hue-rotate(180deg);
-    } */
     100% {
         filter: hue-rotate(3600deg);
     }
@@ -50,16 +32,29 @@ main {
 #blackscreen {
     position: absolute;
     width: 1800px;
+    top: 0;
+    bottom: 0;
+    right: 0;
     background-color: white;
     animation: blackscreen 12s infinite linear;
 }
 
-@keyframes blackscreen {
+/* @keyframes blackscreen {
     0%{
         height: 1000px;
     }
     100% {
         height: 0px;
+    }
+} */
+
+
+@keyframes blackscreen {
+    0%{
+        width: 1500px;
+    }
+    100% {
+        width: 0px;
     }
 }
 
