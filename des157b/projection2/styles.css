@@ -3,6 +3,7 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
+    animation: main 6s infinite;
 }
 
 #leftside {
@@ -10,7 +11,7 @@ main {
     top: 50%;
     position: fixed;
     margin: auto;
-    animation: left 5s infinite;
+    animation: left 6s infinite;
 }
 
 #rightside {
@@ -18,32 +19,37 @@ main {
     position: fixed;
     margin: auto;
     right: 0;
-    animation: right 5s infinite;
+    animation: right 6s infinite;
 }
 
 .rainbowbar {
     background-color: yellow;
-    animation: rainbow 5s infinite;
     height: 10px;
 }
 
-/* @keyframes rainbow {
+@keyframes main {
     0% {
-        filter: hue-rotate(0deg);
+        background-color: black;
+    }
+    90% {
+        background-color: black;
     }
     100% {
-        filter: hue-rotate(3600deg);
+        background-color: white;
     }
-} */
+}
 
 @keyframes left {
     0% {
         width: 0%;
         filter: hue-rotate(0deg);
     }
-    100% {
+    90% {
         width: 50%;
         filter: hue-rotate(3600deg);
+    }
+    100% {
+        width: 50%;
     }
 }
 
@@ -52,8 +58,11 @@ main {
         width: 0%;
         filter: hue-rotate(0deg);
     }
-    100% {
+    90% {
         width: 50%;
         filter: hue-rotate(3600deg);
+    }
+    100% {
+        width: 50%;
     }
 }
