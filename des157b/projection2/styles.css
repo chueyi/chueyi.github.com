@@ -1,0 +1,59 @@
+main {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#leftside {
+    left: 0;
+    top: 50%;
+    position: fixed;
+    margin: auto;
+    animation: left 5s infinite;
+}
+
+#rightside {
+    top: 50%;
+    position: fixed;
+    margin: auto;
+    right: 0;
+    animation: right 5s infinite;
+}
+
+.rainbowbar {
+    background-color: yellow;
+    animation: rainbow 5s infinite;
+    height: 10px;
+}
+
+/* @keyframes rainbow {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(3600deg);
+    }
+} */
+
+@keyframes left {
+    0% {
+        width: 0%;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        width: 50%;
+        filter: hue-rotate(3600deg);
+    }
+}
+
+@keyframes right {
+    0% {
+        width: 0%;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        width: 50%;
+        filter: hue-rotate(3600deg);
+    }
+}
