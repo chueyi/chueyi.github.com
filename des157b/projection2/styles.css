@@ -22,7 +22,7 @@ main {
     animation: right 6s infinite;
 }
 
-#leftblackside {
+/* #leftblackside {
     background-color: black;
     width: 100%;
     top: 0;
@@ -30,11 +30,44 @@ main {
     position: fixed;
     margin: auto;
     animation: leftblack 6s infinite;
-}
+} */
 
 .rainbowbar {
     background-color: yellow;
     height: 100%;
+}
+
+#yellowsquare {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: yellow;
+    z-index: 5;
+    animation: yellowsquare 6s infinite;
+}
+
+@keyframes yellowsquare {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    89% {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
 }
 
 @keyframes left {
@@ -44,9 +77,14 @@ main {
     }
     90% {
         width: 50%;
+        opacity: 1;
         filter: hue-rotate(3600deg);
     }
+    95% {
+        opacity: 0;
+    }
     100% {
+        opacity: 0;
         width: 50%;
         filter: hue-rotate(3600deg);
     }
@@ -59,14 +97,19 @@ main {
     }
     90% {
         width: 50%;
+        opacity: 1;
         filter: hue-rotate(3600deg);
+    }
+    95% {
+        opacity: 0;
     }
     100% {
         width: 50%;
+        opacity: 0;
         filter: hue-rotate(3600deg);
     }
 }
-
+/* 
 @keyframes leftblack {
     0% {
         height: 0%;
@@ -80,4 +123,4 @@ main {
     100% {
         height: 100%;
     }   
-}
+} */
