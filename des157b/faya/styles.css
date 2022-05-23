@@ -366,6 +366,65 @@ h1 {
 
 
 
+/* HELP */
+
+#help {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#help-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+
+
+/* CONTACT */
+
+#contact {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#contact-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+
 /* LOADING SCREEN */
 #leftside {
     position: fixed;

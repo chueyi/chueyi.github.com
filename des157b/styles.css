@@ -3,7 +3,6 @@
 }
 
 body {
-    /* background: linear-gradient(0deg, rgba(147,219,255,1) 0%, rgba(255,255,255,1) 50%); */
     background: rgb(198, 255, 215);
     color: black;
     transition: all 2s ease;
@@ -12,7 +11,6 @@ body {
 }
 
 body.switch {
-    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,76,138,1) 50%); */
     background:rgb(0, 76, 138);
     color: white;
 }

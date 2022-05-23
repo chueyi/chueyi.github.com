@@ -1,0 +1,505 @@
+body {
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+main {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+/* NAV */
+
+#logo-head {
+    position: fixed;
+    left: 4%;
+    top: 5%;
+    transition: all 500ms;
+}
+
+#logo-head:hover {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+#title {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+#logo {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 6;
+    animation: logo-fade 2s linear;
+}
+
+#leftsection {
+    width: 20%;
+    height: 100%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#bluegradient1 {
+    background: linear-gradient(0deg, rgba(0,53,150,1) 0%, rgba(93,223,255,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+
+#bluegradient2 {
+    background: linear-gradient(0deg, rgb(0, 98, 137) 0%, rgba(86,255,237,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+
+#redgradient {
+    background: linear-gradient(0deg, rgba(150,0,0,1) 0%, rgba(255,192,93,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+
+#greengradient {
+    background: linear-gradient(0deg, rgba(0,150,59,1) 0%, rgba(168,255,93,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+
+#nav {
+    position: fixed;
+    left: 2%;
+    top: 20%;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.nav-p {
+    display: inline-block;
+    color: white;
+    padding-top: 25px;
+}
+
+.nav-p:hover {
+    cursor: pointer;
+}
+
+.nav-p::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s;
+}
+
+.nav-p:hover::after {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/* HOME */
+
+#homepage {
+    justify-content: space-evenly;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.homepage-p {
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#intro-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#story-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#goals-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+h1 {
+    color: rgb(18, 148, 255);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.writing {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.allbuttons {
+    width: 120px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(27, 95, 255);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+.allbuttons:hover {
+    cursor: pointer;
+}
+
+.buttontext {
+    float: right;
+}
+
+.buttontext2 {
+    float: left;
+}
+
+
+
+
+/* CHARACTERS */
+
+#characterpanel {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.panel {
+    overflow: hidden;
+    margin-top: 6%;
+    background-color: none;
+    width: 30%;
+    height: 80%;
+}
+
+.characterimg {
+    width: 175%;
+    display: block;
+    transition: all 0.4s;
+}
+
+.characterimg:hover {
+    cursor: pointer;
+}
+
+#farmertext {
+    position: absolute;
+    margin: auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 32%;
+    width: 27%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    color: rgba(0,150,59,1) ;
+}
+
+#farmers {
+    margin-left: -40%;
+    filter: opacity(1);
+}
+
+#farmers:hover {
+    filter: opacity(0.1);
+    transform: translateY(-12px);
+}
+
+#water {
+    margin-left: -40%;
+    filter: opacity(1);
+}
+
+#water:hover {
+    filter: opacity(0.1);
+    transform: translateY(-12px);
+}
+
+#watertext {
+    position: absolute;
+    margin: auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 30%;
+    width: 27%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    color: rgba(0,53,150,1);
+}
+
+#drought {
+    margin-left: -35%;
+    filter: opacity(1);
+}
+
+#drought:hover {
+    filter: opacity(0.1);
+    transform: translateY(-12px);
+}
+
+#droughttext {
+    position: absolute;
+    margin: auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 30%;
+    width: 27%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    color: rgba(150,0,0,1);
+}
+
+
+.paneltext {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 45%;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    z-index: 5;
+}
+
+
+
+
+
+/* HELP */
+
+#help {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#help-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+
+
+/* CONTACT */
+
+#contact {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#contact-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+
+/* LOADING SCREEN */
+#leftside {
+    position: fixed;
+    background: black;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    animation: leftside 2s linear;
+    z-index: 5;
+}
+
+#rightside {
+    position: fixed;
+    background: black;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    animation: rightside 2s linear;
+    z-index: 5;
+}
+
+@keyframes leftside {
+    0% {
+        width: 50%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes rightside {
+    0% {
+        width: 50%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes logo-fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
