@@ -17,7 +17,11 @@
         document.getElementById('farmercharacter1').className = 'hidden'
         document.getElementById('farmercharacter2').className = 'hidden'
         document.getElementById('droughtcharacter').className = 'hidden'
+        clip.pause();
+        clip.muted = true;
     }
+
+    let clip = document.querySelector('.video');
 
     document.getElementById('button1').addEventListener('click', function(event){
         event.preventDefault();
@@ -170,6 +174,18 @@
         document.getElementById('greengradient').className = 'hidden';
         document.getElementById('farmertext').className = 'hidden'
     });
+
+    clip.addEventListener('mouseover', function(event){
+        event.preventDefault();
+        clip.play();
+        clip.muted = false;
+    })
+
+    clip.addEventListener('mouseout', function(event){
+        event.preventDefault();
+        clip.pause();
+        clip.muted = true;
+    })
     
 
 })();

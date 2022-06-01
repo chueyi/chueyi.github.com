@@ -162,7 +162,7 @@ main {
     width: 100%;
 }
 
-ul {
+#nav-ul {
     position: fixed;
     right: 8%;
     width: 50%;
@@ -521,10 +521,10 @@ h1 {
 
 #help {
     position: fixed;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    left: 10%;
-    top: 6%;
+    left: 4%;
+    top: 15%;
     bottom: 0;
     background-color: #ececec;
     transition-property: opacity, visibility;
@@ -534,18 +534,30 @@ h1 {
 
 #help-p {
     position: absolute;
-    font-weight: 500;
-    width: 60%;
-    height: 60%;
-    margin-top: 10%;
-    margin-left: 5%;
+    font-weight: 300;
+    width: 70%;
+    height: 100%;
+    left: 10%;
+    top: 6%;
+    bottom: 0;
     transition-property: opacity, visibility;
     transition-duration: 300ms;
     transition-timing-function: ease;
 }
 
+#help-ul {
+    width: 70%;
+    font-size: 20px;
+    line-height: 40px;
+}
 
-
+#commercialvideo {
+    position: fixed;
+    right: 10%;
+    top: 15%;
+    width: 305px;
+    height: 597px;
+}
 
 
 
@@ -573,6 +585,21 @@ h1 {
     transition-property: opacity, visibility;
     transition-duration: 300ms;
     transition-timing-function: ease;
+}
+
+#facebook {
+    position: absolute;
+    left: -5%;
+}
+
+#instagram {
+    position: absolute;
+    left: 23%;
+}
+
+#youtube {
+    position: absolute;
+    left: 45%;
 }
 
 

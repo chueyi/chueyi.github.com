@@ -14,14 +14,14 @@
 <body>
     <main>
 
-        <div id = "leftside"></div>
+        <!-- <div id = "leftside"></div>
         <div id = "rightside"></div>
         <div id = "characterslide">
             <img src = "images/farmercharacter2.2.png" alt = "farmercharacter2.2" id = "farmercharacter2-2" class = "openingimg">
             <img src = "images/farmercharacter1.2.png" alt = "farmercharacter1.2" id = "farmercharacter1-2" class = "openingimg">
             <img src = "images/watercharacter2.png" alt = "watercharacter2" id = "watercharacter2" class = "openingimg">
             <img src = "images/droughtcharacter2.png" alt = "droughtcharacter2" id = "droughtcharacter2" class = "openingimg">
-        </div>
+        </div> -->
 
         <section id = "leftsection">
             <div id = "bluegradient1"></div>
@@ -32,7 +32,7 @@
             <a href = "index.html"><img src = "images/logo1.png" alt = "logo" width= "75" height= "75" id = "logo-head"></a>
 
             <div id = "nav">
-                <ul>
+                <ul id = "nav-ul">
                     <li><p class = "nav-p" id = "link1">HOME</p></li>
                     <li><p class = "nav-p" id = "link2">THE ELEMENTS</p></li>
                     <li><p class = "nav-p" id = "link3">LET'S HELP </p></li>
@@ -99,7 +99,23 @@
         <div id = "help">
             <div id = "help-p">
                 <h1>Let's Help</h1>
-                    <p></p>
+                    <p><ul id = "help-ul">
+                        <li>Take 5 minute showers instead of 10 minute showers</li>
+                        <li>When shaving, plug the sink instead of running the water</li>
+                        <li>Water plants in the evening to lessen evaporation and preserve moisture</li>
+                        <li>Avoid letting lawn sprinklers excessively run long.</li>
+                        <li>Use mulch on your plants to reduce evaporation.</li>
+                        <li>Harvest rainwater and fog.</li>
+                        <li>Plant more trees to promote photosynthesis and improve air quality.</li>
+                        <li>Purchase from farmers markets to help local farmers - their produce is fresher anyway.</li>
+                    </ul></p>
+
+                    <video id="commercialvideo" class = "video" autoplay loop playsinline>
+                        <source src="media/commercial.webm" type="video/webm">
+                        <source src="media/commercial.mp4" type="video/mp4">
+                        <p>Your browser doesn't support HTML5 video. Here is a <a href="media/porter.mp4">link to the video</a>
+                            instead.</p>
+                    </video>
             </div>
         </div>
 
@@ -110,6 +126,12 @@
                         Address: 1234 Faya Street, Davis, CA<br>
                         Phone Number: (123) 456-7890<br>
                         Email: faya@gmail.com<br>
+                    </p>
+
+                    <p>
+                        <img src = "images/fb.png" alt = "facebooklogo" width="160" height="100" id = "facebook">
+                        <img src = "images/instagram.png" alt = "instagramlogo" width = "100" height = "100" id = "instagram">
+                        <img src = "images/youtube.png" alt = "youtubelogo" width="100" height="100" id = "youtube">
                     </p>
             </div>
     </main>
