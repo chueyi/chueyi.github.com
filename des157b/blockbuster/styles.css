@@ -2,7 +2,7 @@ body {
     font-family: eurostile-extended, sans-serif;
     font-weight: 900;
     font-style: normal;
-    background-color: darkred;
+    background-color: white;
 }
 
 nav {
@@ -82,6 +82,11 @@ button:hover {
 }
 
 #porterbox {
+  position: absolute;
+  top: 0;
+}
+
+#madeonbox {
   position: absolute;
   top: 0;
 }
@@ -338,8 +343,10 @@ footer {
 
 .hidden {
     visibility: hidden;
+    opacity: 0;
   }
 
 .showing {
+    opacity: 1;
     visibility: visible;
   }
