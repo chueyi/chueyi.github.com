@@ -1,0 +1,784 @@
+body {
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+main {
+    position: absolute;
+    background-color: #ececec;
+    width: 100%;
+    height: 100%;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+/* NAV */
+
+#logo-head {
+    position: fixed;
+    left: 14%;
+    top: 5%;
+    transition: all 500ms;
+    z-index: 5;
+}
+
+#logo-head:hover {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+#title {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+#logo {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 17;
+    animation: logo-fade 2s linear;
+}
+
+#leftsection {
+    width: 100%;
+    height: 100%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#bluegradient1 {
+    background: linear-gradient(90deg, rgb(0, 74, 210) 0%, rgba(93,223,255,1) 100%);
+    border: 5px solid #ececec;
+    border-radius: 20px;
+    box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.9), 
+    10px 10px 10px rgba(70,70,70, 0.2);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    top: 4%;
+    right: 10%;
+    width: 45%;
+    height: 6%;
+    position: absolute;
+    z-index: 5;
+}
+
+#bluegradient2 {
+    background: linear-gradient(90deg, rgb(0, 98, 137) 0%, rgba(86,255,237,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    border: 5px solid #ececec;
+    border-radius: 20px;
+    box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.9), 
+    10px 10px 10px rgba(70,70,70, 0.2);
+    top: 4%;
+    right: 10%;
+    width: 45%;
+    height: 6%;
+    position: absolute;
+    z-index: 5;
+}
+
+#redgradient {
+    background: linear-gradient(90deg, rgb(197, 39, 0) 0%, rgba(255,192,93,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    border: 5px solid #ececec;
+    border-radius: 20px;
+    box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.9), 
+    10px 10px 10px rgba(70,70,70, 0.2);
+    top: 4%;
+    right: 10%;
+    width: 45%;
+    height: 6%;
+    position: absolute;
+    z-index: 5;
+}
+
+#greengradient {
+    background: linear-gradient(90deg, rgb(0, 180, 72) 0%, rgba(168,255,93,1) 100%);
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    border: 5px solid #ececec;
+    border-radius: 20px;
+    box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.9), 
+    10px 10px 10px rgba(70,70,70, 0.2);
+    top: 4%;
+    right: 10%;
+    width: 45%;
+    height: 6%;
+    position: absolute;
+    z-index: 5;
+}
+
+#nav {
+    z-index: 10;
+    position: fixed;
+    float: right;
+    top: -0.5%;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.nav-p {
+    display: inline-block;
+    color: white;
+    padding-top: 25px;
+}
+
+.nav-p:hover {
+    cursor: pointer;
+}
+
+.nav-p::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s;
+}
+
+.nav-p:hover::after {
+    width: 100%;
+}
+
+#nav-ul {
+    position: fixed;
+    right: 8%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/* HOME */
+
+#homepage {
+    justify-content: space-evenly;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 6%;
+    bottom: 0;
+    background-color: #ececec;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.homepage-p {
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#intro-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 5%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#story-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 5%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#goals-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 5%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+h1 {
+    color: rgb(18, 148, 255);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+#h1-1 {
+    color: rgb(18, 148, 255);
+}
+
+#h1-2 {
+    color: rgb(97, 209, 0);
+}
+
+#h1-3 {
+    color: rgb(255, 165, 21);
+}
+
+.writing {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.allbuttons {
+    width: 120px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ececec;
+    color: rgb(18, 148, 255);
+    box-shadow: 
+    -8px -8px 10px rgba(255, 255, 255, 0.9), 
+    8px 8px 10px rgba(70,70,70, 0.3);
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    transition: 300ms all ease; 
+}
+
+.allbuttons:hover {
+    cursor: pointer;
+}
+
+.buttontext {
+    float: right;
+}
+
+.buttontext2 {
+    float: left;
+}
+
+#button1 {
+    color: rgb(97, 209, 0);
+}
+
+#button3{
+    color: rgb(255, 165, 21);
+}
+
+#button4 {
+    color: rgb(97, 209, 0);
+}
+
+#characterspot {
+    position:fixed;
+    right: 15%;
+    top: 30%;
+    z-index: 10;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#watercharacter {
+    animation: watermove 3s infinite;
+    position:fixed;
+    right: 15%;
+    top: 25%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#farmercharacter1 {
+    animation: farmermove1 3s infinite;
+    position: fixed;
+    right: 8%;
+    top: 25%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#farmercharacter2 {
+    animation: farmermove2 3s infinite;
+    position: fixed;
+    right: 20%;
+    top: 40%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#droughtcharacter {
+    animation: watermove 3s infinite;
+    position:fixed;
+    right: 15%;
+    top: 25%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+@keyframes watermove {
+    0% {
+        top: 25%;
+    }
+    50% {
+        top: 40%;
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+@keyframes farmermove1 {
+    0% {
+        top: 25%;
+    }
+    50% {
+        top: 40%;
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+@keyframes farmermove2 {
+    0% {
+        top: 40%;
+    }
+    50% {
+        top: 25%;
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+
+
+
+/* CHARACTERS */
+
+#characterpanel {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 40%;
+    bottom: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.panel {
+    display: flex;
+    overflow: hidden;
+    width: 25%;
+    height: 70%;
+    border-radius: 20px;
+    border: 10px solid #ececec;
+    box-shadow: 
+    -10px -10px 10px rgb(255, 255, 255), 
+    10px 10px 10px rgba(70,70,70, 0.3);
+}
+
+.characterimg {
+    width: 230%;
+    display: block;
+    transition: all 0.4s;
+}
+
+#farmertext {
+    position: absolute;
+    margin: auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 22%;
+    width: 23%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    color: rgba(0,150,59,1) ;
+}
+
+#farmers {
+    margin-left: -28%;
+    filter: opacity(1);
+}
+
+#farmers:hover {
+    filter: opacity(0.1);
+    transform: translateY(-12px);
+}
+
+#water {
+    margin-left: -25%;
+    filter: opacity(1);
+}
+
+#water:hover {
+    filter: opacity(0.1);
+    transform: translateY(-12px);
+}
+
+#watertext {
+    position: absolute;
+    margin: auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 20%;
+    width: 23%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    color: rgba(0,53,150,1);
+}
+
+#drought {
+    margin-left: -20%;
+    filter: opacity(1);
+}
+
+#drought:hover {
+    filter: opacity(0.1);
+    transform: translateY(-12px);
+}
+
+#droughttext {
+    position: absolute;
+    margin: auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 20%;
+    width: 23%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    color: rgba(150,0,0,1);
+}
+
+.paneltext {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 45%;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    z-index: 5;
+}
+
+
+
+
+
+
+/* HELP */
+
+#help {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 4%;
+    top: 15%;
+    bottom: 0;
+    background-color: #ececec;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#help-p {
+    position: absolute;
+    font-weight: 300;
+    width: 70%;
+    height: 100%;
+    left: 10%;
+    top: 6%;
+    bottom: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#help-ul {
+    width: 70%;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#commercialvideo {
+    position: fixed;
+    right: 10%;
+    top: 15%;
+    width: 305px;
+    height: 597px;
+}
+
+
+
+/* CONTACT */
+
+#contact {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 6%;
+    bottom: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#contact-p {
+    position: absolute;
+    font-weight: 500;
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 5%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#facebook {
+    position: absolute;
+    left: -5%;
+}
+
+#instagram {
+    position: absolute;
+    left: 23%;
+}
+
+#youtube {
+    position: absolute;
+    left: 45%;
+}
+
+
+
+
+
+/* LOADING SCREEN */
+#leftside {
+    position: fixed;
+    background: black;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    animation: leftside 3s linear;
+    z-index: 15;
+}
+
+#rightside {
+    position: fixed;
+    background: black;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    right: 0;
+    animation: rightside 3s linear;
+    z-index: 15;
+}
+
+#characterslide {
+    display: flex;
+    position: fixed;
+    top: 25%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    animation: characterslide 3s linear;
+}
+
+.openingimg {
+    height: 50%;
+    width: 50%;
+}
+
+#farmercharacter2-2 {
+    animation: farm2-2 3s linear;
+    opacity: 0;
+}
+
+#farmercharacter1-2 {
+    animation: farm1-2 3s linear;
+    opacity: 0;
+}
+
+#watercharacter2 {
+    animation: water2 3s linear;
+    opacity: 0;
+}
+
+#droughtcharacter2 {
+    animation: drought2 3s linear;
+    opacity: 0;
+}
+
+@keyframes characterslide{
+    0% {
+        z-index: 30;
+    }
+    99% {
+        z-index: 30;
+    }
+    100% {
+        z-index: 0;
+    }
+}
+
+@keyframes farm2-2 {
+    0% {
+        z-index: 30;
+    }
+    15% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes farm1-2 {
+    0% {
+        z-index: 30;
+    }
+    10% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes water2 {
+    0% {
+        z-index: 30;
+    }
+    25% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes drought2 {
+    0% {
+        z-index: 30;
+    }
+    45% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes leftside {
+    0% {
+        height: 50%;
+    }
+    70% {
+        height: 50%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes rightside {
+    0% {
+        height: 50%;
+    }
+    70% {
+        height: 50%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes logo-fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,163 +1,189 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background: rgb(198, 255, 215);
-    color: black;
-    transition: all 2s ease;
-    font-family: lores-12, sans-serif;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
-body.switch {
-    background:rgb(0, 76, 138);
-    color: white;
+main {
+    margin-top: 4%;
+    padding-bottom: 6%;
 }
 
-#container {
-    position: relative;
-    width: 100%;
-    max-width: 1366px;
-    /* make sure the columns don't get too small and text stays readable */
-    min-width: 900px;
-    margin: 1em auto;
-    padding-top: 2em;
-}
-
-header {
-    font-size: 20px;
-    margin: 0 auto 2em auto;
-    color: rgb(250, 157, 166);
-}
-
-#headertitles {
-    display: inline-block;
-}
-
-#name {
-    display: inline;
-    float: left;
-    margin-left: 133px;
-}
-
-header.switch {
-    color: rgb(255, 201, 54);
-}
-
-#des157b {
-    display: inline;
-    float: right;
-    margin-right: 125px;
-}
-
-.titles {
-    font-size: 30px;
-    filter: drop-shadow(0px 3px rgb(183, 5, 50));
-    font-weight: 800;
-    letter-spacing: 3px;
-}
-
-#banner {
-    background-image: url("images/morning.jpg");
-    position: relative;
+#top {
+    width: 70%;
     display: flex;
-    width: 1100px;
-    height: 250px;
+    justify-content: space-between;
     margin: auto;
+    border-bottom: solid 0.2vw rgb(255, 155, 150);
+}
+
+#workbox {
+    margin: auto;
+    margin-right: 0%;
+}
+
+.worklinks {
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-left: -5px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    border-left: solid 0.2vw rgb(255, 155, 150);
+    transition: ease 300ms;
+}
+
+#tab-illustration {
+    border-right: solid 0.2vw rgb(255, 155, 150);
+}
+
+.worklinks:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 155, 150);
+}
+
+h1 {
+    color: black;
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+}
+
+#box {
+    margin: auto;
+    padding-bottom: 3vw;
+    height: auto;
+    max-width: 80%;
+    animation: open 1s ease;
     overflow: hidden;
 }
 
-#banner.switch {
-    background-image: url("images/night.jpg");
-    color: rgb(235, 235, 235);
-    transition: all 1s ease;
+/* @keyframes open {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+} */
+
+img {
+    max-width: 90%;
+    height: auto;
+    opacity: 1;
+    transition: ease 300ms;
 }
 
-main {
+img:hover {
+    opacity: 0.5;
+}
+
+.imgtext {
+    font-size: 1.2vw;
+    padding-bottom: 10px;
+}
+
+ol {
+    margin-left: 5%;
+    list-style-type: none;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
-main section {
-    width: 20%;
-    border-left: 5px rgb(250, 157, 166) solid;
-    padding: 30px;
-}
-
-main section.switch{
-    border-left: 5px rgb(255, 201, 54) solid;
+li {
+    flex: 100%;
+    padding-top: 80px;
 }
 
 a {
-    text-decoration: none;
-    transition: all 100ms;
-}
-
-ol, ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-section li {
-    padding-left: 1.2em;
-}
-
-section h3 {
-    background: rgb(250, 157, 166);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-}
-
-section.switch h3 {
-    background: rgb(255, 201, 54);
-}
-
-section a {
-    font-weight: 800;
-    line-height: 1.1em;
-    display: inline-block;
-    padding: 10px;
     color: black;
+    text-decoration: none;
+    position: relative;
 }
 
-section a:hover {
-    color: rgb(250, 157, 166);
-    transform: scale(1.25) translateY(-5px) translateX(10px);
+#bottomlogo {
+    visibility: hidden;
 }
 
-section.switch a {
-    color: white;
-}
 
-section.switch a:hover {
-    color: rgb(255, 201, 54);
-}
+@media only screen and (max-width: 800px) {
 
-button {
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    padding: 12px;
-    transition: all 0.5s ease;
-    background: rgba(0, 0, 0, 0.3);
-    border: 5px transparent;
-    color: white;
-}
+    main {
+        margin-bottom: 5%;
+    }
 
-button:hover {
-    cursor: pointer;
-    background-image: url("images/nightbutton.jpg");
-}
+    #toplogo {
+        visibility: hidden;
+    }
 
-button.switch {
-    background: rgba(255, 255, 255, 0.3);
-    transition: all 0.5s ease;
-}
+    #bottomlogo {
+        font-size: 4vw;
+        visibility: visible;
+        margin-top: 12%;
+    }
 
-button:hover.switch {
-    background-image: url("images/morningbutton.jpg");
+    #tab-web {
+        border-right: 0;
+    }
+
+    #tab-graphics {
+        border-right: 0;
+    }
+
+    ol {
+        margin: auto;
+        width: 100%;
+    }
+
+    li {
+        flex: 100%;
+        padding-top: 40px;
+    }
+
+    #workbox {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .worklinks {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        color: black;
+        font-size: 3vw;
+        border: solid 0.4vw rgb(255, 155, 150);
+        padding: 25px;
+    }
+
+    .imgtext {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    #top {
+        width: 100%;
+        display: block;
+    }
+
+    #box {
+        max-width: 100%;
+        margin-top: 10%;
+    }
+
 }
