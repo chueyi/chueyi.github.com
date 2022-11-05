@@ -8,12 +8,11 @@ body {
 }
 
 main {
-    margin-top: 4%;
     padding-bottom: 6%;
 }
 
 #top {
-    width: 70%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -22,7 +21,7 @@ main {
 
 #workbox {
     margin: auto;
-    margin-right: 0%;
+    margin-right: 0;
 }
 
 .worklinks {
@@ -47,31 +46,38 @@ main {
     background-color: rgb(255, 155, 150);
 }
 
-h1 {
+h1, h2{
     color: black;
     font-family: scotch-display, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
-#box {
+#title-squidgame {
+    color: rgb(255, 54, 104);
+}
+
+#title-forus {
+    color: rgb(71, 185, 36);
+}
+
+#title-faya {
+    color: rgb(21, 97, 219);
+}
+
+#title-horrorstory {
+    color: rgb(222, 0, 0);
+}
+
+#container {
     margin: auto;
     padding-bottom: 3vw;
     height: auto;
     max-width: 80%;
-    animation: open 1s ease;
     overflow: hidden;
 }
 
-/* @keyframes open {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 75%;
-    }
-} */
 
 img {
     max-width: 90%;
@@ -84,11 +90,6 @@ img:hover {
     opacity: 0.5;
 }
 
-.imgtext {
-    font-size: 1.2vw;
-    padding-bottom: 10px;
-}
-
 ol {
     margin-left: 5%;
     list-style-type: none;
@@ -96,7 +97,8 @@ ol {
     flex-wrap: wrap;
 }
 
-li {
+.boxes-web {
+    display: flex;
     flex: 100%;
     padding-top: 80px;
 }
@@ -107,15 +109,65 @@ a {
     position: relative;
 }
 
+.descriptions {
+    width: 100%;
+    padding-right: 5%;
+    line-height: 1.8vw;
+}
+
 #bottomlogo {
     visibility: hidden;
 }
+
+.titles-web {
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .boxes-web {
+        display: block;
+    }
+
+    .descriptions {
+        line-height: 2.9vw;
+    }
+
+    img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+}
+
+    .descriptions {
+        max-width: 60%;
+        margin: auto;
+        padding-bottom: 4vw;
+    }
+
+    .explanations {
+        margin: auto;
+        display: block;
+    }
 
 
 @media only screen and (max-width: 800px) {
 
     main {
         margin-bottom: 5%;
+    }
+
+    .boxes-web {
+        width: 100%;
+        margin: auto;
+        display: block;
+        flex: 100%;
+        padding-top: 40px;
     }
 
     #toplogo {
@@ -128,6 +180,10 @@ a {
         margin-top: 12%;
     }
 
+    #tab-home {
+        border-right: 0;
+    }
+
     #tab-web {
         border-right: 0;
     }
@@ -136,14 +192,9 @@ a {
         border-right: 0;
     }
 
-    ol {
-        margin: auto;
-        width: 100%;
-    }
-
-    li {
-        flex: 100%;
-        padding-top: 40px;
+    #container {
+        max-width: 100%;
+        height: auto;
     }
 
     #workbox {
@@ -162,9 +213,13 @@ a {
         height: 100%;
         width: 100%;
         color: black;
-        font-size: 3vw;
+        font-size: 1.7vw;
         border: solid 0.4vw rgb(255, 155, 150);
-        padding: 25px;
+        padding: 22px;
+    }
+
+    img {
+        max-width: 100%;
     }
 
     .imgtext {
@@ -172,7 +227,6 @@ a {
     }
 
     h1 {
-        font-size: 100%;
         text-align: center;
     }
 
@@ -184,6 +238,24 @@ a {
     #box {
         max-width: 100%;
         margin-top: 10%;
+    }
+
+    .descriptions {
+        max-width: 80%;
+        margin: auto;
+        height: auto;
+        line-height: 5vw;
+        padding-bottom: 4vw;
+    }
+
+    .explanations {
+        margin: auto;
+        display: block;
+    }
+
+    .titles-web {
+        font-size: 5vw;
+        text-align: center;
     }
 
 }
