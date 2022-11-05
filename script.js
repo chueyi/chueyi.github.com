@@ -1,69 +1,48 @@
 (function() {
     'use strict';
+    console.log('reading js');
 
-    const button = document.querySelector('button');
-    const body = document.querySelector('body');
-    const banner = document.querySelector('#banner');
-    const header = document.querySelector('header');
-    const sections = document.querySelectorAll('section');
-    const buttonweb = document.querySelector('button-web');
-    let mode = 'dark';
 
-    const switchSound  = new Audio('sound/switch.mp3');
+    window.onload = function(){
+        document.getElementById("webdesign").className = 'hidden';
+        document.getElementById("illustration").className = 'hidden';  
+    }
 
-    button.addEventListener('click', function() {
-        if (mode === 'dark') {
-            body.className = 'switch';
-            banner.className = 'switch';
-            button.className = 'switch';
-            header.className = 'switch';
-            for (const section of sections) {
-                section.className = 'switch';
-            }
-            mode = 'light';
-        } else {
-            body.removeAttribute('class');
-            banner.removeAttribute('class');
-            button.removeAttribute('class');
-            header.removeAttribute('class');
-            for (const section of sections) {
-                section.removeAttribute('class');
-            }
-            mode = 'dark'
-        }
-        switchSound.play();
+    document.getElementById('toplogo').addEventListener('click', function(event){
+        event.preventDefault();
+        location.reload();
     })
 
-    document.getElementById('button-web').addEventListener('click', function(event){
+    document.getElementById('tab-home').addEventListener('click', function(event){
         event.preventDefault();
-        document.querySelector('#illustration').className = 'shrink'
-        document.querySelector('#graphicdesign').className = 'shrink'   
-        document.querySelector('#nav-web').className = 'showing'
-        document.querySelector('#nav-illustration').className = 'hidden'
-        document.querySelector('#nav-graphicdesign').className = 'hidden'
-        document.querySelector('#webdesign').className = 'expand'
-    });
+        document.getElementById("webdesign").className = 'hidden';
+        document.getElementById("illustration").className = 'hidden';
+        document.getElementById("boxill1").className = 'hidden';
+        document.getElementById("boxill2").className = 'hidden';
+    })
 
-    document.getElementById('button-illustration').addEventListener('click', function(event){
+    document.getElementById('tab-web').addEventListener('click', function(event){
         event.preventDefault();
-        document.querySelector('#nav-web').className = 'hidden'
-        document.querySelector('#nav-illustration').className = 'showing'
-        document.querySelector('#nav-graphicdesign').className = 'hidden'
-        document.querySelector('#webdesign').className = 'shrink'
-        document.querySelector('#illustration').className = 'expand'
-        document.querySelector('#graphicdesign').className = 'shrink'
-        document.querySelector('#picture1').className = 'expand-picture'
-        document.querySelector('#picture2').className = 'expand-picture'
-    });
+        document.getElementById("webdesign").className = 'showing';
+        document.getElementById("illustration").className = 'hidden'; 
+        document.getElementById("boxill1").className = 'hidden';
+        document.getElementById("boxill2").className = 'hidden';
+    })
 
-    document.getElementById('button-graphicdesign').addEventListener('click', function(event){
+    document.getElementById('tab-graphics').addEventListener('click', function(event){
         event.preventDefault();
-        document.querySelector('#nav-web').className = 'hidden'
-        document.querySelector('#nav-illustration').className = 'hidden'
-        document.querySelector('#nav-graphicdesign').className = 'showing'
-        document.querySelector('#webdesign').className = 'shrink'
-        document.querySelector('#illustration').className = 'shrink'
-        document.querySelector('#graphicdesign').className = 'expand'
-    });
+        document.getElementById("webdesign").className = 'hidden';
+        document.getElementById("illustration").className = 'hidden';
+        document.getElementById("boxill1").className = 'hidden';
+        document.getElementById("boxill2").className = 'hidden';
+    })
+
+    document.getElementById('tab-illustration').addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById("webdesign").className = 'hidden';
+        document.getElementById("illustration").className = 'showing';
+        document.getElementById("boxill1").className = 'showing';
+        document.getElementById("boxill2").className = 'showing';
+    })
 
 })()

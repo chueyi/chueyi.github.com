@@ -1,0 +1,331 @@
+body {
+    font-family: eurostile-extended, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    z-index: 10;
+    color: white;
+}
+
+a {
+  z-index: 10;
+  justify-content: space-evenly;
+}
+
+button {
+  z-index: 10;
+  border: 4px solid transparent;
+  font-weight: 900;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: yellow;
+  animation: buttonhover 800ms infinite linear;
+}
+
+@keyframes buttonhover {
+  0% {
+    filter: hue-rotate(0deg);
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+  }
+75% {
+    outline: 4px solid rgba(255, 255, 255, 1);
+  }
+100% {
+  filter: hue-rotate(720deg);
+  outline: 8px solid rgba(255, 255, 255, 0.1);
+}
+}
+
+.video {
+  position: fixed;
+  right: -20%;
+  bottom: -10%;
+  display: block;
+  min-width: 100%;
+  min-width: 1366px;
+}
+
+@keyframes huechange {
+  from {
+      filter: hue-rotate(0deg);
+  }
+  to {
+      filter: hue-rotate(4320deg);
+  }
+}
+
+#blackoverlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  top: -40px;
+  margin: auto;
+  margin-top: 40px;
+  animation: info 20s linear infinite;
+}
+
+#madeonbox {
+  position: absolute;
+  top: 0;
+}
+
+
+#info {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 4px solid yellow;
+  border-radius: 30px;
+  height: 520px;
+  width: 70%;
+  left: 50%;
+  margin: auto;
+  margin-top: 5%;
+  animation: info 20s linear infinite;
+}
+
+.closer {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  animation: closeanimate 1.5s ease infinite;
+}
+
+.headers {
+  border-bottom: 4px solid white;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+
+.infotextbox {
+  color: white;
+  margin: 50px;
+}
+
+.infotext {
+  font-family: eurostile, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-right: 60px;
+}
+
+.infolinks {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.infolinks:link {
+  color: white;
+}
+
+.infolinks:hover {
+  cursor: pointer;
+  animation: infolinkshover 2s infinite linear;
+}
+
+.infolinks:visited {
+  color: white;
+}
+
+@keyframes info {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(1080deg);
+  }
+}
+
+@keyframes infolinkshover {
+  0% {
+    filter: hue-rotate(0deg);
+    color: yellow;
+  }
+100% {
+  color: yellow;
+  filter: hue-rotate(720deg);
+}
+}
+
+
+#loading {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: black;
+  animation: loadingscreen 10s linear;
+  visibility: hidden;
+}
+
+#warninglabel {
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  color: white;
+  z-index: 100;
+  animation: label 10s linear;
+  line-height: 50px;
+}
+
+#loadingbar {
+  background-color: orange;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 45%;
+  z-index: 101;
+  animation: loadingbar 10s linear;
+}
+
+@keyframes loadingbar {
+  0% {
+    width: 0px;
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  80% {
+    filter: hue-rotate(1080deg);
+    width: 100%;
+  }
+}
+
+@keyframes loadingscreen {
+  0% {
+    height: 100%;
+    visibility: visible;
+  }
+  90% {
+    height: 100%;
+    visibility: visible;
+    filter: hue-rotate(0deg);
+    background: black;
+  }
+  100% {
+    height: 0%;
+    background: yellow;
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes label {
+  0% {
+    opacity: 100%;
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  10% {
+    outline: 2px solid rgba(255, 255, 255, 1);
+  }
+  20% {
+    outline: 6px solid rgba(255, 255, 255, 0.0);
+  }
+
+  40% {
+    outline: 0px solid rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    outline: 2px solid rgba(255, 255, 255, 1);
+  }
+  60% {
+    outline: 6px solid rgba(255, 255, 255, 0.0);
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    outline: 10px solid rgba(255, 255, 255, 0.0);
+  }
+} 
+
+#marquee {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+    background-color: black;
+  }
+  
+.marqueebox {
+   position: absolute;
+   bottom: 0;
+   white-space: nowrap;
+   will-change: transform;
+   animation: marquee 30s linear infinite;
+  }
+
+.marqueetext {
+      color: white;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+footer {
+    position: absolute;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    bottom: 30%;
+  }
+
+.footerlinks {
+    margin-left: 450px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+.footerlinks:link {
+    color: white;
+  }
+
+.footerlinks:visited {
+    color: white;
+  }
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.showing {
+    opacity: 1;
+    visibility: visible;
+  }

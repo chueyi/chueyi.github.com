@@ -9,6 +9,9 @@ body {
 
 main {
     padding-bottom: 6%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
 }
 
 #top {
@@ -16,7 +19,23 @@ main {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    border-bottom: solid 0.2vw rgb(255, 155, 150);
+    border-bottom: solid 0.2vw black;
+}
+
+#toplogo:hover {
+    cursor: pointer;
+    animation: toplogohue infinite 2s;
+}
+
+@keyframes toplogohue {
+    0%{
+        color: yellow;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        color: yellow;
+        filter: hue-rotate(360deg);
+    }
 }
 
 #workbox {
@@ -54,6 +73,110 @@ h1, h2{
     font-size: 3vw;
 }
 
+h1 {
+    animation: fade-in 2s linear;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#container {
+    margin: auto;
+    padding-bottom: 3vw;
+    max-width: 80%;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#home {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+#hello {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10vw;
+    margin: auto;
+    display: block;
+    color: red;
+    animation: hello 3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -5;
+}
+
+@keyframes hello {
+    0% {
+        transform: translateY(0%);
+        opacity: 0;
+        visibility: visible;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30%);
+        visibility: hidden;
+    }
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    opacity: 1;
+    transition: ease 300ms;
+}
+
+/* WEB */
+
+.img-web {
+    max-width: 90%;
+    height: auto;
+    opacity: 1;
+    transition: ease 300ms;
+}
+
+.img-web:hover {
+    opacity: 0.3;
+    transform: scale(0.9);
+}
+
+.boxes-web {
+    display: flex;
+    flex: 100%;
+    padding-top: 50px;
+}
+
+#carefurus {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.titles-web {
+    text-align: left;
+}
+
+.descriptions {
+    width: 100%;
+    padding-right: 5%;
+    line-height: 1.8vw;
+}
+
 #title-squidgame {
     color: rgb(255, 54, 104);
 }
@@ -66,41 +189,39 @@ h1, h2{
     color: rgb(21, 97, 219);
 }
 
+#title-madeon {
+    color: rgb(22, 199, 234);
+}
+
 #title-horrorstory {
     color: rgb(222, 0, 0);
 }
 
-#container {
-    margin: auto;
-    padding-bottom: 3vw;
+#title-care {
+    color: rgb(255, 129, 27);
+}
+
+/* ILLUSTRATION */
+
+#illustration {
+    max-width: 100%;
     height: auto;
-    max-width: 80%;
-    overflow: hidden;
+    padding-top: 2%;
 }
 
+#damnill {
+    max-width: 100%;
+    display: flex;
+}
 
-img {
-    max-width: 90%;
+.img-ill {
+    padding: 5%;
+}
+
+#me {
+    max-width: 30%;
     height: auto;
-    opacity: 1;
-    transition: ease 300ms;
-}
-
-img:hover {
-    opacity: 0.5;
-}
-
-ol {
-    margin-left: 5%;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.boxes-web {
-    display: flex;
-    flex: 100%;
-    padding-top: 80px;
+    margin-top: 5%;
 }
 
 a {
@@ -109,24 +230,40 @@ a {
     position: relative;
 }
 
-.descriptions {
-    width: 100%;
-    padding-right: 5%;
-    line-height: 1.8vw;
-}
-
 #bottomlogo {
     visibility: hidden;
 }
 
-.titles-web {
-    text-align: left;
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
 }
 
 
 @media only screen and (max-width: 1100px) {
     .boxes-web {
         display: block;
+    }
+
+    #damnill {
+        max-width: 100%;
+        display: block;
+        margin-left:auto;
+    }
+
+    .boxes-ill {
+        display: block;
+    }
+    
+    #illustration {
+        max-width: 100%;
+    }
+
+    .img-ill {
+        padding: 0;
     }
 
     .descriptions {
@@ -169,6 +306,11 @@ a {
         flex: 100%;
         padding-top: 40px;
     }
+
+    .boxes-ill {
+        display: block;
+    }
+
 
     #toplogo {
         visibility: hidden;
@@ -224,6 +366,11 @@ a {
 
     .imgtext {
         font-size: 4vw;
+    }
+
+    #illustration {
+        padding-top: 50px;
+        display: block;
     }
 
     h1 {
