@@ -152,7 +152,7 @@ img {
 
 .img-web:hover {
     opacity: 0.3;
-    transform: scale(0.9);
+    transform: scale(1.05);
 }
 
 .boxes-web {
