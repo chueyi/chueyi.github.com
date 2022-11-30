@@ -7,6 +7,10 @@ body {
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     padding-bottom: 6%;
     transition-property: opacity, visibility;
@@ -15,53 +19,89 @@ main {
 }
 
 #top {
-    width: 95%;
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
+    z-index: 50;
     justify-content: space-between;
-    margin: auto;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(29,29,29,0) 75%);
 }
+
+#toplogo {
+    margin-left: 2%;
+    animation: letterrotate 1s ease-in-out;
+}
+
+#toplogo2 {
+    animation: letterrotate2 1.5s ease-in-out;
+}
+
+@keyframes letterrotate {
+    0% {
+        transform:rotateY(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform:rotateY(720deg);
+        opacity: 1;
+    }
+}
+
+@keyframes letterrotate2 {
+    0% {
+        transform:rotateY(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform:rotateY(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform:rotateY(720deg);
+        opacity: 1;
+    }
+}
+
 
 #toplogo:hover {
     cursor: pointer;
-    animation: toplogohue infinite 2s;
 }
 
-@keyframes toplogohue {
-    0%{
-        color: yellow;
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        color: yellow;
-        filter: hue-rotate(360deg);
-    }
+#toplogo2:hover {
+    cursor: pointer;
 }
 
 #workbox {
     margin: auto;
-    margin-right: 0;
+    margin-right: 2%;
 }
 
 .worklinks {
     display: inline-block;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-left: -5px;
-    padding: 8px;
+    padding: 6px;
     padding-left: 20px;
     padding-right: 20px;
     color: black;
-    border-left: solid 0.2vw rgb(255, 155, 150);
+    border-left: solid 0.15vw black;
     transition: ease 300ms;
 }
 
 #tab-illustration {
-    border-right: solid 0.2vw rgb(255, 155, 150);
+    border-right: solid 0.15vw black;
 }
 
 .worklinks:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(255, 155, 150);
+    background-color: black;
+}
+
+#me {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1, h2{
@@ -72,27 +112,30 @@ h1, h2{
     font-size: 3vw;
 }
 
-h1 {
-    animation: fade-in 2s linear;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.worktitles {
+    text-align: center;
+    font-size: 80px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 #container {
+    padding-top: 10%;
     margin: auto;
     padding-bottom: 3vw;
     max-width: 80%;
+}
+
+#webdesign {
     transition-property: opacity, visibility;
     transition-duration: 300ms;
     transition-timing-function: ease;
 }
+
 
 #home {
     max-width: 100%;
@@ -102,6 +145,9 @@ h1 {
 }
 
 #hello {
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     position: fixed;
     top: 40%;
     left: 0;
@@ -110,8 +156,8 @@ h1 {
     font-size: 10vw;
     margin: auto;
     display: block;
-    color: red;
-    animation: hello 3s ease;
+    color: black;
+    animation: hello 2s ease;
     opacity: 0;
     visibility: hidden;
     z-index: -5;
@@ -119,12 +165,19 @@ h1 {
 
 @keyframes hello {
     0% {
-        transform: translateY(0%);
+        transform: translateY(30%);
         opacity: 0;
         visibility: visible;
     }
+    20% {
+        transform: translateY(0%);
+    }
     50%{
         opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0%);
     }
     100% {
         opacity: 0;
@@ -143,14 +196,14 @@ img {
 /* WEB */
 
 .img-web {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    opacity: 1;
+    /* opacity: 1; */
     transition: ease 300ms;
 }
 
 .img-web:hover {
-    opacity: 0.3;
+    /* opacity: 0.4; */
     transform: scale(1.05);
 }
 
@@ -160,17 +213,12 @@ img {
     padding-top: 50px;
 }
 
-#carefurus {
-    width: 70%;
-    margin: auto;
-    display: block;
-}
-
 .titles-web {
     text-align: left;
 }
 
 .descriptions {
+    position: absolute;
     width: 100%;
     padding-right: 5%;
     line-height: 1.8vw;
@@ -200,17 +248,60 @@ img {
     color: rgb(255, 129, 27);
 }
 
+
+/* GRAPHIC DESIGN */
+
+#graphicdesign {
+    padding-top: 25%;
+}
+
+#carousel {
+    overflow-X: scroll;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+#scroll {
+    font-size: 18px;
+    animation: scroll 3s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+}
+
+
+
 /* ILLUSTRATION */
 
 #illustration {
     max-width: 100%;
     height: auto;
-    padding-top: 2%;
+    padding-top: 25%;
 }
 
 #damnill {
     max-width: 100%;
     display: flex;
+}
+
+#boxill1 {
+    margin-left: -2.5%;
+}
+
+#boxill2 {
+    margin-right: -2.5%;
 }
 
 .img-ill {
@@ -234,12 +325,16 @@ a {
 }
 
 .hidden {
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 .showing {
-    display: block;
+    /* display: block; */
+    opacity: 1;
 }
+
+
 
 
 @media only screen and (max-width: 1100px) {
@@ -281,6 +376,7 @@ a {
 }
 
     .descriptions {
+        /* position: static; */
         max-width: 60%;
         margin: auto;
         padding-bottom: 4vw;
@@ -290,6 +386,22 @@ a {
         margin: auto;
         display: block;
     }
+
+    /* #goup {
+        position: fixed;
+        right: 2%;
+        bottom: 50%;
+        color: black;
+        border: 2px solid black;
+        border-radius: 50px;
+        padding: 5px;
+        transition: ease 300ms;
+    }
+
+    #goup:hover {
+        color: white;
+        background: black;
+    } */
 
 
 @media only screen and (max-width: 800px) {
@@ -310,8 +422,16 @@ a {
         display: block;
     }
 
+    .descriptions {
+        position: static;
+    }
+
 
     #toplogo {
+        visibility: hidden;
+    }
+
+    #toplogo2 {
         visibility: hidden;
     }
 
@@ -343,10 +463,10 @@ a {
         justify-content: space-evenly;
         text-align: center;
         position: fixed;
-        top: 0;
         width: 100%;
         background-color: white;
         z-index: 10;
+        top: 0;
     }
 
     .worklinks {
@@ -354,9 +474,9 @@ a {
         height: 100%;
         width: 100%;
         color: black;
-        font-size: 1.7vw;
-        border: solid 0.4vw rgb(255, 155, 150);
-        padding: 22px;
+        font-size: 2vw;
+        border: solid 0.2vw black;
+        padding: 10px;
     }
 
     img {
@@ -365,6 +485,17 @@ a {
 
     .imgtext {
         font-size: 4vw;
+    }
+
+    #scroll {
+        margin: auto;
+        display: block;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #carousel {
+        margin-top: 2%;
     }
 
     #illustration {
@@ -408,5 +539,12 @@ a {
         text-align: center;
         margin: auto;
     }
+
+    #goup {
+        right: 1%;
+        bottom: 1%;
+    }
+
+
 
 }

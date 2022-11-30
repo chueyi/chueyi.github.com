@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/jla3yvs.css">
 
     <link href="styles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <script src="script.js" defer></script>
 
 </head>
@@ -19,31 +20,32 @@
 
         <nav>
             <div id = "top">
-                <h1 id = "toplogo">CV</h1>
+                <h1 id = "toplogo">C</h1>
+                <h1 id  ="toplogo2">V</h1>
                 <div id = "workbox">
-                    <p class = "worklinks" id = "tab-home">Home</p>
-                    <p class = "worklinks" id = "tab-web">Web & UI/UX</p>
-                    <p class = "worklinks" id = "tab-graphics">Graphic Design</p>
-                    <p class = "worklinks" id = "tab-illustration">Illustration</p>
+                    <a href = "#container" class = "worklinks" id = "tab-home">Home</a>
+                    <a href = "#web-title" class = "worklinks" id = "tab-web">Web & UI/UX</a>
+                    <a href = "#graphicdesign-title" class = "worklinks" id = "tab-graphics">Graphic Design</a>
+                    <a href = "#illustration-title" class = "worklinks" id = "tab-illustration">Illustration</a>
                 </div>
             </div>
         </nav>
 
         <div id="container">
-
             <div id = "home">
                 <!-- <img src = "images/portrait.jpeg" alt = "me" id = "me">  -->
-                <p id = "hello">Greetings!</p>
+                <p id = "hello">Christian V.</p>
             </div>
 
-            <div id = "webdesign" class = "hidden">
+            <div id = "webdesign">
                         <section>
+                            <h2 class = "worktitles" id = "web-title">Web & UI</h2>
                                 <div class = "boxes-web">
                                     <div class = "descriptions">
                                         <h3 class = "titles-web" id = "title-squidgame">Squid Game Mad Libs</h3>
                                           <p class = "explanations">Let's play a Mad Libs story generator that is themed after the popular Netflix show, "Squid Game"! You can select your own character which changes the script! It also features two bonus characters, Jungkook and V, from the renowned South-Korean boyband, BTS.</p>
                                     </div>
-                                    <a href="websites/squidgame/index.html">
+                                    <a href="websites/squidgame/index.html" target = "_blank">
                                         <img src = "images/squidgame.jpg" alt = "squidgamemadlibs" id = "squidgame" class = "img-web">
                                     
                                     </a>
@@ -54,7 +56,7 @@
                                         <h3 class = "titles-web" id = "title-forus">For Us</h3>
                                           <p class = "explanations">"For Us" is a haven for my people, the Hmong, to write their stories in four topics: food, art, war, and ghosts. These subjects are prominent in Hmong culture and should be shared with each other! The inspiration behind this was to preserve knowledge of the Hmong people because the population is small and losing its rich culture to contemporary Americanization.</p>
                                     </div>
-                                    <a href="websites/forus/index.html">
+                                    <a href="websites/forus/index.html" target = "_blank">
                                         <img src="images/forus.jpg" alt = "forus" class = "img-web">
                                     </a>
                                 </div>
@@ -64,7 +66,7 @@
                                         <h3 class = "titles-web" id = "title-faya">Farmers Are Your Ally</h3>
                                           <p class = "explanations">"Farmers Are Your Ally" (FAYA) is a graphic design campaign made to teach and raise awareness about Californian drought and how it can negatively impact farmers then ultimately, our stomachs! This website was created to inform and engage with Internet users as a supplement to the graphic design.</p>
                                     </div>
-                                    <a href="websites/faya/index.html">
+                                    <a href="websites/faya/index.html" target = "_blank">
                                         <img src = "images/faya.jpg" alt = "faya" class = "img-web">
                                     </a>
                                 </div>
@@ -74,17 +76,17 @@
                                         <h3 class = "titles-web" id = "title-madeon">Homage to Madeon</h3>
                                             <p class = "explanations">"Homage to Madeon" is designed give a basic introduction about Madeon, a French musician, and link readers to several sources for engaging with his work. Footage from Madeon's concert was utilized for a Video API background to deliver an exhilirating tease to his performance. The infinite marquee is a lyric from his single, "Pay No Mind" which I hold closely to my heart.</p>
                                     </div>
-                                    <a href="websites/blockbuster/index.html">
+                                    <a href="websites/blockbuster/index.html" target = "_blank">
                                         <img src = "images/madeon.jpg" alt = "madeon" id = "madeon" class = "img-web">
                                     </a>
                                 </div>
 
                                 <div class = "boxes-web">
                                     <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-horrorstory">A Walk in the Woods</h3>
-                                            <p class = "explanations">This is an illustrative storytelling project inspired by anxiety from night-time walks after class. "A Walk in the Woods" showcases the prowess and utility of the fullPage and Vanilla Tilt Javascript Libraries.</p>
+                                        <h3 class = "titles-web" id = "title-horrorstory">On a Walk</h3>
+                                            <p class = "explanations">This is an illustrative storytelling project inspired by anxiety from night-time walks after class. "On a Walk" showcases the prowess and utility of the fullPage and Vanilla Tilt Javascript Libraries.</p>
                                     </div>
-                                    <a href="websites/horrorstory/index.html">
+                                    <a href="websites/horrorstory/index.html" target = "_blank">
                                         <img src = "images/horrorstory.jpg" alt = "horrorstory" id = "horrorstory" class = "img-web">
                                     </a>
                                 </div>
@@ -94,15 +96,33 @@
                                         <h3 class = "titles-web" id = "title-care">Care Fur Us</h3>
                                             <p class = "explanations">"Care Fur Us" is an app designed to exhibit the shining personalities of rescued and abandoned dogs and cats in order to find them permanent homes. Users will be allowed to petsit if they are not fully dedicated to complete adoption yet. This is a UI/UX focused project that demonstrates the seamless experience of transactions users will do for babysitting and adoption.</p>
                                     </div>
-                                    <a href="https://invis.io/5C1114QO7GRX">
-                                        <img src = "images/carefurus.jpg" alt = "carefurus" id = "carefurus" class = "img-web">
+                                    <a href="https://invis.io/5C1114QO7GRX" target = "_blank">
+                                        <img src = "images/carefurus2.jpg" alt = "carefurus" id = "carefurus" class = "img-web">
                                     </a>
                                 </div>
 
                         </section>
             </div>
 
-            <div id = "illustration" class = "hidden">
+            <div id = "graphicdesign">
+                <h2 class = "worktitles" id = "graphicdesign-title">Graphic Design</h2>
+                <p id = "scroll">Scroll Horizontally</p>
+                    <div id = "carousel">
+                        <img src = "images/slide1.jpg" alt = "slide1">
+                        <img src = "images/slide2.jpg" alt = "slide2">
+                        <img src = "images/slide3.jpg" alt = "slide3">
+                        <img src = "images/slide4.jpg" alt = "slide4">
+                        <img src = "images/slide5.jpg" alt = "slide5">
+                        <img src = "images/slide6.jpg" alt = "slide6">
+                        <img src = "images/slide7.jpg" alt = "slide7">
+                        <img src = "images/slide8.jpg" alt = "slide8">
+                        <img src = "images/slide9.jpg" alt = "slide9">
+                        <img src = "images/slide10.jpg" alt = "slide10">
+                    </div>
+            </div>
+
+            <div id = "illustration">
+                <h2 class = "worktitles" id = "illustration-title">Illustration</h2>
                 <section id = "damnill">
                     <div class = "boxes-ill" id = "boxill1">
                         <img src = "images/dolldemo.jpg" alt = "doll1" class = "img-ill">
@@ -116,6 +136,7 @@
             </div>
 
             <h2 id = "bottomlogo">CV</h2>
+            <!-- <a href = "#top" id = "goup">Go Up</a> -->
 
         </div>
         

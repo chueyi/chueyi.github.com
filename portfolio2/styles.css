@@ -1,0 +1,441 @@
+body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#top {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#toplogo:hover {
+    cursor: pointer;
+}
+
+#workbox {
+    margin: auto;
+    margin-right: 0;
+}
+
+.worklinks {
+    display: inline-block;
+    font-size: 1vw;
+    margin-left: -5px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    border-left: solid 0.15vw black;
+    transition: ease 300ms;
+}
+
+#tab-illustration {
+    border-right: solid 0.15vw black;
+}
+
+.worklinks:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+h1, h2{
+    color: black;
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+#container {
+    margin: auto;
+    padding-bottom: 3vw;
+    max-width: 80%;
+}
+
+#webdesign {
+    /* background-color: blue; */
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+#home {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+#hello {
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10vw;
+    margin: auto;
+    display: block;
+    color: black;
+    animation: hello 2s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -5;
+}
+
+@keyframes hello {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+        visibility: visible;
+    }
+    20% {
+        transform: translateY(0%);
+    }
+    50%{
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30%);
+        visibility: hidden;
+    }
+}
+
+/* CAROUSEL */
+#carousel1 {
+    height: auto;
+    width: 100%;
+    overflow: scroll;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: red; */
+    scroll-behavior: smooth;
+}
+
+img {
+    height: auto;
+    opacity: 1;
+    margin: auto;
+    display: block;
+    transition: ease 300ms;
+    padding-left: 5%;
+}
+
+#horrorstory {
+    padding-right: 5%;
+}
+
+#dotcontainer {
+    position: absolute;
+    margin: auto;
+    display: block;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* WEB */
+
+.img-web {
+    max-width: 90%;
+    height: auto;
+    opacity: 1;
+    transition: ease 300ms;
+}
+
+.img-web:hover {
+    cursor: pointer;
+}
+
+.boxes-web {
+    display: flex;
+    flex: 100%;
+    padding-top: 50px;
+}
+
+#carefurus {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.titles-web {
+    text-align: left;
+}
+
+.descriptions {
+    width: 100%;
+    padding-right: 5%;
+    line-height: 1.8vw;
+}
+
+#title-squidgame {
+    color: rgb(255, 54, 104);
+}
+
+#title-forus {
+    color: rgb(71, 185, 36);
+}
+
+#title-faya {
+    color: rgb(21, 97, 219);
+}
+
+#title-madeon {
+    color: rgb(22, 199, 234);
+}
+
+#title-horrorstory {
+    color: rgb(222, 0, 0);
+}
+
+#title-care {
+    color: rgb(255, 129, 27);
+}
+
+/* ILLUSTRATION */
+
+#illustration {
+    max-width: 100%;
+    height: auto;
+    padding-top: 2%;
+}
+
+#damnill {
+    max-width: 100%;
+    display: flex;
+}
+
+.img-ill {
+    padding: 5%;
+}
+
+#me {
+    max-width: 30%;
+    height: auto;
+    margin-top: 5%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+#bottomlogo {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.showing {
+    display: block;
+    transition-property: opacity, visibility;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .boxes-web {
+        display: block;
+    }
+
+    #damnill {
+        max-width: 100%;
+        display: block;
+        margin-left:auto;
+    }
+
+    .boxes-ill {
+        display: block;
+    }
+    
+    #illustration {
+        max-width: 100%;
+    }
+
+    .img-ill {
+        padding: 0;
+    }
+
+    .descriptions {
+        line-height: 2.9vw;
+    }
+
+    img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+}
+
+    .descriptions {
+        max-width: 60%;
+        margin: auto;
+        padding-bottom: 4vw;
+    }
+
+    .explanations {
+        margin: auto;
+        display: block;
+    }
+
+
+@media only screen and (max-width: 800px) {
+
+    main {
+        margin-bottom: 5%;
+    }
+
+    .boxes-web {
+        width: 100%;
+        margin: auto;
+        display: block;
+        flex: 100%;
+        padding-top: 40px;
+    }
+
+    .boxes-ill {
+        display: block;
+    }
+
+
+    #toplogo {
+        visibility: hidden;
+    }
+
+    #bottomlogo {
+        font-size: 4vw;
+        visibility: visible;
+        margin-top: 12%;
+    }
+
+    #tab-home {
+        border-right: 0;
+    }
+
+    #tab-web {
+        border-right: 0;
+    }
+
+    #tab-graphics {
+        border-right: 0;
+    }
+
+    #container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #workbox {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .worklinks {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        color: black;
+        font-size: 2vw;
+        border: solid 0.2vw black;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .imgtext {
+        font-size: 4vw;
+    }
+
+    #illustration {
+        padding-top: 50px;
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #top {
+        width: 100%;
+        display: block;
+    }
+
+    #box {
+        max-width: 100%;
+        margin-top: 10%;
+    }
+
+    .descriptions {
+        max-width: 80%;
+        margin: auto;
+        height: auto;
+        line-height: 5vw;
+        padding-bottom: 4vw;
+    }
+
+    .explanations {
+        margin: auto;
+        display: block;
+    }
+
+    .titles-web {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        margin: auto;
+    }
+
+}
