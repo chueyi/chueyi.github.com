@@ -67,24 +67,31 @@ h2 {
 }
 
 p {
+    font-size: 20px;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
     color: white;
-    left: 11.5%;
-    bottom: 10%;
+    text-align: center;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
 }
 
 .section {
     background-color: black;
-    width: 1300px;
-    height: 620px;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 
 .imgholder {
-    width: 1300px;
-    height: 620px;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 
@@ -107,19 +114,6 @@ img {
     height: 100%;
     width: 100%;
     z-index: 10;
-}
-
-#ellipse {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    border: 5px solid black;
-    border-radius: 100%;
-    z-index: 15;
-    opacity: 1;
-    visibility: hidden;
-    animation: ellipse 4s ease-in-out;
 }
 
 @keyframes ellipse {
@@ -150,149 +144,20 @@ img {
 
 #lady {
     position: absolute;
-    margin-left: 6%;
+    right: -5%;
     width: 90%;
     height: 90%;
 }
 
-#look {
-    font-size: 15px;
-    position: absolute;
-    left: 45%;
-    padding: 10px;
-    z-index: 20;
-    top: 40%;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    line-height: 80px;
-    animation: look 3s infinite;
-}
-
-@keyframes look {
-    0% {
-        outline: 0px solid rgba(255, 255, 255, 0);
-      }
-      50% {
-        outline: 2px solid rgba(255, 255, 255, 1);
-      }
-      100% {
-      outline: 10px solid rgba(255, 255, 255, 0);
-      }
-}
-
 #closing {
-    position: relative;
-    left: 40%;
-    top: 2%;
-}
-
-#lefthalf {
-    position: fixed;
-    height: 100%;
-    width: 50%;
-    background-color: white;
-    animation: lefthalf 4s ease;
-}
-
-#righthalf {
-    position: fixed;
-    height: 100%;
-    width: 50%;
-    right: 0;
-    background-color: white;
-    animation: righthalf 4s ease;
-}
-
-#loadingbarleft {
-    position: fixed;
-    height: 5px;
-    width: 100%;
-    margin-top: 26%;
+    font-size: 20px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 43%;
     left: 0;
-    background-color: black;
-    animation: leftbar 4s ease;
-}
-
-#loadingbarright {
-    position: fixed;
-    height: 5px;
-    width: 100%;
-    margin-top: 26%;
     right: 0;
-    background-color: black;
-    animation: rightbar 4s ease;
-}
-
-
-@keyframes lefthalf {
-    0% {
-        width: 50%;
-        visibility: visible;
-    }
-    45% {
-        width: 50%;
-    }
-    100% {
-        width: 0%;
-    }
-}
-
-@keyframes righthalf {
-    0% {
-        width: 50%;
-        visibility: visible;
-    }
-    45% {
-        width: 50%;
-    }
-    100% {
-        width: 0%;
-    }
-}
-
-@keyframes leftbar {
-    0% {
-        width: 0%;
-    }
-    30% {
-        width: 43%;
-    }
-    32% {
-        background-color: black;
-    }
-    40% {
-        background-color: red;
-    }
-    48% {
-        width: 43%;
-    }
-
-    100% {
-        width: 0%;
-    }
-}
-
-
-@keyframes rightbar {
-    0% {
-        width: 0%;
-    }
-    30% {
-        width: 43%;
-    }
-    32% {
-        background-color: black;
-    }
-    40% {
-        background-color: red;
-    }
-    48% {
-        width: 43%;
-    }
-    100% {
-        width: 0%;
-    }
 }
 
 .hidden {
