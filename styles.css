@@ -19,7 +19,6 @@ main {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    border-bottom: solid 0.2vw black;
 }
 
 #toplogo:hover {

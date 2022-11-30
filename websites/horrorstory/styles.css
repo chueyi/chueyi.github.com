@@ -1,20 +1,57 @@
 body {
     font-family: questa-grande, serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 
-h1 {
+.intro-titles {
+    position: static;
     color: white;
     text-align: center;
     margin: auto;
-    animation: keepscrolling 6s linear;
+    animation: keepscrolling 1s linear;
+}
+
+#title1 {
+    margin-top: 10%;
+    font-style: normal;
+    font-size: 60px;
+}
+
+#title2 {
+    font-style: italic;
+    font-size: 30px;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 40px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0px, 0px);
+    }
+}
+
+#subtitles {
+    padding-top: 10%;
+    line-height: 1px;
 }
 
 h2 {
     color: white;
     position: absolute;
     z-index: 10;
+}
+
+#look {
+    color: white;
+    font-weight: 200;
 }
 
 @keyframes keepscrolling {
