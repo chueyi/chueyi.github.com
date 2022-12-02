@@ -12,7 +12,9 @@
 
     <link href="styles.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -20,15 +22,16 @@
 
         <nav>
             <div id = "top">
-                <h1 id = "toplogo">C</h1>
-                <h1 id  ="toplogo2">V</h1>
+                <h1 id = "toplogo"><span id = "toplogo1">C</span><span id  ="toplogo2">V</span></h1>
                 <div id = "workbox">
                     <a href = "#container" class = "worklinks" id = "tab-home">Home</a>
                     <a href = "#web-title" class = "worklinks" id = "tab-web">Web & UI/UX</a>
                     <a href = "#graphicdesign-title" class = "worklinks" id = "tab-graphics">Graphic Design</a>
                     <a href = "#illustration-title" class = "worklinks" id = "tab-illustration">Illustration</a>
+                    <button id = "button-close">&times;</button>
                 </div>
             </div>
+            <button id = "hamburger"><div id = "bar"></div></button>
         </nav>
 
         <div id="container">
@@ -39,63 +42,70 @@
 
             <div id = "webdesign">
                         <section>
-                            <h2 class = "worktitles" id = "web-title">Web & UI</h2>
-                                <div class = "boxes-web">
-                                    <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-squidgame">Squid Game Mad Libs</h3>
+                            <h2 class = "worktitles" id = "web-title" data-aos="fade-up">Web & UI</h2>
+
+                            <p class = "projectname">Squid Game Mad Lib</p>
+                            <p class = "visit">Visit Me</p>
+                                <div class = "boxes-web" data-aos="zoom-in">
+                                    <!-- <div class = "descriptions">
                                           <p class = "explanations">Let's play a Mad Libs story generator that is themed after the popular Netflix show, "Squid Game"! You can select your own character which changes the script! It also features two bonus characters, Jungkook and V, from the renowned South-Korean boyband, BTS.</p>
-                                    </div>
+                                    </div> -->
                                     <a href="websites/squidgame/index.html" target = "_blank">
                                         <img src = "images/squidgame.jpg" alt = "squidgamemadlibs" id = "squidgame" class = "img-web">
                                     
                                     </a>
                                 </div>
 
-                                <div class = "boxes-web">
-                                    <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-forus">For Us</h3>
+                                <p class = "projectname">For Us</p>
+                                <p class = "visit">Visit Me</p>
+                                <div class = "boxes-web" data-aos="zoom-in">
+                                    <!-- <div class = "descriptions">
                                           <p class = "explanations">"For Us" is a haven for my people, the Hmong, to write their stories in four topics: food, art, war, and ghosts. These subjects are prominent in Hmong culture and should be shared with each other! The inspiration behind this was to preserve knowledge of the Hmong people because the population is small and losing its rich culture to contemporary Americanization.</p>
-                                    </div>
+                                    </div> -->
                                     <a href="websites/forus/index.html" target = "_blank">
-                                        <img src="images/forus.jpg" alt = "forus" class = "img-web">
+                                        <img src="images/forus.jpg" alt = "forus" class = "img-web" id = "forus">
                                     </a>
                                 </div>
 
-                                <div class = "boxes-web">
-                                    <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-faya">Farmers Are Your Ally</h3>
+                                <p class = "projectname">Farmers Are Your Ally (FAYA)</p>
+                                <p class = "visit">Visit Me</p>
+                                <div class = "boxes-web" data-aos="zoom-in">
+                                    <!-- <div class = "descriptions">
                                           <p class = "explanations">"Farmers Are Your Ally" (FAYA) is a graphic design campaign made to teach and raise awareness about Californian drought and how it can negatively impact farmers then ultimately, our stomachs! This website was created to inform and engage with Internet users as a supplement to the graphic design.</p>
-                                    </div>
+                                    </div> -->
                                     <a href="websites/faya/index.html" target = "_blank">
                                         <img src = "images/faya.jpg" alt = "faya" class = "img-web">
                                     </a>
                                 </div>
 
-                                <div class = "boxes-web">
-                                    <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-madeon">Homage to Madeon</h3>
+                                <p class = "projectname">Homage to Madeon</p>
+                                <p class = "visit">Visit Me</p>
+                                <div class = "boxes-web" data-aos="zoom-in">
+                                    <!-- <div class = "descriptions">
                                             <p class = "explanations">"Homage to Madeon" is designed give a basic introduction about Madeon, a French musician, and link readers to several sources for engaging with his work. Footage from Madeon's concert was utilized for a Video API background to deliver an exhilirating tease to his performance. The infinite marquee is a lyric from his single, "Pay No Mind" which I hold closely to my heart.</p>
-                                    </div>
-                                    <a href="websites/blockbuster/index.html" target = "_blank">
+                                    </div> -->
+                                    <a href="websites/madeon/index.html" target = "_blank">
                                         <img src = "images/madeon.jpg" alt = "madeon" id = "madeon" class = "img-web">
                                     </a>
                                 </div>
 
-                                <div class = "boxes-web">
-                                    <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-horrorstory">On a Walk</h3>
+                                <p class = "projectname">On a Walk</p>
+                                <p class = "visit">Visit Me</p>
+                                <div class = "boxes-web" data-aos="zoom-in">
+                                    <!-- <div class = "descriptions">
                                             <p class = "explanations">This is an illustrative storytelling project inspired by anxiety from night-time walks after class. "On a Walk" showcases the prowess and utility of the fullPage and Vanilla Tilt Javascript Libraries.</p>
-                                    </div>
-                                    <a href="websites/horrorstory/index.html" target = "_blank">
+                                    </div> -->
+                                    <a href="websites/onawalk/index.html" target = "_blank">
                                         <img src = "images/horrorstory.jpg" alt = "horrorstory" id = "horrorstory" class = "img-web">
                                     </a>
                                 </div>
 
-                                <div class = "boxes-web">
-                                    <div class = "descriptions">
-                                        <h3 class = "titles-web" id = "title-care">Care Fur Us</h3>
+                                <p class = "projectname">Care Fur Us</p>
+                                <p class = "visit">Visit Me</p>
+                                <div class = "boxes-web" data-aos="zoom-in">
+                                    <!-- <div class = "descriptions">
                                             <p class = "explanations">"Care Fur Us" is an app designed to exhibit the shining personalities of rescued and abandoned dogs and cats in order to find them permanent homes. Users will be allowed to petsit if they are not fully dedicated to complete adoption yet. This is a UI/UX focused project that demonstrates the seamless experience of transactions users will do for babysitting and adoption.</p>
-                                    </div>
+                                    </div> -->
                                     <a href="https://invis.io/5C1114QO7GRX" target = "_blank">
                                         <img src = "images/carefurus2.jpg" alt = "carefurus" id = "carefurus" class = "img-web">
                                     </a>
@@ -105,9 +115,16 @@
             </div>
 
             <div id = "graphicdesign">
-                <h2 class = "worktitles" id = "graphicdesign-title">Graphic Design</h2>
-                <p id = "scroll">Scroll Horizontally</p>
-                    <div id = "carousel">
+                <h2 class = "worktitles" id = "graphicdesign-title" data-aos="fade-up">Graphic Design</h2>
+
+
+                <p class = "projectname">"Hmong New Year 2021, California" Poster</p>
+                <img src = "images/hny.jpg" alt = "hmongnewyearposter" id = "hny" data-aos="zoom-in">
+                
+                <p class = "projectname">"Save Freshwater" Presentation</p>
+                <div>
+                <p class = "scroll">Scroll Horizontally</p>
+                    <div id = "carousel" data-aos="zoom-in">
                         <img src = "images/slide1.jpg" alt = "slide1">
                         <img src = "images/slide2.jpg" alt = "slide2">
                         <img src = "images/slide3.jpg" alt = "slide3">
@@ -119,24 +136,56 @@
                         <img src = "images/slide9.jpg" alt = "slide9">
                         <img src = "images/slide10.jpg" alt = "slide10">
                     </div>
+
+                    <p class = "projectname">"FAYA" Envelope Dielines</p>
+                    <p id = "scroll2" class = "scroll">Scroll Horizontally</p>
+                    <div id = "carousel2" data-aos="zoom-in">
+                        <img src = "images/faya1.1.jpg" alt = "faya1.1" class = "fayaimg">
+                        <img src = "images/faya1.2.jpg" alt = "faya1.2" class = "fayaimg">
+                        <img src = "images/faya2.1.jpg" alt = "faya2.1" class = "fayaimg" id = "faya2-1">
+                        <img src = "images/faya2.2.jpg" alt = "faya2.2" class = "fayaimg">
+                        <img src = "images/faya3.1.jpg" alt = "faya3.1" class = "fayaimg" id = "faya3-1">
+                        <img src = "images/faya3.2.jpg" alt = "faya3.2" class = "fayaimg">
+                    </div>
+
+                    <p class = "projectname">"FAYA" Promotional Video</p>
+                    <p class = "visit">Visit Me</p>
+                    <!-- <a href = "https://www.youtube.com/shorts/uj1gkURrFYk" id = "fayaad" target = "_blank"><img src = "images/fayaad2.jpg" alt = "fayaad" id = "fayaadimg" data-aos="zoom-in"></a> -->
+                    <a href = "https://www.youtube.com/shorts/uj1gkURrFYk" id = "fayaad" target = "_blank">
+                        <video id="fayaad" class = "video" autoplay loop playsinline muted>
+                            <source src="media/commercial.webm" type="video/webm">
+                            <source src="media/commercial.mp4" type="video/mp4">
+                        </video>
+                    </a>
+
+                    <p class = "projectname">"P.A.L. Uniform" Infographic Commercial</p>
+                    <p class = "visit">Visit Me</p>
+                    <a href = "https://www.youtube.com/watch?v=L0pt8VpBZX4&ab_channel=OhGeeChewy" id = "pal" target = "_blank"><img src = "images/pal.jpg" alt = "paluniform" id = "palimg" data-aos="zoom-in"></a>
+                </div>
             </div>
 
             <div id = "illustration">
-                <h2 class = "worktitles" id = "illustration-title">Illustration</h2>
+                <h2 class = "worktitles" id = "illustration-title" data-aos="fade-up">Illustration</h2>
                 <section id = "damnill">
-                    <div class = "boxes-ill" id = "boxill1">
+                    <div class = "boxes-ill" id = "boxill1" data-aos="zoom-in">
                         <img src = "images/dolldemo.jpg" alt = "doll1" class = "img-ill">
                         <img src = "images/fness3.jpg" alt = "onioutfit" class = "img-ill">
                     </div>
-                    <div class = "boxes-ill" id = "boxill2">
+                    <div class = "boxes-ill" id = "boxill2" data-aos="zoom-in">
                         <img src = "images/halloweengirl.jpg" alt = "halloweengirl" class = "img-ill">
                         <img src = "images/fness9.jpg" alt = "blueoutfit" class = "img-ill">
                     </div>
                 </section>
+
+                <div id = "carousel3" data-aos="zoom-in">
+                    <img src = "images/tease1.jpg" alt = "tease1" id = "tease1" class = "teases img-ill">
+                    <img src = "images/tease2.jpg" alt = "tease2" id = "tease2" class = "teases img-ill">
+                    <img src = "images/tease3.jpg" alt = "tease3" id = "tease3" class = "teases img-ill">
+                    <img src = "images/tease4.jpg" alt = "tease4" id = "tease4" class = "teases img-ill">
+                </div>
             </div>
 
             <h2 id = "bottomlogo">CV</h2>
-            <!-- <a href = "#top" id = "goup">Go Up</a> -->
 
         </div>
         

@@ -1,0 +1,165 @@
+body {
+    font-family: questa-grande, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro-titles {
+    position: static;
+    color: white;
+    text-align: center;
+    margin: auto;
+    animation: keepscrolling 1s linear;
+}
+
+#title1 {
+    margin-top: 10%;
+    font-style: normal;
+    font-size: 120px;
+}
+
+#title2 {
+    font-style: italic;
+    font-size: 30px;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 40px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0px, 0px);
+    }
+}
+
+#subtitles {
+    padding-top: 10%;
+    line-height: 1px;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+#look {
+    color: white;
+    font-weight: 200;
+}
+
+@keyframes keepscrolling {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 20px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.section {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.imgholder {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.footsteps {
+    position: absolute;
+}
+
+/* LOADING SCREEN */
+
+#loadingscreen {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+@keyframes ellipse {
+      0% {
+        opacity: 1;
+        visibility: visible;
+      }
+      20% {
+        outline: 0px solid rgba(255, 0, 0, 0);
+      }
+      30%{
+        border: 5px solid black;
+      }
+      40% {
+        border: 5px solid red;
+      }
+      70% {
+        outline: 20px solid rgba(255, 0, 0, 1);
+      }
+      90% {
+          opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        outline: 1000px solid rgba(255, 0, 0, 0);
+      }
+}
+
+#lady {
+    position: absolute;
+    right: -5%;
+    width: 90%;
+    height: 90%;
+}
+
+#closing {
+    font-size: 20px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    top: 43%;
+    left: 0;
+    right: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
