@@ -18,6 +18,13 @@ main {
     transition-timing-function: ease;
 }
 
+svg {
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
 #top {
     position: fixed;
     width: 100%;
@@ -113,9 +120,6 @@ h1, h2{
 
 #webdesign {
     padding-top: 20%;
-    transition-property: opacity, visibility;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
 }
 
 
@@ -176,6 +180,7 @@ img {
 }
 
 .projectname {
+    width: 80%;
     font-size: 30px;
     font-weight: 600;
     display: block;
@@ -579,9 +584,13 @@ a {
     }
 
     #bottomlogo {
-        font-size: 4vw;
+        font-size: 8vw;
         visibility: visible;
-        margin-top: 12%;
+        margin-top: 8%;
+    }
+
+    #bottomlogo:hover {
+        cursor: pointer;
     }
 
     #container {
