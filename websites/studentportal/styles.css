@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(198, 255, 215);
+    color: black;
+    transition: all 2s ease;
+    font-family: lores-12, sans-serif;
+    font-style: normal;
+}
+
+body.switch {
+    background:rgb(0, 76, 138);
+    color: white;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    font-size: 20px;
+    margin: 0 auto 2em auto;
+    color: rgb(250, 157, 166);
+}
+
+#headertitles {
+    display: inline-block;
+}
+
+#name {
+    display: inline;
+    float: left;
+    margin-left: 133px;
+}
+
+header.switch {
+    color: rgb(255, 201, 54);
+}
+
+#des157b {
+    display: inline;
+    float: right;
+    margin-right: 125px;
+}
+
+.titles {
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#banner {
+    background-image: url("images/morning.jpg");
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#banner.switch {
+    background-image: url("images/night.jpg");
+    color: rgb(235, 235, 235);
+    transition: all 1s ease;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    width: 20%;
+    border-left: 5px rgb(250, 157, 166) solid;
+    padding: 30px;
+}
+
+main section.switch{
+    border-left: 5px rgb(255, 201, 54) solid;
+}
+
+a {
+    text-decoration: none;
+    transition: all 100ms;
+}
+
+ol, ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section h3 {
+    background: rgb(250, 157, 166);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+section.switch h3 {
+    background: rgb(255, 201, 54);
+}
+
+section a {
+    font-weight: 800;
+    line-height: 1.1em;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+}
+
+section a:hover {
+    color: rgb(250, 157, 166);
+    transform: scale(1.25) translateY(-5px) translateX(10px);
+}
+
+section.switch a {
+    color: white;
+}
+
+section.switch a:hover {
+    color: rgb(255, 201, 54);
+}
+
+button {
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    padding: 12px;
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.3);
+    border: 5px transparent;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: url("images/nightbutton.jpg");
+}
+
+button.switch {
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+}
+
+button:hover.switch {
+    background-image: url("images/morningbutton.jpg");
+}
