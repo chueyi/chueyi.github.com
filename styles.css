@@ -323,19 +323,19 @@ img {
 #hny {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 40%;
 }
 
 #fayaad {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 30%;
 }
 
 #fayaadvideo {
     display: block;
     margin: auto;
-    width: 30%;
+    width: 100%;
     filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
     transition: ease 300ms;
 }
