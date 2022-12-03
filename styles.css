@@ -329,17 +329,20 @@ img {
 #fayaad {
     display: block;
     margin: auto;
-    width: 50%;
-    transition: ease 300ms ;
+    width: 100%;
 }
 
-#fayaadimg {
+#fayaadvideo {
     display: block;
     margin: auto;
+    width: 30%;
+    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
+    transition: ease 300ms;
 }
 
-#fayaad:hover {
+#fayaadvideo:hover {
     transform: scale(1.05);
+    filter: drop-shadow(20px 20px 12px rgba(153, 163, 173, 0.5));
 }
 
 #pal {
@@ -347,15 +350,12 @@ img {
     margin: auto;
     width: 100%;
     transition: ease 300ms ;
-}
-
-#palimg {
-    display: block;
-    margin: auto;
+    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
 }
 
 #pal:hover {
     transform: scale(1.05);
+    filter: drop-shadow(20px 20px 12px rgba(153, 163, 173, 0.5));
 }
 
 @keyframes scroll {
@@ -384,6 +384,10 @@ img {
         opacity: 0;
         transform: translateY(-10px);
     }
+}
+
+#pal {
+    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
 }
 
 
@@ -657,6 +661,7 @@ a {
 
     .worktitles {
         font-size: 15vw;
+        -webkit-text-stroke-width: 2px;
     }
 
     img {
@@ -764,7 +769,24 @@ a {
     }
     
     #fayaad {
-        width: 70%;
+        width: 100%;
+    }
+
+    #fayaadvideo {
+        width: 60%;
+        filter: none;
+    }
+
+    #fayaadvideo:hover {
+        filter: none;
+    }
+
+    #pal {
+        filter: none;
+    }
+
+    #pal:hover {
+        filter: none;
     }
 
     .img-web {
@@ -789,5 +811,6 @@ a {
         display: block;
         margin: auto;
     }
+    
     
 }
