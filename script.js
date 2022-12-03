@@ -62,6 +62,16 @@
         document.getElementById('hamburger').className = "showing"
     })
 
+    anime({
+        targets: '.svg path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function(el, i) { return i * 50 },
+        direction: 'alternate',
+        loop: false
+      });
+
 
 
 })()
