@@ -26,13 +26,13 @@ main {
     display: flex;
     z-index: 40;
     transition: 300ms ease;
-    background: rgba(255, 255, 255, 1);
+    background: white;
     /* border-bottom: 2px solid black; */
 }
 
 #toplogo {
     margin: auto;
-    margin-left: 0.5%;
+    margin-left: 0.8%;
 }
 
 
@@ -95,7 +95,7 @@ h1, h2{
 
 .worktitles {
     text-align: center;
-    font-size: 90px;
+    font-size: 10vw;
     font-family: proxima-nova, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -112,6 +112,7 @@ h1, h2{
 }
 
 #webdesign {
+    padding-top: 20%;
     transition-property: opacity, visibility;
     transition-duration: 300ms;
     transition-timing-function: ease;
@@ -195,7 +196,7 @@ img {
 
 .img-web:hover {
     transform: scale(1.05);
-    filter: drop-shadow(20px 20px 8px rgba(153, 163, 173, 0.5));
+    filter: drop-shadow(20px 20px 12px rgba(153, 163, 173, 0.5));
 }
 
 .boxes-web {
@@ -251,7 +252,7 @@ img {
 /* GRAPHIC DESIGN */
 
 #graphicdesign {
-    padding-top: 25%;
+    padding-top: 20%;
 }
 
 #carousel {
@@ -376,7 +377,7 @@ img {
 #illustration {
     max-width: 100%;
     height: auto;
-    padding-top: 25%;
+    padding-top: 20%;
 }
 
 #damnill {
@@ -428,6 +429,7 @@ img {
     margin: 8px 0px;
     border: none;
     cursor: pointer;
+    border-radius: 30px;
 }
 
 
@@ -498,6 +500,10 @@ a {
     .boxes-ill {
         display: block;
     }
+
+    #toplogo {
+        margin-left: 1.5%;
+    }
     
     #illustration {
         max-width: 100%;
@@ -536,6 +542,10 @@ a {
 
 @media only screen and (max-width: 800px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     main {
         margin-bottom: 5%;
     }
@@ -545,7 +555,10 @@ a {
         margin: auto;
         display: block;
         flex: 100%;
-        /* padding-top: 40px; */
+    }
+
+    #toplogo {
+        display: none;
     }
 
     .boxes-ill {
@@ -608,10 +621,9 @@ a {
     }
 
     .worklinks {
+        display: block;
         text-align: center;
         margin: auto;
-        margin-left: -5%;
-        width: 100%;
         height: 100%;
         color: black;
         font-size: 7vw;
@@ -619,6 +631,10 @@ a {
         border-left: none;
         padding: 40px;
         transition: 300ms ease;
+    }
+
+    .worktitles {
+        font-size: 15vw;
     }
 
     img {
@@ -640,7 +656,6 @@ a {
     }
 
     #illustration-title {
-        margin-top: 20%;
         margin-bottom: 20%;
     }
 
@@ -650,6 +665,7 @@ a {
 
     #top {
         width: 100%;
+        margin: auto;
         display: block;
         background: none;
     }
@@ -675,20 +691,6 @@ a {
     .titles-web {
         font-size: 5vw;
         text-align: center;
-    }
-
-    #tab-home:hover {
-        /* background: url("images/squidgame.jpg"); */
-    }
-
-    #tab-web:hover {
-        /* background: url(""); */
-    }
-
-    #tab-graphics:hover {
-    } 
-
-    #tab-illustration:hover {
     }
 
     h2 {
@@ -752,9 +754,18 @@ a {
     }
 
     #hamburger {
+        margin: auto;
         display: block;
         z-index: 45;
     }
 
+    #hamburger:hover {
+        cursor: pointer;
+    }
+
+    #bar {
+        display: block;
+        margin: auto;
+    }
     
 }

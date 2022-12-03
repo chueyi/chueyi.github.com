@@ -7,15 +7,14 @@
         window.location.href = "index.html"
     }
 
+    window.onload = function() {
+        document.getElementById('workbox').style.top = "-1000px"
+    }
+
     document.getElementById('toplogo').addEventListener('click', function(event){
         event.preventDefault();
         gohome();
     })
-
-    // document.getElementById('toplogo2').addEventListener('click', function(event){
-    //     event.preventDefault();
-    //     gohome();
-    // })
 
     document.getElementById('bottomlogo').addEventListener('click', function(event){
         event.preventDefault();
@@ -30,8 +29,8 @@
         } else {
             document.getElementById("top").style.top = "-200px";
         }
-    prevScrollpos = currentScrollPos;
-}
+    prevScrollpos = currentScrollPos;   
+    }
 
     document.getElementById('button-close').addEventListener('click', function(event){
         document.getElementById('workbox').style.top = "-1000px"
