@@ -107,8 +107,19 @@ h1, h2{
     font-weight: 600;
     font-style: normal;
 	color: white;
-	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 3px;
+}
+
+#web-title {
+    -webkit-text-stroke-color: rgb(57, 149, 255);
+}
+
+#graphicdesign-title {
+    -webkit-text-stroke-color: rgb(255, 116, 36);
+}
+
+#illustration-title {
+    -webkit-text-stroke-color: rgb(25, 222, 68);
 }
 
 #container {
@@ -374,6 +385,8 @@ img {
         transform: translateY(-10px);
     }
 }
+
+
 
 
 
