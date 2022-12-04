@@ -196,7 +196,8 @@ svg {
 }
 
 #webdesign {
-    padding-top: 20%;
+    padding-top: 2%;
+    margin-top: 30%;
 }
 
 img {
@@ -219,6 +220,10 @@ img {
 
 /* WEB */
 
+#web {
+    margin-top: 30%;
+}
+
 .img-web {
     max-width: 100%;
     height: auto;
@@ -240,27 +245,12 @@ img {
     text-align: left;
 }
 
-.descriptions {
-    position: absolute;
-    line-height: 1.8vw;
-    top: 30%;
-    left: 0;
-    right: 0;
-    width: 80%;
-}
-
-.explanations {
-    width: 70%;
-    display: block;
-    margin: auto;
-    padding-top: 10%;
-}
-
 
 /* GRAPHIC DESIGN */
 
 #graphicdesign {
-    padding-top: 20%;
+    margin-top: 30%;
+    padding-top: 2%;
 }
 
 #carousel {
@@ -389,9 +379,10 @@ img {
 /* ILLUSTRATION */
 
 #illustration {
+    padding-top: 2%;
     max-width: 100%;
     height: auto;
-    padding-top: 20%;
+    margin-top: 30%;
 }
 
 #damnill {
@@ -728,19 +719,6 @@ a {
     #box {
         max-width: 100%;
         margin-top: 10%;
-    }
-
-    .descriptions {
-        max-width: 100%;
-        margin: auto;
-        height: auto;
-        line-height: 5vw;
-        padding-bottom: 4vw;
-    }
-
-    .explanations {
-        width: 100%;
-        padding-top: 0;
     }
 
     .titles-web {
