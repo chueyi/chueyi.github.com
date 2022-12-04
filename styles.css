@@ -63,17 +63,14 @@ svg {
 .worklinks {
     display: inline-block;
     font-size: 1vw;
-    margin-left: -5px;
+    margin-left: 5px;
     padding: 6px;
     padding-left: 20px;
     padding-right: 20px;
-    color: black;
-    border-left: solid 0.15vw black;
+    color: white;
+    background: black;
+    border-radius: 20px;
     transition: ease 300ms;
-}
-
-#tab-illustration {
-    border-right: solid 0.15vw black;
 }
 
 .worklinks:hover {
@@ -303,6 +300,12 @@ img {
     width: 40%;
 }
 
+#heaven {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
 #fayaad {
     display: block;
     margin: auto;
@@ -373,28 +376,43 @@ img {
 #illustration {
     padding-top: 2%;
     max-width: 100%;
-    height: auto;
     margin-top: 30%;
+    display: block;
+    margin: auto;
 }
 
 #damnill {
-    max-width: 100%;
-    display: flex;
+    margin: auto;
+    width: 100%;
 }
 
 #boxill1 {
-    margin-left: -2.5%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
 }
 
 #boxill2 {
-    margin-right: -2.5%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+}
+
+#boxill3 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+}
+
+.teases {
+    width: 25%;
 }
 
 .img-ill {
-    margin-bottom: 0;
-}
-.teases {
-    width: 25%;
+    padding: 30px;
 }
 
 
@@ -507,10 +525,6 @@ a {
     
     #illustration {
         max-width: 100%;
-    }
-
-    .img-ill {
-        padding: 0;
     }
 
     .descriptions {
@@ -663,17 +677,19 @@ a {
         text-align: center;
         margin: auto;
         height: 100%;
+        background: white;
         color: black;
         font-size: 7vw;
         border-bottom: solid 0.3vw black;
         border-left: none;
+        border-radius: 0px;
         padding: 40px;
         transition: 300ms ease;
     }
 
     .worktitles {
         font-size: 15vw;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1.5px;
     }
 
     img {
@@ -749,11 +765,12 @@ a {
     }
 
     .teases {
-        width: 80%;
+        width: 100%;
     }
 
     .img-ill {
-        margin-bottom: 10%;
+        padding: 0px;
+        /* margin-bottom: 10%; */
     }
 
     #tab-illustration {
@@ -761,6 +778,10 @@ a {
     }
 
     #hny {
+        width: 70%;
+    }
+
+    #heaven {
         width: 70%;
     }
     
@@ -813,6 +834,21 @@ a {
     #bottom-title {
         margin: auto;
         padding: 5%;
+    }
+
+    #boxill1 {
+        display: block;
+        width: 100%;
+    }
+
+    #boxill2 {
+        display: block;
+        width: 100%;
+    }
+
+    #boxill3 {
+        display: block;
+        width: 100%;
     }
     
     
