@@ -228,12 +228,12 @@ img {
     max-width: 100%;
     height: auto;
     transition: ease 300ms;
-    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
+    filter: drop-shadow(8px 8px 8px rgba(153, 163, 173, 0.75));
 }
 
 .img-web:hover {
     transform: scale(1.05);
-    filter: drop-shadow(20px 20px 12px rgba(153, 163, 173, 0.5));
+    filter: drop-shadow(20px 20px 16px rgba(153, 163, 173, 0.5));
 }
 
 .boxes-web {
@@ -318,13 +318,13 @@ img {
     display: block;
     margin: auto;
     width: 100%;
-    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
+    filter: drop-shadow(8px 8px 8px rgba(153, 163, 173, 0.75));
     transition: ease 300ms;
 }
 
 #fayaadvideo:hover {
     transform: scale(1.05);
-    filter: drop-shadow(20px 20px 12px rgba(153, 163, 173, 0.5));
+    filter: drop-shadow(20px 20px 16px rgba(153, 163, 173, 0.5));
 }
 
 #pal {
@@ -332,12 +332,12 @@ img {
     margin: auto;
     width: 100%;
     transition: ease 300ms ;
-    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
+    filter: drop-shadow(8px 8px 8px rgba(153, 163, 173, 0.75));
 }
 
 #pal:hover {
     transform: scale(1.05);
-    filter: drop-shadow(20px 20px 12px rgba(153, 163, 173, 0.5));
+    filter: drop-shadow(20px 20px 16px rgba(153, 163, 173, 0.5));
 }
 
 @keyframes scroll {
@@ -368,9 +368,6 @@ img {
     }
 }
 
-#pal {
-    filter: drop-shadow(8px 8px 0px rgb(153, 163, 173));
-}
 
 
 
