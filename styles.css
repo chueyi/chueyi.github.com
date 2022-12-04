@@ -109,7 +109,7 @@ h1 {
     font-family: roboto, sans-serif;
     font-weight: 700;
     font-style: normal;
-	color: white;
+	color: rgba(255, 255, 255, 0);
 	-webkit-text-stroke-width: 2px;
 }
 
@@ -181,6 +181,10 @@ svg {
 
 #tab-illustration:hover {
     background-color: rgb(25, 222, 68);
+}
+
+#bottom-title {
+    -webkit-text-stroke-color: black;
 }
 
 #container {
@@ -361,7 +365,7 @@ img {
 
 @keyframes visit {
     0% {
-        transform: translateY(10px);
+        transform: translateY(5px);
         opacity: 0;
     }
     50% {
@@ -503,6 +507,10 @@ a {
         display: block;
     }
 
+    .svg {
+        width: 80%;
+    }
+
     #damnill {
         max-width: 100%;
         display: block;
@@ -563,8 +571,11 @@ a {
     }
 
     svg {
-        width: 50%;
-        height: 50%;
+        width: 100%;
+    }
+
+    #home {
+        margin-top: 5%;
     }
 
     #home-write {
@@ -636,13 +647,14 @@ a {
 
 
     #workbox {
-        display: block;
+        display: none;
         margin: auto;
         text-align: center;
         position: fixed;
         background-color: white;
         z-index: 100;
         top: 0;
+        width: 100%;
         transition: 400ms ease;
     }
 
@@ -659,10 +671,6 @@ a {
 
     #button-close:hover {
         cursor: pointer;
-    }
-
-    #workbox{
-        width: 100%;
     }
 
     .worklinks {
@@ -826,6 +834,10 @@ a {
     #bar {
         display: block;
         margin: auto;
+    }
+
+    #bottom-title {
+        padding: 5%;
     }
     
     

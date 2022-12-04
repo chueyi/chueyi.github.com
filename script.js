@@ -39,6 +39,7 @@
 
     document.getElementById('hamburger').addEventListener('click', function(event){
         document.getElementById('workbox').style.top = "0px"
+        document.getElementById('workbox').style.display = "block"
         document.getElementById('hamburger').className = "hidden"
     })
 
@@ -66,8 +67,8 @@
         targets: '.svg path',
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutSine',
-        duration: 1000,
-        delay: function(el, i) { return i * 50 },
+        duration: 1200,
+        delay: function(el, i) { return i * 20 },
         direction: 'alternate',
         loop: false
       });
