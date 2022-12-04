@@ -73,6 +73,52 @@
         loop: false
       });
 
+    let svgmorning = document.getElementById('svg-morning'),
+        svgevening = document.getElementById('svg-evening'),
+        background = document.querySelector('body'),
+        top = document.getElementById('top'),
+        toplogo = document.getElementById('toplogo'),
+        workbox = document.getElementById('workbox'),
+        hamburger = document.getElementById('hamburger'),
+        bar = document.getElementById('bar'),
+        buttonclose = document.getElementById('button-close'),
+        today,
+        h;
+
+    function time() {
+        today = new Date,
+        h = today.getHours();
+
+        if (h>=18 || h<5) {
+            svgmorning.style.display = "none"
+            svgevening.style.display = "block"
+            background.style.backgroundColor = "black"
+            background.style.color = "white"
+            top.style.backgroundColor = "black"
+            toplogo.style.color = "white"
+            hamburger.style.backgroundColor = "white"
+            hamburger.style.borderRadius = "5px"
+            bar.style.backgroundColor = "black"
+            workbox.style.backgroundColor = "black"
+            buttonclose.style.color = "black"
+            buttonclose.style.backgroundColor = "white"
+
+            document.getElementsByClassName('worklinks')[0].style.color = 'white';
+            document.getElementsByClassName('worklinks')[1].style.color = 'white';
+            document.getElementsByClassName('worklinks')[2].style.color = 'white';
+            document.getElementsByClassName('worklinks')[3].style.color = 'white';
+        }
+        else if (h>=5 || h<18) {
+            svgmorning.style.display = "block"
+            svgevening.style.display = "none"
+        }
+        else {
+            svgmorning.style.display = "block"
+            svgevening.style.display = "none"
+        }
+    }
+    time();
+
 
 
 })()

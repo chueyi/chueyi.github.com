@@ -476,11 +476,7 @@ a {
 #button-close {
     display: none;
     width: 100%;
-}
 
-#button-close:hover {
-    background: black;
-    color: white;
 }
 
 
@@ -648,13 +644,18 @@ a {
         background: none;
         border: none;
         margin: auto;
+        padding-bottom: 2%;
         text-align: center;
         border-bottom: solid 0.3vw black;
         transition: 400ms ease;
+        background: white;
+        color: black;
     }
 
     #button-close:hover {
         cursor: pointer;
+        background: black;
+        color: white;
     }
 
     .worklinks {
@@ -793,6 +794,8 @@ a {
     }
 
     #hamburger {
+        padding-left: 5px;
+        padding-right: 5px;
         margin: auto;
         display: block;
         z-index: 45;
