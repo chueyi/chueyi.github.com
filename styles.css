@@ -144,7 +144,7 @@ svg {
 }
 
 .home-title {
-    color: rgb(180, 131, 8);
+    color: rgb(226, 164, 7);
 }
 
 #web-title {
@@ -589,7 +589,6 @@ a {
     }
 
     #p1 {
-        /* text-align: left; */
         width: 80%;
         margin: auto;
         line-height: 6vw;
