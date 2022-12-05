@@ -435,7 +435,7 @@ img {
     top: 1%;
     right: 2%;
     display: none;
-    transition: 400ms ease;
+    transition: 300ms ease;
 }
 
 #bar, #hamburger:after, #hamburger:before {
@@ -664,7 +664,7 @@ a {
         padding-bottom: 2%;
         text-align: center;
         border-bottom: solid 0.3vw black;
-        transition: 400ms ease;
+        transition: 300ms ease;
         background: white;
         color: black;
     }
