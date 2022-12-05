@@ -117,6 +117,28 @@
             document.getElementsByClassName('worklinks')[3].style.color = 'white';
             document.getElementsByClassName('worklinks')[3].style.border = 'solid 1.5px white';
             document.getElementsByClassName('worklinks')[3].style.backgroundColor = 'black';
+
+            function myFunction(x) {
+                if (x.matches) {
+                    document.getElementsByClassName('worklinks')[0].style.border = 'solid 0px white';
+                    document.getElementsByClassName('worklinks')[1].style.border = 'solid 0px white';
+                    document.getElementsByClassName('worklinks')[2].style.border = 'solid 0px white';
+                    document.getElementsByClassName('worklinks')[3].style.border = 'solid 0px white';
+                    top.style.background = 'transparent'
+                } else {
+                    document.getElementsByClassName('worklinks')[0].style.border = 'solid 1.5px white';
+                    document.getElementsByClassName('worklinks')[1].style.border = 'solid 1.5px white';
+                    document.getElementsByClassName('worklinks')[2].style.border = 'solid 1.5px white';
+                    document.getElementsByClassName('worklinks')[3].style.border = 'solid 1.5px white';
+                    top.style.background = 'black'
+                }
+                
+              }
+
+              var x = window.matchMedia("(max-width: 800px)")
+              myFunction(x)
+              x.addListener(myFunction) 
+
         }
         else if (h>=5 || h<18) {
             svgmorning.style.display = "block"
@@ -129,6 +151,8 @@
     }
     time();
 
-
+      myFunction(x)
+      x.addListener(myFunction) 
+      
 
 })()
