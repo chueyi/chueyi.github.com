@@ -90,7 +90,7 @@
         today = new Date,
         h = today.getHours();
 
-        if (h>=18 || h<5) {
+        if (h>=18 || h<6) {
             svgmorning.style.display = "none"
             svgevening.style.display = "block"
             background.style.backgroundColor = "black"
@@ -140,7 +140,7 @@
               x.addListener(myFunction) 
 
         }
-        else if (h>=5 || h<18) {
+        else if (h>=6 || h<18) {
             svgmorning.style.display = "block"
             svgevening.style.display = "none"
         }
