@@ -67,16 +67,15 @@ svg {
     padding: 6px;
     padding-left: 20px;
     padding-right: 20px;
-    color: white;
-    background: black;
+    color: black;
+    background: none;
+    border: 1.5px solid black;
     border-radius: 20px;
-    transition: ease 300ms;
+    transition: ease 200ms;
 }
 
 .worklinks:hover {
     cursor: pointer;
-    color: white;
-    background-color: black;
 }
 
 #read {
@@ -148,11 +147,13 @@ h1 {
 }
 
 #tab-home:hover {
-    background-color: rgba(239, 176, 14, 1);
+    color: rgba(239, 176, 14, 1);
+    border: solid 1.5px rgba(239, 176, 14, 1);
 }
 
 #tab-web:hover {
-    background-color: rgb(57, 149, 255);
+    color: rgb(57, 149, 255);
+    border: solid 1.5px rgb(57, 149, 255);;
 }
 
 #graphicdesign-title {
@@ -160,7 +161,8 @@ h1 {
 }
 
 #tab-graphics:hover {
-    background-color :rgb(255, 81, 81);
+    color :rgb(255, 81, 81);
+    border: solid 1.5px rgb(255, 81, 81);
 }
 
 .graphicname {
@@ -172,7 +174,8 @@ h1 {
 }
 
 #tab-illustration:hover {
-    background-color: rgb(25, 222, 68);
+    color: rgb(25, 222, 68);
+    border: solid 1.5px rgb(25, 222, 68);;
 }
 
 #bottom-title {
@@ -680,11 +683,29 @@ a {
         background: white;
         color: black;
         font-size: 7vw;
+        border: none;
         border-bottom: solid 0.3vw black;
         border-left: none;
         border-radius: 0px;
         padding: 40px;
         transition: 300ms ease;
+    }
+
+    #tab-home:hover {
+        border: solid 0px;
+        border-bottom: solid 0.3vw black;
+    }
+    #tab-web:hover {
+        border: solid 0px;
+        border-bottom: solid 0.3vw black;
+    }
+    #tab-graphics:hover {
+        border: solid 0px;
+        border-bottom: solid 0.3vw black;
+    }
+    #tab-illustration:hover {
+        border: solid 0px;
+        border-bottom: solid 0.3vw black;
     }
 
     .worktitles {

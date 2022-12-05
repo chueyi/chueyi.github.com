@@ -105,14 +105,18 @@
             buttonclose.style.backgroundColor = "white"
             bottomtitle.style.webkitTextStrokeColor = "white"
 
-            document.getElementsByClassName('worklinks')[0].style.color = 'black';
-            document.getElementsByClassName('worklinks')[0].style.backgroundColor = 'white';
-            document.getElementsByClassName('worklinks')[1].style.color = 'black';
-            document.getElementsByClassName('worklinks')[1].style.backgroundColor = 'white';
-            document.getElementsByClassName('worklinks')[2].style.color = 'black';
-            document.getElementsByClassName('worklinks')[2].style.backgroundColor = 'white';
-            document.getElementsByClassName('worklinks')[3].style.color = 'black';
-            document.getElementsByClassName('worklinks')[3].style.backgroundColor = 'white';
+            document.getElementsByClassName('worklinks')[0].style.color = 'white';
+            document.getElementsByClassName('worklinks')[0].style.border = 'solid 1.5px white';
+            document.getElementsByClassName('worklinks')[0].style.backgroundColor = 'black';
+            document.getElementsByClassName('worklinks')[1].style.color = 'white';
+            document.getElementsByClassName('worklinks')[1].style.backgroundColor = 'black';
+            document.getElementsByClassName('worklinks')[1].style.border = 'solid 1.5px white';
+            document.getElementsByClassName('worklinks')[2].style.color = 'white';
+            document.getElementsByClassName('worklinks')[2].style.backgroundColor = 'black';
+            document.getElementsByClassName('worklinks')[2].style.border = 'solid 1.5px white';
+            document.getElementsByClassName('worklinks')[3].style.color = 'white';
+            document.getElementsByClassName('worklinks')[3].style.border = 'solid 1.5px white';
+            document.getElementsByClassName('worklinks')[3].style.backgroundColor = 'black';
         }
         else if (h>=5 || h<18) {
             svgmorning.style.display = "block"
