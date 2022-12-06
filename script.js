@@ -150,9 +150,6 @@
         }
     }
     time();
-
-      myFunction(x)
-      x.addListener(myFunction) 
       
 
 })()
