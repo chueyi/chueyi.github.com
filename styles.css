@@ -35,6 +35,7 @@ svg {
     z-index: 40;
     transition: 300ms ease;
     background: white;
+    border-bottom: 1px solid grey;
 }
 
 #toplogo {
@@ -741,6 +742,7 @@ a {
         margin: auto;
         display: block;
         background: none;
+        border-bottom: none;
     }
 
     #box {
