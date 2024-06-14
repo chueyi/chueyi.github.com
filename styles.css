@@ -406,6 +406,20 @@ img {
     width: 100%;
 }
 
+#spiritualitybox {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+#endearmentbox {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
 .teases {
     width: 25%;
 }
