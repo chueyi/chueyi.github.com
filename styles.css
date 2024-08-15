@@ -420,6 +420,13 @@ img {
     width: 100%;
 }
 
+#resurrectionbox {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
 .teases {
     width: 25%;
 }
